@@ -1,17 +1,12 @@
 package org.ez.vk.ui.command;
 
-import java.awt.print.Printable;
-import java.io.BufferedReader;
-import java.io.Console;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.ez.vk.ui.command.common.ConsoleHelper;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.test.annotation.Repeat;
 
 public abstract class RootCommand {
 	protected final static ApplicationContext context = new ClassPathXmlApplicationContext("ui-context.xml");

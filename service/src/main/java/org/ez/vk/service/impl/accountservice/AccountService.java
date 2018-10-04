@@ -1,9 +1,8 @@
 package org.ez.vk.service.impl.accountservice;
 
-import org.ez.vk.dao.common.api.vk.dao.IAccountDao;
-import org.ez.vk.dao.common.entity.vk.db.reserved.AccountVk;
+import org.ez.api.dao.IAccountDao;
+import org.ez.entity.vk.db.reserved.AccountVk;
 import org.ez.vk.service.api.IAccountService;
-import org.ez.vk.service.api.IRepostTask;
 import org.ez.vk.service.common.web.WebHelper;
 import org.ez.vk.service.entity.AccountServiceDTO;
 import org.ez.vk.service.impl.AbstractService;

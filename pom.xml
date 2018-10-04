@@ -21,8 +21,7 @@
 
 
 	<modules>
-		<module>dao-common</module>
-		<module>dao-import-file-system</module>
+		<module>common</module>
 		<module>dao</module>
 		<module>service</module>
 		<module>ui</module>
@@ -58,7 +57,7 @@
 		<!-- Mongo -->
 		<dependency>
 			<groupId>org.mongodb</groupId>
-			<artifactId>mongodb-driver-sync</artifactId>
+			<artifactId>mongo-java-driver</artifactId>
 			<version>${mongo.version}</version>
 		</dependency>
 

@@ -3,16 +3,15 @@ package org.ez.vk.service.task.repost;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ez.vk.dao.common.api.vk.dao.IAccountDao;
-import org.ez.vk.dao.common.api.vk.dao.IGroupDao;
-import org.ez.vk.dao.common.entity.vk.db.GroupEntity;
-import org.ez.vk.dao.common.entity.vk.db.reserved.AccountVk;
-import org.ez.vk.dao.common.entity.vk.search.AccountSearchDTO;
+import org.ez.api.dao.IAccountDao;
+import org.ez.api.dao.IGroupDao;
+import org.ez.entity.vk.db.GroupEntity;
+import org.ez.entity.vk.db.reserved.AccountVk;
+import org.ez.entity.vk.search.AccountSearchDTO;
 import org.ez.vk.service.api.IRepostTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.vk.api.sdk.client.TransportClient;
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.UserActor;
 import com.vk.api.sdk.exceptions.ApiException;

@@ -5,15 +5,11 @@ import java.util.List;
 
 import com.vk.api.sdk.client.TransportClient;
 import com.vk.api.sdk.client.VkApiClient;
-import com.vk.api.sdk.client.actors.Actor;
 import com.vk.api.sdk.client.actors.UserActor;
 import com.vk.api.sdk.exceptions.ApiException;
 import com.vk.api.sdk.exceptions.ClientException;
 import com.vk.api.sdk.httpclient.HttpTransportClient;
-import com.vk.api.sdk.objects.UserAuthResponse;
 import com.vk.api.sdk.objects.groups.Group;
-import com.vk.api.sdk.objects.groups.responses.SearchResponse;
-import com.vk.api.sdk.objects.wall.responses.GetResponse;
 
 /**
  * Hello world!
