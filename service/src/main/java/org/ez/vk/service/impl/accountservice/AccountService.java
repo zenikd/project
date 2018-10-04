@@ -2,6 +2,9 @@ package org.ez.vk.service.impl.accountservice;
 
 import org.ez.api.dao.IAccountDao;
 import org.ez.entity.vk.db.reserved.AccountVk;
+import org.ez.vk.dao.common.exception.internal.InternalException;
+import org.ez.vk.dao.common.exception.user.BadCredentialsException;
+import org.ez.vk.dao.common.exception.user.RootUserException;
 import org.ez.vk.service.api.IAccountService;
 import org.ez.vk.service.common.web.WebHelper;
 import org.ez.vk.service.entity.AccountServiceDTO;
@@ -25,34 +28,23 @@ public class AccountService extends AbstractService implements IAccountService {
 
 	public final static String ACCOUNT_ALREADY_EXIST = "account already exists";
 	private final static String BAD_CREDENTIALS = "Login or pass wrong";
-	private final static String VK_API_EXCEPTION = "Vk api exception";
 	private final static String VK_DOMEN = "https://vk.com";
 	private final static String ID = "id";
 
 	private final static TransportClient transportClient = HttpTransportClient.getInstance();
 	private final static VkApiClient vk = new VkApiClient(transportClient);
 
-	public String addAccount(AccountServiceDTO accountServiceDTO) {
+	public void addAccount(AccountServiceDTO accountServiceDTO) throws RootUserException, InternalException {
 		String urlToGetAccount = getURLToGetAccount(accountServiceDTO);
 		String response = WebHelper.gerStringByUrl(urlToGetAccount);
-
 		AccountVk defaultAccount = getDefaultAccount(response);
 		if (defaultAccount.getUserActor().getAccessToken() == null) {
-			return BAD_CREDENTIALS;
+			throw new BadCredentialsException(BAD_CREDENTIALS);
 		}
+		setAccountIdentificationData(defaultAccount);
+		setUserCredentials(accountServiceDTO, defaultAccount);
+		accountDao.addEntity(defaultAccount);
 
-		try {
-			setAccountIdentificationData(defaultAccount);
-		} catch (Exception e) {
-			return VK_API_EXCEPTION;
-		}
-		setUserCredentials(accountServiceDTO, defaultAccount);		
-		try {
-			accountDao.addAccount(defaultAccount);
-		} catch (RuntimeException e) {
-			return ACCOUNT_ALREADY_EXIST;
-		}
-		return "ok";
 	}
 
 	private void setUserCredentials(AccountServiceDTO accountServiceDTO, AccountVk defaultAccount) {
@@ -71,15 +63,21 @@ public class AccountService extends AbstractService implements IAccountService {
 
 	}
 
-	private void setAccountIdentificationData(AccountVk defaultAccount) throws ApiException, ClientException {
-		UserSettings accountInfo = vk.account().getProfileInfo(defaultAccount.getUserActor()).execute();
-
-		Integer idValue = defaultAccount.getUserActor().getId();
-		defaultAccount.setDefaultAccountUrl(VK_DOMEN + "/" + ID + idValue);
-		if (accountInfo.getScreenName() != null) {
-			defaultAccount.setCustomAccountUrl(VK_DOMEN + "/" + accountInfo.getScreenName());
+	private void setAccountIdentificationData(AccountVk defaultAccount) throws InternalException {
+		UserSettings accountInfo;
+		try {
+			accountInfo = vk.account().getProfileInfo(defaultAccount.getUserActor()).execute();
+			Integer idValue = defaultAccount.getUserActor().getId();
+			defaultAccount.setDefaultAccountUrl(VK_DOMEN + "/" + ID + idValue);
+			if (accountInfo.getScreenName() != null) {
+				defaultAccount.setCustomAccountUrl(VK_DOMEN + "/" + accountInfo.getScreenName());
+			}
+			defaultAccount.setUserName(String.format("%s %s", accountInfo.getFirstName(), accountInfo.getLastName()));
+		} catch (ApiException e) {
+			throw new InternalException();
+		} catch (ClientException e) {
+			throw new InternalException();
 		}
-		defaultAccount.setUserName(String.format("%s %s", accountInfo.getFirstName(), accountInfo.getLastName()));
 
 	}
 
@@ -88,7 +86,5 @@ public class AccountService extends AbstractService implements IAccountService {
 				"https://oauth.vk.com/token?grant_type=password&client_id=2274003&client_secret=hHbZxrka2uZ6jB1inYsH&username=%s&password=%s",
 				accountServiceDTO.getLogin(), accountServiceDTO.getPass());
 	}
-
-	
 
 }

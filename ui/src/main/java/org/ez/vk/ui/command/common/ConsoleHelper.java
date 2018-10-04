@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
+import org.ez.vk.dao.common.exception.internal.InternalException;
+
 public class ConsoleHelper {
 	private final static String COMMAND_NO_UNIQUE = "command no unique";
 	private final static String COMMAND_NO_EXIST = "command no exist";
@@ -48,9 +50,14 @@ public class ConsoleHelper {
 		return command;
 	}
 
-	public static String writeText() throws IOException {
+	public static String writeText() throws InternalException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		return in.readLine();
+		try {
+			return in.readLine();
+		} catch (IOException e) {
+			throw new InternalException();
+		}
+		
 	}
 
 }

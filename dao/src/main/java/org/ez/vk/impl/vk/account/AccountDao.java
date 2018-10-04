@@ -8,6 +8,8 @@ import org.ez.api.converter.IAccountFromDBObject;
 import org.ez.api.dao.IAccountDao;
 import org.ez.entity.vk.db.reserved.AccountVk;
 import org.ez.entity.vk.search.AccountSearchDTO;
+import org.ez.vk.dao.common.exception.user.NotUniqueException;
+import org.ez.vk.dao.common.exception.user.RootUserException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -31,9 +33,9 @@ public class AccountDao extends AbstractDao<AccountVk, AccountSearchDTO> impleme
 		this.collection = database.getCollection("cappedCollection", BasicDBObject.class);
 	}
 
-	public void addAccount(AccountVk defaultAccount) throws RuntimeException {
+	public void addEntity(AccountVk defaultAccount) throws RootUserException {
 		if (!isUnique(defaultAccount)) {
-			throw new RuntimeException(ACCOUNT_ALREADY_EXIST);
+			throw new NotUniqueException(ACCOUNT_ALREADY_EXIST);
 		}
 		BasicDBObject basicDBObject = new BasicDBObject();
 		BasicDBObject document = accountToDBObject.convertEntityToDBObject(defaultAccount, basicDBObject);

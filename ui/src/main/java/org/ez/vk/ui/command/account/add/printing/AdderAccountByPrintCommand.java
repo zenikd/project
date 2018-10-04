@@ -31,10 +31,10 @@ public class AdderAccountByPrintCommand extends RootCommand{
 		print(WRITE_TYPE);
 		String type = ConsoleHelper.chooseOneFromList(listType);
 		AccountServiceDTO accountSearchDTO = new AccountServiceDTO(login, pass, type);		
-		String result = accountService.addAccount(accountSearchDTO);
-			print(result);
+		accountService.addAccount(accountSearchDTO);
+		print("OK");
 		} catch (Exception e) {
-			// TODO: handle exception
+			print(e.getMessage());
 		}
 	}
 	

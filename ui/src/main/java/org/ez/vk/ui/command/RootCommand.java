@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.ez.vk.dao.common.exception.internal.InternalException;
 import org.ez.vk.ui.command.common.ConsoleHelper;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -15,7 +16,7 @@ public abstract class RootCommand {
 	private final static String COMMAND_NOT_FOUND = "command not found or not unique";
 	private final static String EXIT = "exit";
 
-	public void openDirectory() throws IOException {
+	public void openDirectory() throws InternalException {
 		if (listCommands.size() > 0) {
 			showCommandNameChilds();
 			chooseChildCommand();
@@ -24,7 +25,7 @@ public abstract class RootCommand {
 		}
 	}
 
-	private void chooseChildCommand() throws IOException {
+	private void chooseChildCommand() throws InternalException {
 		boolean isFound = false;
 		String command = ConsoleHelper.writeText();
 		if (EXIT.startsWith(command)) {
