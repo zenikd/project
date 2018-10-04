@@ -1,5 +1,7 @@
 package org.ez.vk.service.impl.accountservice;
 
+import java.io.IOException;
+
 import org.ez.api.dao.IAccountDao;
 import org.ez.entity.vk.db.reserved.AccountVk;
 import org.ez.vk.dao.common.exception.internal.InternalException;
@@ -36,14 +38,16 @@ public class AccountService extends AbstractService implements IAccountService {
 
 	public void addAccount(AccountServiceDTO accountServiceDTO) throws RootUserException, InternalException {
 		String urlToGetAccount = getURLToGetAccount(accountServiceDTO);
-		String response = WebHelper.gerStringByUrl(urlToGetAccount);
-		AccountVk defaultAccount = getDefaultAccount(response);
-		if (defaultAccount.getUserActor().getAccessToken() == null) {
+		String response;
+		try {
+			response = WebHelper.gerStringByUrl(urlToGetAccount);		
+		} catch (IOException e) {
 			throw new BadCredentialsException(BAD_CREDENTIALS);
 		}
-		setAccountIdentificationData(defaultAccount);
-		setUserCredentials(accountServiceDTO, defaultAccount);
-		accountDao.addEntity(defaultAccount);
+		AccountVk accountVk = getDefaultAccount(response);
+		setAccountIdentificationData(accountVk);
+		setUserCredentials(accountServiceDTO, accountVk);
+		accountDao.addEntity(accountVk);
 
 	}
 
