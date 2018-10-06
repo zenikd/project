@@ -3,8 +3,8 @@ package org.ez.vk.impl.vk.account;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ez.api.converter.IAccountConverterToDBObject;
-import org.ez.api.converter.IAccountFromDBObject;
+import org.ez.api.converter.entity.IAccountConverterToDBObject;
+import org.ez.api.converter.entity.IAccountFromDBObject;
 import org.ez.api.dao.IAccountDao;
 import org.ez.entity.vk.db.reserved.AccountVk;
 import org.ez.entity.vk.search.AccountSearchDTO;

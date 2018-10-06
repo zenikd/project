@@ -3,7 +3,7 @@ package org.ez.vk.impl.vk.account;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ez.api.converter.IGroupToDBObject;
+import org.ez.api.converter.entity.IGroupToDBObject;
 import org.ez.api.dao.IGroupDao;
 import org.ez.entity.vk.db.GroupEntity;
 import org.springframework.beans.factory.annotation.Autowired;

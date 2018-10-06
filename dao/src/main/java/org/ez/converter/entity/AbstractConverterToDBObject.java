@@ -1,6 +1,6 @@
-package org.ez.converter;
+package org.ez.converter.entity;
 
-import org.ez.api.converter.IAbstractConverterToDBObject;
+import org.ez.api.converter.entity.IAbstractConverterToDBObject;
 import org.ez.entity.vk.db.BaseEntity;
 
 import com.mongodb.BasicDBObject;

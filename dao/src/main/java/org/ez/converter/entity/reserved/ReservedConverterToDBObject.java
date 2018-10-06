@@ -1,6 +1,6 @@
-package org.ez.converter.vk.reserved;
+package org.ez.converter.entity.reserved;
 
-import org.ez.converter.AbstractConverterToDBObject;
+import org.ez.converter.entity.AbstractConverterToDBObject;
 import org.ez.entity.vk.db.reserved.AbstractReservedEntity;
 
 import com.mongodb.BasicDBObject;

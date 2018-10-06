@@ -1,4 +1,4 @@
-package org.ez.api.converter;
+package org.ez.api.converter.entity;
 
 import com.mongodb.BasicDBObject;
 

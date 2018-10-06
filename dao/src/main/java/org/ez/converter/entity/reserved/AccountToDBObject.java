@@ -1,6 +1,6 @@
-package org.ez.converter.vk.reserved;
+package org.ez.converter.entity.reserved;
 
-import org.ez.api.converter.IAccountConverterToDBObject;
+import org.ez.api.converter.entity.IAccountConverterToDBObject;
 import org.ez.entity.vk.db.reserved.AccountVk;
 import org.springframework.stereotype.Repository;
 

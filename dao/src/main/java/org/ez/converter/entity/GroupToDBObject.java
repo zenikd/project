@@ -1,6 +1,6 @@
-package org.ez.converter;
+package org.ez.converter.entity;
 
-import org.ez.api.converter.IGroupToDBObject;
+import org.ez.api.converter.entity.IGroupToDBObject;
 import org.ez.entity.vk.db.GroupEntity;
 import org.springframework.stereotype.Service;
 
