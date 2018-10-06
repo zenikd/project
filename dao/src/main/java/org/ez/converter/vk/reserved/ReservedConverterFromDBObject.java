@@ -6,11 +6,11 @@ import org.ez.entity.vk.db.reserved.AbstractReservedEntity;
 import com.mongodb.BasicDBObject;
 
 public abstract class ReservedConverterFromDBObject<Entity> extends AbstractConverterFromDBObject<Entity> {
-	public Entity convertDBObjectFromEntity(BasicDBObject basicDBObject, Entity entity) {
+	public Entity setEntity(BasicDBObject basicDBObject, Entity entity) {
 		AbstractReservedEntity reservedEntity = (AbstractReservedEntity) entity;
 		reservedEntity.setDateReserved(basicDBObject.getLong("dateReserve"));
 		reservedEntity.setIdReserve(basicDBObject.getString("idReserve"));
 		reservedEntity.setUpdate(basicDBObject.getLong("update"));
-		return super.convertDBObjectFromEntity(basicDBObject, entity);		
+		return super.setEntity(basicDBObject, entity);		
 	}
 }

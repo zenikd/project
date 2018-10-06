@@ -11,7 +11,7 @@ import com.vk.api.sdk.client.actors.UserActor;
 public class AccountFromDBObject extends ReservedConverterFromDBObject<AccountVk> implements IAccountFromDBObject {
 
 	@Override
-	public AccountVk convertDBObjectFromEntity(BasicDBObject basicDBObject, AccountVk accountVk) {
+	public AccountVk setEntity(BasicDBObject basicDBObject, AccountVk accountVk) {
 		accountVk.setType(basicDBObject.getString("type"));
 		accountVk.setUserActor(new UserActor(basicDBObject.getInt("id"), basicDBObject.getString("token")));
 		accountVk.setCustomAccountUrl(basicDBObject.getString("customAccountUrl"));
@@ -19,7 +19,11 @@ public class AccountFromDBObject extends ReservedConverterFromDBObject<AccountVk
 		accountVk.setUserLogin(basicDBObject.getString("userLogin"));
 		accountVk.setUserPass(basicDBObject.getString("userPass"));
 		accountVk.setUserName(basicDBObject.getString("userName"));
-		return super.convertDBObjectFromEntity(basicDBObject, accountVk);
+		return super.setEntity(basicDBObject, accountVk);
+	}
+	
+	public AccountVk  convertDBObjectFromEntity(BasicDBObject basicDBObject) {
+		return setEntity(basicDBObject, new AccountVk());
 	}
 
 }

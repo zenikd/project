@@ -57,8 +57,7 @@ public class AccountDao extends AbstractDao<AccountVk, AccountSearchDTO> impleme
 		List<AccountVk> listAccount = new ArrayList<AccountVk>();
 		try {
 			for (BasicDBObject documnetJson : listDocumnet) {
-				AccountVk accountVk = new AccountVk();
-				accountFromDBObject.convertDBObjectFromEntity(documnetJson, accountVk);
+				AccountVk accountVk = accountFromDBObject.convertDBObjectFromEntity(documnetJson);
 				listAccount.add(accountVk);
 			}
 		} catch (Exception e) {
