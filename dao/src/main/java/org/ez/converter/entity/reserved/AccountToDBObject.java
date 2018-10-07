@@ -9,7 +9,7 @@ import com.mongodb.BasicDBObject;
 @Repository
 public class AccountToDBObject extends ReservedConverterToDBObject<AccountVk> implements IAccountConverterToDBObject {
 
-	public BasicDBObject convertEntityToDBObject(AccountVk accountVk,BasicDBObject basicDBObject)  {
+	protected BasicDBObject setDBObject(AccountVk accountVk,BasicDBObject basicDBObject)  {
 		if (accountVk.getUserActor() != null) {
 			setValueIfExist(accountVk.getUserActor().getId(), "id", basicDBObject);
 			setValueIfExist(accountVk.getUserActor().getAccessToken(), "token", basicDBObject);
@@ -20,7 +20,16 @@ public class AccountToDBObject extends ReservedConverterToDBObject<AccountVk> im
 		setValueIfExist(accountVk.getUserLogin(), "userLogin", basicDBObject);
 		setValueIfExist(accountVk.getUserPass(), "userPass", basicDBObject);
 		setValueIfExist(accountVk.getUserName(), "userName", basicDBObject);
-		return super.convertEntityToDBObject(accountVk, basicDBObject);
+		setValueIfExist(accountVk.getCountComment(), "countComment", basicDBObject);
+		setValueIfExist(accountVk.getCountQuery(), "countQuery", basicDBObject);
+		setValueIfExist(accountVk.getCountLoad(), "countLoad", basicDBObject);
+		return super.setDBObject(accountVk, basicDBObject);
 	}
+	
+	public BasicDBObject convertEntityToDBObject(AccountVk accountVk) {
+		BasicDBObject basicDBObject = new BasicDBObject();
+		return setDBObject(accountVk, basicDBObject);
+	}
+	
 
 }

@@ -1,4 +1,4 @@
-package org.ez.vk.impl.vk.account;
+package org.ez.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +24,7 @@ public class GroupDao implements IGroupDao {
 		MongoClient mlabClient = new MongoClient(
 				new MongoClientURI("mongodb://adminn:1234567qw@ds121673.mlab.com:21673/test-db"));
 		MongoDatabase database = mlabClient.getDatabase("test-db");
-		this.collection = database.getCollection("groups", BasicDBObject.class);
+		this.collection = database.getCollection("group", BasicDBObject.class);
 	}
 	
 	public void addGroups(List<GroupEntity> groups) {

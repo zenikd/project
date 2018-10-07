@@ -7,7 +7,7 @@ import org.ez.api.dao.IAccountDao;
 import org.ez.api.dao.IGroupDao;
 import org.ez.entity.vk.db.GroupEntity;
 import org.ez.entity.vk.db.reserved.AccountVk;
-import org.ez.entity.vk.search.AccountSearchDTO;
+import org.ez.entity.vk.search.reserved.AccountSearchDTO;
 import org.ez.vk.service.api.IRepostTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

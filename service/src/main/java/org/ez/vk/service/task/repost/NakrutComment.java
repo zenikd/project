@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.ez.api.dao.IAccountDao;
 import org.ez.entity.vk.db.reserved.AccountVk;
-import org.ez.entity.vk.search.AccountSearchDTO;
+import org.ez.entity.vk.search.reserved.AccountSearchDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class NakrutComment {

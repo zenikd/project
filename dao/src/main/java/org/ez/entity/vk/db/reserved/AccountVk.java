@@ -2,7 +2,7 @@ package org.ez.entity.vk.db.reserved;
 
 import com.vk.api.sdk.client.actors.UserActor;
 
-public class AccountVk extends AbstractReservedEntity{
+public class AccountVk extends AbstractReservedEntity {
 	protected String type;
 	private UserActor userActor;
 	private String customAccountUrl;
@@ -10,51 +10,69 @@ public class AccountVk extends AbstractReservedEntity{
 	private String userLogin;
 	private String userPass;
 	private String userName;
-	
+	private Integer countComment;
+	private Integer countQuery;
+	private Integer countLoad;
+
+	public Integer getCountComment() {
+		return countComment;
+	}
+
+	public void setCountComment(Integer countComment) {
+		this.countComment = countComment;
+	}
+
+	public Integer getCountQuery() {
+		return countQuery;
+	}
+
+	public void setCountQuery(Integer countQuery) {
+		this.countQuery = countQuery;
+	}
+
+	public Integer getCountLoad() {
+		return countLoad;
+	}
+
+	public void setCountLoad(Integer countLoad) {
+		this.countLoad = countLoad;
+	}
+
 	public String getCustomAccountUrl() {
 		return customAccountUrl;
 	}
-
 
 	public void setCustomAccountUrl(String customAccountUrl) {
 		this.customAccountUrl = customAccountUrl;
 	}
 
-
 	public String getDefaultAccountUrl() {
 		return defaultAccountUrl;
 	}
-
 
 	public void setDefaultAccountUrl(String defaultAccountUrl) {
 		this.defaultAccountUrl = defaultAccountUrl;
 	}
 
-
 	public String getUserLogin() {
 		return userLogin;
 	}
-
 
 	public void setUserLogin(String userLogin) {
 		this.userLogin = userLogin;
 	}
 
-
 	public String getUserPass() {
 		return userPass;
 	}
-
 
 	public void setUserPass(String userPass) {
 		this.userPass = userPass;
 	}
 
-
 	public String getUserName() {
 		return userName;
 	}
-
 
 	public void setUserName(String userName) {
 		this.userName = userName;

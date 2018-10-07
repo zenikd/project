@@ -3,6 +3,8 @@ package org.ez.vk.ui;
 import java.io.IOException;
 
 import org.ez.api.dao.IAccountDao;
+import org.ez.entity.vk.search.reserved.AccountSearchDTO;
+import org.ez.impl.reserved.AccountDao;
 import org.ez.vk.service.entity.AccountServiceDTO;
 import org.ez.vk.service.impl.accountservice.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +26,12 @@ public class Runner {
 	public static void main(String[] args) throws JsonGenerationException, JsonMappingException, IOException, ApiException, ClientException {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("ui-context.xml");
-		AccountService accountService = (AccountService) context.getBean("accountService");
-		AccountServiceDTO accountServiceDTO = new AccountServiceDTO("+375297844586","rjkjrjkf19977", "woking");
+		AccountDao accountDao = (AccountDao) context.getBean("accountDao");
+
 	
-		String responce = accountService.addAccount(accountServiceDTO);
+		accountDao.select(new AccountSearchDTO());
 		
-		System.out.println(responce);
+	
  		int a = 2;
 		a++;
 	

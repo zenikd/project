@@ -7,7 +7,7 @@ import com.mongodb.BasicDBObject;
 
 public abstract class AbstractConverterToDBObject<Entity> implements IAbstractConverterToDBObject<Entity> {
 
-	public BasicDBObject convertEntityToDBObject(Entity entity,BasicDBObject basicDBObject) {
+	protected BasicDBObject setDBObject(Entity entity,BasicDBObject basicDBObject) {
 		BaseEntity baseEntity = (BaseEntity) entity;
 		setValueIfExist(baseEntity.getObjectId(), "_id", basicDBObject);		
 		return basicDBObject;

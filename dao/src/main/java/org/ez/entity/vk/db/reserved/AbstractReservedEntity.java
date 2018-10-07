@@ -5,7 +5,7 @@ import org.ez.entity.vk.db.BaseEntity;
 public abstract class AbstractReservedEntity extends BaseEntity{
 	private String idReserve;
 	private Long dateReserved;
-	private Long update;
+
 	public String getIdReserve() {
 		return idReserve;
 	}
@@ -17,12 +17,6 @@ public abstract class AbstractReservedEntity extends BaseEntity{
 	}
 	public void setDateReserved(Long dateReserved) {
 		this.dateReserved = dateReserved;
-	}
-	public Long getUpdate() {
-		return update;
-	}
-	public void setUpdate(Long update) {
-		this.update = update;
 	}
 	
 	

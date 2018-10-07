@@ -19,6 +19,9 @@ public class AccountFromDBObject extends ReservedConverterFromDBObject<AccountVk
 		accountVk.setUserLogin(basicDBObject.getString("userLogin"));
 		accountVk.setUserPass(basicDBObject.getString("userPass"));
 		accountVk.setUserName(basicDBObject.getString("userName"));
+		accountVk.setCountComment(basicDBObject.getInt("countComment"));
+		accountVk.setCountLoad(basicDBObject.getInt("countLoad"));
+		accountVk.setCountQuery(basicDBObject.getInt("countQuery"));
 		return super.setEntity(basicDBObject, accountVk);
 	}
 	
