@@ -35,7 +35,7 @@ public class GroupDao implements IGroupDao {
 	private List<BasicDBObject> getListDocument(List<GroupEntity> groups){
 		List<BasicDBObject> documents = new ArrayList<BasicDBObject>();
 		for(GroupEntity group: groups) {
-			documents.add(groupToDBObject.convertGroupToDBObject(group));
+			documents.add(groupToDBObject.convertEntityToDBObject(group));
 		}
 		return documents;
 	}

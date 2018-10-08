@@ -1,6 +1,7 @@
 package org.ez.converter.entity;
 
 import org.ez.api.converter.entity.IAbstractConverterToDBObject;
+import org.ez.converter.entity.constant.BaseEntityConst;
 import org.ez.entity.vk.db.BaseEntity;
 
 import com.mongodb.BasicDBObject;
@@ -9,8 +10,8 @@ public abstract class AbstractConverterToDBObject<Entity> implements IAbstractCo
 
 	protected BasicDBObject setDBObject(Entity entity,BasicDBObject basicDBObject) {
 		BaseEntity baseEntity = (BaseEntity) entity;
-		setValueIfExist(baseEntity.getObjectId(), "_id", basicDBObject);
-		setValueIfExist(baseEntity.getUpdate(), "update", basicDBObject);
+		setValueIfExist(baseEntity.getObjectId(), BaseEntityConst._ID, basicDBObject);
+		setValueIfExist(baseEntity.getUpdate(), BaseEntityConst.UPDATED, basicDBObject);
 		return basicDBObject;
 	}
 

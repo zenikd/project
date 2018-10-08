@@ -1,6 +1,7 @@
 package org.ez.converter.entity.reserved;
 
 import org.ez.api.converter.entity.IAccountConverterToDBObject;
+import org.ez.converter.entity.constant.reserved.AccountConst;
 import org.ez.entity.vk.db.reserved.AccountVk;
 import org.springframework.stereotype.Repository;
 
@@ -11,18 +12,18 @@ public class AccountToDBObject extends ReservedConverterToDBObject<AccountVk> im
 
 	protected BasicDBObject setDBObject(AccountVk accountVk,BasicDBObject basicDBObject)  {
 		if (accountVk.getUserActor() != null) {
-			setValueIfExist(accountVk.getUserActor().getId(), "id", basicDBObject);
-			setValueIfExist(accountVk.getUserActor().getAccessToken(), "token", basicDBObject);
+			setValueIfExist(accountVk.getUserActor().getId(), AccountConst.ID, basicDBObject);
+			setValueIfExist(accountVk.getUserActor().getAccessToken(), AccountConst.TOKEN, basicDBObject);
 		}	
-		setValueIfExist(accountVk.getType(), "type", basicDBObject);
-		setValueIfExist(accountVk.getCustomAccountUrl(), "customAccountUrl", basicDBObject);
-		setValueIfExist(accountVk.getDefaultAccountUrl(), "defaultAccountUrl", basicDBObject);
-		setValueIfExist(accountVk.getUserLogin(), "userLogin", basicDBObject);
-		setValueIfExist(accountVk.getUserPass(), "userPass", basicDBObject);
-		setValueIfExist(accountVk.getUserName(), "userName", basicDBObject);
-		setValueIfExist(accountVk.getCountComment(), "countComment", basicDBObject);
-		setValueIfExist(accountVk.getCountQuery(), "countQuery", basicDBObject);
-		setValueIfExist(accountVk.getCountLoad(), "countLoad", basicDBObject);
+		setValueIfExist(accountVk.getType(), AccountConst.TYPE, basicDBObject);
+		setValueIfExist(accountVk.getCustomAccountUrl(), AccountConst.CUSTOM_ACCOUNT_URL, basicDBObject);
+		setValueIfExist(accountVk.getDefaultAccountUrl(), AccountConst.DEFAULT_ACCOUNT_URL, basicDBObject);
+		setValueIfExist(accountVk.getUserLogin(), AccountConst.USER_LOGIN, basicDBObject);
+		setValueIfExist(accountVk.getUserPass(), AccountConst.USER_PASS, basicDBObject);
+		setValueIfExist(accountVk.getUserName(), AccountConst.USER_NAME, basicDBObject);
+		setValueIfExist(accountVk.getCountComment(), AccountConst.COUNT_COMMENT, basicDBObject);
+		setValueIfExist(accountVk.getCountQuery(), AccountConst.COUNT_QUERY, basicDBObject);
+		setValueIfExist(accountVk.getCountLoad(), AccountConst.COUNT_LOAD, basicDBObject);
 		return super.setDBObject(accountVk, basicDBObject);
 	}
 	

@@ -1,25 +1,23 @@
 package org.ez.converter.entity;
 
 import org.ez.api.converter.entity.IGroupToDBObject;
+import org.ez.converter.entity.constant.GroupConst;
 import org.ez.entity.vk.db.GroupEntity;
 import org.springframework.stereotype.Service;
 
 import com.mongodb.BasicDBObject;
 @Service
-public class GroupToDBObject implements IGroupToDBObject{
-	public BasicDBObject convertGroupToDBObject(GroupEntity groupEntity) {
-		BasicDBObject basicDBObject = new BasicDBObject();
-		setValueIfExist(groupEntity.getTown(), "town", basicDBObject);
-		setValueIfExist(groupEntity.getId(), "id", basicDBObject);
-		setValueIfExist(groupEntity.getType(), "type", basicDBObject);
-		setValueIfExist(groupEntity.getObjectId(), "_id", basicDBObject);
-		return basicDBObject;
+public class GroupToDBObject extends AbstractConverterToDBObject<GroupEntity> implements IGroupToDBObject{
+	public BasicDBObject setDBObject(GroupEntity groupEntity, BasicDBObject basicDBObject) {
+		setValueIfExist(groupEntity.getTown(), GroupConst.TOWN, basicDBObject);
+		setValueIfExist(groupEntity.getType(), GroupConst.TYPE, basicDBObject);
+		return super.setDBObject(groupEntity,basicDBObject);
 	}
 	
-	protected void setValueIfExist(Object object, String key, BasicDBObject basicDBObject) {
-		if (object != null) {
-			basicDBObject.append(key, object);
-		}
+	public BasicDBObject convertEntityToDBObject(GroupEntity groupEntity) {
+		BasicDBObject basicDBObject = new BasicDBObject();
+		return setDBObject(groupEntity, basicDBObject);
 	}
+
 
 }
