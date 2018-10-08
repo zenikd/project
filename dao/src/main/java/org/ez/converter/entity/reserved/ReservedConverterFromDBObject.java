@@ -11,7 +11,6 @@ public abstract class ReservedConverterFromDBObject<Entity> extends AbstractConv
 		AbstractReservedEntity reservedEntity = (AbstractReservedEntity) entity;
 		reservedEntity.setDateReserved(basicDBObject.getLong("dateReserve"));
 		reservedEntity.setIdReserve(basicDBObject.getString("idReserve"));
-		reservedEntity.setUpdate(basicDBObject.getLong("update"));
 		return super.setEntity(basicDBObject, entity);		
 	}
 }

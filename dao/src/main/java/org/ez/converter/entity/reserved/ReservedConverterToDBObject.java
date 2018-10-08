@@ -10,7 +10,6 @@ public abstract class ReservedConverterToDBObject<Entity> extends AbstractConver
 	protected BasicDBObject setDBObject(Entity entity,BasicDBObject basicDBObject) {
 		AbstractReservedEntity reservedEntity = (AbstractReservedEntity) entity;
 		setValueIfExist(reservedEntity.getIdReserve(), "idReserve", basicDBObject);
-		setValueIfExist(reservedEntity.getUpdate(), "update", basicDBObject);
 		setValueIfExist(reservedEntity.getDateReserved(), "dateReserve", basicDBObject);
 		return super.setDBObject(entity, basicDBObject);
 	}

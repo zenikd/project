@@ -9,7 +9,8 @@ public abstract class AbstractConverterToDBObject<Entity> implements IAbstractCo
 
 	protected BasicDBObject setDBObject(Entity entity,BasicDBObject basicDBObject) {
 		BaseEntity baseEntity = (BaseEntity) entity;
-		setValueIfExist(baseEntity.getObjectId(), "_id", basicDBObject);		
+		setValueIfExist(baseEntity.getObjectId(), "_id", basicDBObject);
+		setValueIfExist(baseEntity.getUpdate(), "update", basicDBObject);
 		return basicDBObject;
 	}
 
