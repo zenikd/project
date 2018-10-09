@@ -4,12 +4,12 @@ import org.ez.entity.vk.search.BaseSearchDTO;
 
 import com.mongodb.BasicDBObject;
 
-public class ReservedSearchDTO extends BaseSearchDTO {
+public abstract class ReservedSearchDTO extends BaseSearchDTO {
 	private Long reservedMinute;
 	private boolean reserve;
-	private BasicDBObject queryDoc = new BasicDBObject();
-	private BasicDBObject updateDoc = new BasicDBObject();
 	private int count = 1;
+
+	protected abstract BasicDBObject getResetFiled();
 
 	public int getCount() {
 		return count;
@@ -17,22 +17,6 @@ public class ReservedSearchDTO extends BaseSearchDTO {
 
 	public void setCount(int count) {
 		this.count = count;
-	}
-
-	public BasicDBObject getQueryDoc() {
-		return queryDoc;
-	}
-
-	public void setQueryDoc(BasicDBObject queryDoc) {
-		this.queryDoc = queryDoc;
-	}
-
-	public BasicDBObject getUpdateDoc() {
-		return updateDoc;
-	}
-
-	public void setUpdateDoc(BasicDBObject updateDoc) {
-		this.updateDoc = updateDoc;
 	}
 
 	public boolean isReserve() {
