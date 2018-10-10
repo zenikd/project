@@ -1,43 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8be1f4fa-891c-46d3-8abc-c3e2fa063c14" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/JsonHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8be1f4fa-891c-46d3-8abc-c3e2fa063c14" name="Default" comment="Change project structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAccountConverterToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAccountConverterToDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAccountFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAccountFromDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IGroupToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IGroupToDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IAccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IAccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IGroupDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/AbstractConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/AbstractConverterFromDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/AbstractConverterToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/AbstractConverterToDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/GroupToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/GroupToDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/AccountFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/AccountFromDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/AccountToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/AccountToDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/ReservedConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/ReservedConverterFromDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/ReservedConverterToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/ReservedConverterToDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/db/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/db/GroupEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/GroupEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/db/reserved/AbstractReservedEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/reserved/AbstractReservedEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/db/reserved/AccountVk.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/reserved/AccountVk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/search/BaseSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/BaseSearchDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/search/query/SearchQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/query/SearchQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/search/query/UpdateQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/query/UpdateQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/search/reserved/AccountSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/reserved/AccountSearchDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/search/reserved/ReservedSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/reserved/ReservedSearchDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/GroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/GroupDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/ReservedDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/ReservedDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/common/web/WebHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/WebHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/accountservice/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/accountservice/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/NakrutComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/NakrutComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/RepostTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/RepostTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vk-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vk-project.iml" afterDir="false" />
     </list>
     <ignored path="vk-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,6 +47,7 @@
     <session id="902394935">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="1" />
           <entry key="java" value="5" />
           <entry key="xml" value="1" />
         </counts>
@@ -89,17 +55,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="5" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="8" />
           <entry key="java" value="381" />
+          <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="381" />
+          <entry key="PLAIN_TEXT" value="34" />
         </counts>
       </usages-collector>
     </session>
@@ -118,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/JsonHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -130,6 +100,15 @@
                 <element signature="e#889#904#0" expanded="true" />
                 <element signature="e#1157#1165#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -170,6 +149,7 @@
         <option value="$PROJECT_DIR$/service/pom.xml" />
         <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/JsonHelper.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/JsonHelper.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -382,7 +362,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539188705818" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539189379362" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -462,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539171347981</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Change project structure">
+      <created>1539188992403</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539188992403</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -470,6 +457,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18623266" />
       <window_info id="Structure" order="1" weight="0.24962178" />
@@ -487,7 +475,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32925472" />
       <window_info anchor="bottom" id="Spring" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -504,6 +492,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -517,7 +531,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor addEntity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor addEntity" />
+    <MESSAGE value="Change project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change project structure" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/App.java">
@@ -623,6 +638,13 @@
             <element signature="e#889#904#0" expanded="true" />
             <element signature="e#1157#1165#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
