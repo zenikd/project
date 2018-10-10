@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8be1f4fa-891c-46d3-8abc-c3e2fa063c14" name="Default" comment="" />
+    <list default="true" id="8be1f4fa-891c-46d3-8abc-c3e2fa063c14" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/JsonHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAccountConverterToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAccountConverterToDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAccountFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAccountFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IGroupToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IGroupToDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IAccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IAccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/AbstractConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/AbstractConverterFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/AbstractConverterToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/AbstractConverterToDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/GroupToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/GroupToDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/AccountFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/AccountFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/AccountToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/AccountToDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/ReservedConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/ReservedConverterFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/ReservedConverterToDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reserved/ReservedConverterToDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/db/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/db/GroupEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/GroupEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/db/reserved/AbstractReservedEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/reserved/AbstractReservedEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/db/reserved/AccountVk.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/reserved/AccountVk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/search/BaseSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/BaseSearchDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/search/query/SearchQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/query/SearchQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/search/query/UpdateQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/query/UpdateQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/search/reserved/AccountSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/reserved/AccountSearchDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/entity/vk/search/reserved/ReservedSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/reserved/ReservedSearchDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/AbstractDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/GroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/GroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/ReservedDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/ReservedDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/common/web/WebHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/WebHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/accountservice/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/accountservice/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/NakrutComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/NakrutComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/RepostTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/RepostTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vk-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vk-project.iml" afterDir="false" />
+    </list>
     <ignored path="vk-project.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,6 +79,30 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="902394935">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="5" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="5" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="381" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="381" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="vk-project" />
@@ -49,38 +110,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/pom.xml">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/WebHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="20" lean-forward="true" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+            <state relative-caret-position="60">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/GeterPost.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/JsonHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="45" column="5" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#889#904#0" expanded="true" />
+                <element signature="e#1157#1165#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/kkk.java">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/org/ez/impl/AbstractDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            <state relative-caret-position="413">
+              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/service/pom.xml" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/JsonHelper.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/JsonHelper.java" />
       </list>
     </option>
   </component>
@@ -90,17 +179,19 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="31" />
+    <option name="y" value="2" />
+    <option name="width" value="1368" />
+    <option name="height" value="996" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -117,48 +208,170 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="vk-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vk-project" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="vk-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vk-project" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="vk-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vk-project" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="vk-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vk-project" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vk-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vk-project" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="vk-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vk-project" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="reserved" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ez" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ez" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -169,10 +382,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539188705818" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,15 +455,23 @@
       <workItem from="1537301763788" duration="341000" />
       <workItem from="1537302326708" duration="62000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactor addEntity">
+      <created>1539171347981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539171347981</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="403000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18623266" />
       <window_info id="Structure" order="1" weight="0.24962178" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -288,6 +515,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor addEntity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor addEntity" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/App.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -310,17 +541,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/kkk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/kkk.java" />
     <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/GeterPost.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="45" column="5" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/AccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#3120#3121#0" expanded="true" />
+            <element signature="e#3175#3176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/exception/internal/InternalException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/org/ez/impl/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/org/ez/impl/GroupDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/org/ez/vk/dao/common/api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/WebHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/org/ez/impl/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/impl/JsonHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#889#904#0" expanded="true" />
+            <element signature="e#1157#1165#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

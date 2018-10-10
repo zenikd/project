@@ -3,7 +3,7 @@ package org.ez.converter.entity.reserved;
 
 import org.ez.converter.entity.AbstractConverterFromDBObject;
 import org.ez.converter.entity.constant.reserved.ReservedConst;
-import org.ez.entity.vk.db.reserved.AbstractReservedEntity;
+import org.ez.vk.dao.common.entity.db.reserved.AbstractReservedEntity;
 
 import com.mongodb.BasicDBObject;
 

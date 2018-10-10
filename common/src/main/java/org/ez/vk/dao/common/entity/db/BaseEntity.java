@@ -1,4 +1,4 @@
-package org.ez.entity.vk.db;
+package org.ez.vk.dao.common.entity.db;
 
 import org.bson.types.ObjectId;
 

@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.ez.api.converter.entity.IAbstractConverterFromDBObject;
-import org.ez.api.converter.entity.IAbstractConverterToDBObject;
-import org.ez.entity.vk.db.reserved.AbstractReservedEntity;
-import org.ez.entity.vk.search.reserved.ReservedSearchDTO;
+import org.ez.vk.dao.common.entity.db.reserved.AbstractReservedEntity;
+import org.ez.vk.dao.common.entity.search.reserved.ReservedSearchDTO;
 import org.ez.impl.AbstractDao;
 import org.ez.vk.dao.common.exception.internal.InternalException;
 

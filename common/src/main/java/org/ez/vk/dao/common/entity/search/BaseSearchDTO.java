@@ -1,6 +1,6 @@
-package org.ez.entity.vk.search;
+package org.ez.vk.dao.common.entity.search;
 
-import org.ez.entity.vk.search.query.SearchQuery;
+import org.ez.vk.dao.common.entity.search.query.SearchQuery;
 
 public class BaseSearchDTO {
 	private SearchQuery searchQuery;

@@ -3,13 +3,11 @@ package org.ez.impl.reserved;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ez.api.converter.entity.IAbstractConverterFromDBObject;
-import org.ez.api.converter.entity.IAbstractConverterToDBObject;
 import org.ez.api.converter.entity.IAccountConverterToDBObject;
 import org.ez.api.converter.entity.IAccountFromDBObject;
 import org.ez.api.dao.IAccountDao;
-import org.ez.entity.vk.db.reserved.AccountVk;
-import org.ez.entity.vk.search.reserved.AccountSearchDTO;
+import org.ez.vk.dao.common.entity.db.reserved.AccountVk;
+import org.ez.vk.dao.common.entity.search.reserved.AccountSearchDTO;
 import org.ez.vk.dao.common.exception.internal.InternalException;
 import org.ez.vk.dao.common.exception.user.NotUniqueException;
 import org.ez.vk.dao.common.exception.user.RootUserException;

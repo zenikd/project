@@ -1,10 +1,11 @@
-package org.ez.entity.vk.search.reserved;
+package org.ez.vk.dao.common.entity.search.reserved;
 
-import org.ez.entity.vk.search.BaseSearchDTO;
+import org.ez.vk.dao.common.entity.search.BaseSearchDTO;
 
 import com.mongodb.BasicDBObject;
 
-public abstract class ReservedSearchDTO extends BaseSearchDTO {
+public abstract class ReservedSearchDTO extends BaseSearchDTO
+{
 	private Long reservedMinute;
 	private boolean reserve;
 	private int count = 1;

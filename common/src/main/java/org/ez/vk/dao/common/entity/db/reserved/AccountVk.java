@@ -1,4 +1,4 @@
-package org.ez.entity.vk.db.reserved;
+package org.ez.vk.dao.common.entity.db.reserved;
 
 import com.vk.api.sdk.client.actors.UserActor;
 

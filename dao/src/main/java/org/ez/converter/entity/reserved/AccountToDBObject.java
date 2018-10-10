@@ -2,7 +2,7 @@ package org.ez.converter.entity.reserved;
 
 import org.ez.api.converter.entity.IAccountConverterToDBObject;
 import org.ez.converter.entity.constant.reserved.AccountConst;
-import org.ez.entity.vk.db.reserved.AccountVk;
+import org.ez.vk.dao.common.entity.db.reserved.AccountVk;
 import org.springframework.stereotype.Repository;
 
 import com.mongodb.BasicDBObject;

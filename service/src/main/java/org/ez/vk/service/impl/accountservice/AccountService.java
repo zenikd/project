@@ -3,7 +3,7 @@ package org.ez.vk.service.impl.accountservice;
 import java.io.IOException;
 
 import org.ez.api.dao.IAccountDao;
-import org.ez.entity.vk.db.reserved.AccountVk;
+import org.ez.vk.dao.common.entity.vk.db.reserved.AccountVk;
 import org.ez.vk.dao.common.exception.internal.InternalException;
 import org.ez.vk.dao.common.exception.user.BadCredentialsException;
 import org.ez.vk.dao.common.exception.user.RootUserException;

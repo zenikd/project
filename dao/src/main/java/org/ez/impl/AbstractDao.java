@@ -11,13 +11,11 @@ import java.util.List;
 import org.apache.commons.lang3.CharSetUtils;
 import org.ez.api.converter.entity.IAbstractConverterToDBObject;
 import org.ez.api.dao.IAbstractDao;
-import org.ez.entity.vk.db.BaseEntity;
+import org.ez.vk.dao.common.entity.db.BaseEntity;
 import org.ez.vk.dao.common.exception.internal.InternalException;
-import org.ez.vk.dao.common.exception.user.NotUniqueException;
 import org.ez.vk.dao.common.exception.user.RootUserException;
 
 import com.mongodb.BasicDBObject;
-import com.mongodb.DBObject;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.util.JSON;
 

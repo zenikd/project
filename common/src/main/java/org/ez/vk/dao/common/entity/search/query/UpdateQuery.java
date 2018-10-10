@@ -1,6 +1,5 @@
-package org.ez.entity.vk.search.query;
+package org.ez.vk.dao.common.entity.search.query;
 
-import java.util.List;
 import java.util.Map;
 
 public class UpdateQuery {

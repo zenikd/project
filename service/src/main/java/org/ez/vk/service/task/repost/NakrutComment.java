@@ -3,8 +3,8 @@ package org.ez.vk.service.task.repost;
 import java.util.List;
 
 import org.ez.api.dao.IAccountDao;
-import org.ez.entity.vk.db.reserved.AccountVk;
-import org.ez.entity.vk.search.reserved.AccountSearchDTO;
+import org.ez.vk.dao.common.entity.vk.db.reserved.AccountVk;
+import org.ez.vk.dao.common.entity.vk.search.reserved.AccountSearchDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class NakrutComment {

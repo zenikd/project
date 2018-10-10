@@ -3,7 +3,7 @@ package org.ez.vk.ui;
 import java.io.IOException;
 
 import org.ez.api.dao.IAccountDao;
-import org.ez.entity.vk.search.reserved.AccountSearchDTO;
+import org.ez.vk.dao.common.entity.vk.search.reserved.AccountSearchDTO;
 import org.ez.impl.reserved.AccountDao;
 import org.ez.vk.service.entity.AccountServiceDTO;
 import org.ez.vk.service.impl.accountservice.AccountService;

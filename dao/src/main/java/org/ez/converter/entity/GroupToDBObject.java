@@ -2,7 +2,7 @@ package org.ez.converter.entity;
 
 import org.ez.api.converter.entity.IGroupToDBObject;
 import org.ez.converter.entity.constant.GroupConst;
-import org.ez.entity.vk.db.GroupEntity;
+import org.ez.vk.dao.common.entity.db.GroupEntity;
 import org.springframework.stereotype.Service;
 
 import com.mongodb.BasicDBObject;

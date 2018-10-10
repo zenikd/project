@@ -1,4 +1,4 @@
-package org.ez.vk.service.common.web;
+package org.ez.vk.dao.common.helper.impl;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
