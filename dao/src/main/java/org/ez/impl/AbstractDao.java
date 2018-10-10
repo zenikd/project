@@ -8,13 +8,18 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.commons.lang3.CharSetUtils;
 import org.ez.api.converter.entity.IAbstractConverterToDBObject;
 import org.ez.api.dao.IAbstractDao;
 import org.ez.entity.vk.db.BaseEntity;
 import org.ez.vk.dao.common.exception.internal.InternalException;
+import org.ez.vk.dao.common.exception.user.NotUniqueException;
+import org.ez.vk.dao.common.exception.user.RootUserException;
 
 import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.util.JSON;
 
 public abstract class AbstractDao<Entity, SearchDTO> implements IAbstractDao<Entity, SearchDTO> {
 	public MongoCollection<BasicDBObject> collection;
@@ -23,6 +28,11 @@ public abstract class AbstractDao<Entity, SearchDTO> implements IAbstractDao<Ent
 	protected void setDefaultEntityParam(Entity entity) throws InternalException {
 		BaseEntity baseEntity = (BaseEntity) entity;
 		baseEntity.setUpdate(getEndPrivDay());
+	}
+
+	public void addEntity(String jsonData) throws RootUserException, InternalException {
+		BasicDBObject dbObject = jsonToDbObject(jsonData);
+		collection.insertOne(dbObject);
 	}
 
 	protected List<Entity> convertJsonToEntity(List<BasicDBObject> listDocumnet,
@@ -64,6 +74,10 @@ public abstract class AbstractDao<Entity, SearchDTO> implements IAbstractDao<Ent
 			throw new InternalException();
 		}
 		return c.getTime().getTime();
+	}
+
+	private BasicDBObject jsonToDbObject(String jsonData){
+		return (BasicDBObject) JSON.parse(CharSetUtils.delete(jsonData, "\t\r\n\b"));
 	}
 
 }
