@@ -3,6 +3,7 @@ package org.ez.impl.reserved;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.ez.api.converter.entity.IAbstractConverterFromDBObject;
 import org.ez.api.converter.entity.IAbstractConverterToDBObject;
 import org.ez.api.converter.entity.IAccountConverterToDBObject;
 import org.ez.api.converter.entity.IAccountFromDBObject;
@@ -56,7 +57,7 @@ public class AccountDao extends ReservedDao<AccountVk, AccountSearchDTO> impleme
 		BasicDBObject basicDBObject = accountToDBObject.convertEntityToDBObject(searchDTO.getAccountVk());
 
 		List<BasicDBObject> listDocumnet = collection.find(basicDBObject).limit(searchDTO.getCount())
-				.skip(searchDTO.getOffset()).into(new ArrayList<BasicDBObject>());
+				.into(new ArrayList<BasicDBObject>());
 		return convertJsonToEntity(listDocumnet, accountToDBObject);
 
 	}
@@ -83,4 +84,5 @@ public class AccountDao extends ReservedDao<AccountVk, AccountSearchDTO> impleme
 	private BasicDBObject entityToBaseDBObject(AccountVk defaultAccount) {
 		return new BasicDBObject("idReserve", "idBlock");
 	}
+
 }
