@@ -5,9 +5,10 @@ import java.util.List;
 
 import org.ez.api.dao.IAccountDao;
 import org.ez.api.dao.IGroupDao;
-import org.ez.vk.dao.common.entity.vk.db.GroupEntity;
-import org.ez.vk.dao.common.entity.vk.db.reserved.AccountVk;
-import org.ez.vk.dao.common.entity.vk.search.reserved.AccountSearchDTO;
+import org.ez.vk.dao.common.entity.db.GroupEntity;
+import org.ez.vk.dao.common.entity.db.reserved.AccountVk;
+import org.ez.vk.dao.common.entity.search.reserved.AccountSearchDTO;
+import org.ez.vk.dao.common.exception.internal.InternalException;
 import org.ez.vk.service.api.IRepostTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,31 +30,34 @@ public class RepostTask implements IRepostTask {
 	@Autowired
 	IGroupDao groupDao;
 
-	public void findPostToRepost(String groupName, int count) {
-		AccountSearchDTO accountSearchDTO = getListAccount(count);
+	public void findPostToRepost(String groupName, int count) throws InternalException {
+		AccountSearchDTO accountSearchDTO = getListAccount();
 		List<AccountVk> listAccount = accountDao.select(accountSearchDTO);
 	}
 
-	public String addNewGroupToFound(String town) {
+	public void addNewGroupToFound(String town) throws InternalException {
 		try {
 			List<GroupEntity> listGroups = new ArrayList<GroupEntity>();
-			AccountSearchDTO accountSearchDTO = getListAccount(1);
+			AccountSearchDTO accountSearchDTO = getListAccount();
 			List<AccountVk> listAccount = accountDao.select(accountSearchDTO);
 			UserActor userActor = listAccount.get(0).getUserActor();
 			for (int offset = 0; offset < COUNT_GROUP; offset += 100) {
 				for (Group group : vk.groups().search(userActor, town).count(100).offset(offset).execute().getItems()) {
 					listGroups.add(convetGroup(group, town));
 				}
+
 				Thread.sleep(1100);
+
 			}
 			groupDao.addGroups(listGroups);
 		} catch (ApiException e1) {
-			e1.printStackTrace();
+			throw new InternalException();
 		} catch (ClientException e1) {
-			e1.printStackTrace();
+			throw new InternalException();
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			throw new InternalException();
 		}
+
 		return "ok";
 
 	}
@@ -66,12 +70,12 @@ public class RepostTask implements IRepostTask {
 		return groupEntity;
 	}
 
-	private AccountSearchDTO getListAccount(int count) {
+	private AccountSearchDTO getListAccount() {
 		AccountSearchDTO accountSearchDTO = new AccountSearchDTO();
-		AccountVk accountVk = new AccountVk();
-		accountVk.setType(WORKING);
-		accountSearchDTO.setAccountVk(accountVk);
-		accountSearchDTO.setCount(count);
+		accountSearchDTO
+			.setLimit(10)
+			.getSearchQuery().addSearchParam(filed, operator, value).
+			
 		return accountSearchDTO;
 	}
 

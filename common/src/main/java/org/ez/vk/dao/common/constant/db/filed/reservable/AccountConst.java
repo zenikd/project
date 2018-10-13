@@ -1,6 +1,6 @@
-package org.ez.converter.entity.constant.reserved;
+package org.ez.vk.dao.common.constant.db.filed.reservable;
 
-public class AccountConst extends ReservedConst {
+public class AccountConst extends ReservableConst {
 
 	public final static String TYPE = "type";
 	public final static String TOKEN = "token";

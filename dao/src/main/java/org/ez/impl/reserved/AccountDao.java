@@ -3,14 +3,17 @@ package org.ez.impl.reserved;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.logging.impl.AvalonLogger;
+import org.ez.api.converter.entity.IAbstractConverterToDBObject;
 import org.ez.api.converter.entity.IAccountConverterToDBObject;
 import org.ez.api.converter.entity.IAccountFromDBObject;
 import org.ez.api.dao.IAccountDao;
-import org.ez.vk.dao.common.entity.db.reserved.AccountVk;
+import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
 import org.ez.vk.dao.common.entity.search.reserved.AccountSearchDTO;
 import org.ez.vk.dao.common.exception.internal.InternalException;
 import org.ez.vk.dao.common.exception.user.NotUniqueException;
 import org.ez.vk.dao.common.exception.user.RootUserException;
+import org.ez.vk.dao.common.helper.impl.JsonHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -20,10 +23,8 @@ import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoDatabase;
 
 @Repository
-public class AccountDao extends ReservedDao<AccountVk, AccountSearchDTO> implements IAccountDao {
+public class AccountDao extends ReservedDao<AccountVk> implements IAccountDao {
 	public final static String ACCOUNT_ALREADY_EXIST = "account already exists";
-	@Autowired
-	IAccountConverterToDBObject accountToDBObject;
 	@Autowired
 	IAccountFromDBObject accountFromDBObject;
 
@@ -39,25 +40,8 @@ public class AccountDao extends ReservedDao<AccountVk, AccountSearchDTO> impleme
 			throw new NotUniqueException(ACCOUNT_ALREADY_EXIST);
 		}
 		setDefaultEntityParam(defaultAccount);
-		BasicDBObject basicDBObject = new BasicDBObject();
-		BasicDBObject document = accountToDBObject.convertEntityToDBObject(defaultAccount);
+		BasicDBObject document = jsonHelper.entityToDBObject(defaultAccount);
 		collection.insertOne(document);
-	}
-
-	public List<AccountVk> select(AccountSearchDTO searchDTO) {
-		try {
-			reserveAccount(searchDTO);
-		} catch (InternalException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		BasicDBObject basicDBObject = accountToDBObject.convertEntityToDBObject(searchDTO.getAccountVk());
-
-		List<BasicDBObject> listDocumnet = collection.find(basicDBObject).limit(searchDTO.getCount())
-				.into(new ArrayList<BasicDBObject>());
-		return convertJsonToEntity(listDocumnet, accountToDBObject);
-
 	}
 
 	protected void setDefaultEntityParam(AccountVk accountVk) throws InternalException {
@@ -66,7 +50,6 @@ public class AccountDao extends ReservedDao<AccountVk, AccountSearchDTO> impleme
 		accountVk.setCountQuery(0);
 		super.setDefaultEntityParam(accountVk);
 	}
-
 
 	private boolean isUnique(AccountVk defaultAccount) {
 		BasicDBObject document = new BasicDBObject("type", defaultAccount.getType()).append("id",
@@ -79,8 +62,18 @@ public class AccountDao extends ReservedDao<AccountVk, AccountSearchDTO> impleme
 
 	}
 
-	private BasicDBObject entityToBaseDBObject(AccountVk defaultAccount) {
-		return new BasicDBObject("idReserve", "idBlock");
+	@Override
+	protected List<AccountVk> convetJsonToEntity(List<BasicDBObject> resultSearchJson) throws InternalException {
+		List<AccountVk> listAccount = new ArrayList();
+		for (BasicDBObject json : resultSearchJson) {
+			listAccount.add(accountFromDBObject.convertDBObjectFromEntity(json));
+		}
+		return listAccount;
+	}
+
+	@Override
+	protected AccountVk getEntityInstance() {
+		return new AccountVk();
 	}
 
 }

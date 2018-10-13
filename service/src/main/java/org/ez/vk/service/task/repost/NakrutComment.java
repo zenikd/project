@@ -3,8 +3,9 @@ package org.ez.vk.service.task.repost;
 import java.util.List;
 
 import org.ez.api.dao.IAccountDao;
-import org.ez.vk.dao.common.entity.vk.db.reserved.AccountVk;
-import org.ez.vk.dao.common.entity.vk.search.reserved.AccountSearchDTO;
+import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
+import org.ez.vk.dao.common.entity.search.reserved.AccountSearchDTO;
+import org.ez.vk.dao.common.exception.internal.InternalException;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class NakrutComment {
@@ -13,18 +14,14 @@ public class NakrutComment {
 	@Autowired
 	IAccountDao accountDao;
 
-	public void addTask(String href) {
+	public void addTask(String href) throws InternalException {
 		AccountSearchDTO accountSearchDTO = getListAccount();
 		List<AccountVk> listAccount = accountDao.select(accountSearchDTO);
-	
+
 	}
 
 	private AccountSearchDTO getListAccount() {
 		AccountSearchDTO accountSearchDTO = new AccountSearchDTO();
-		AccountVk accountVk = new AccountVk();
-		accountVk.setType(WORKING);
-		accountSearchDTO.setAccountVk(accountVk);
-		accountSearchDTO.setCount(1);
 		return accountSearchDTO;
 	}
 

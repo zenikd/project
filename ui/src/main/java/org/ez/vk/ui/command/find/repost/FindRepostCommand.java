@@ -5,9 +5,15 @@ import org.ez.vk.ui.command.RootCommand;
 
 public class FindRepostCommand extends RootCommand {
 	protected void execute() {
-		IRepostTask repostTask;
-		repostTask = (IRepostTask) context.getBean("repostTask");
-		repostTask.findPostToRepost("москва", 5);
+		try {
+			IRepostTask repostTask;
+			repostTask = (IRepostTask) context.getBean("repostTask");
+			repostTask.findPostToRepost("москва", 5);
+			print("OK");
+
+		} catch (Exception e) {
+			print(e.getMessage());
+		}
 	}
 
 	@Override

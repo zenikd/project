@@ -7,5 +7,5 @@ import org.ez.vk.dao.common.exception.user.RootUserException;
 
 public interface IAbstractDao<Entity, SearchDTO> {
 	public void addEntity(Entity entity) throws RootUserException, InternalException;
-	public List<Entity> select(SearchDTO searchDTO);
+	public List<Entity> select(SearchDTO searchDTO) throws InternalException;
 }

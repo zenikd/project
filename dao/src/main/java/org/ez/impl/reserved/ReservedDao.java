@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.ez.vk.dao.common.entity.db.reserved.AbstractReservedEntity;
+import org.ez.vk.dao.common.entity.db.reservable.AbstractReservableEntity;
 import org.ez.vk.dao.common.entity.search.reserved.ReservedSearchDTO;
 import org.ez.impl.AbstractDao;
 import org.ez.vk.dao.common.exception.internal.InternalException;
@@ -12,7 +12,8 @@ import org.ez.vk.dao.common.exception.internal.InternalException;
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.result.UpdateResult;
 
-public abstract class ReservedDao<Entity, SearchDTO> extends AbstractDao<Entity, SearchDTO> {
+public abstract class ReservedDao<Entity> extends AbstractDao<Entity> {
+
 
 	private static final String DEFAULT_RESERVE = "defaultReserve";
 	private static final Long MILSEC_IN_MINUTE = 600000l;
@@ -20,14 +21,14 @@ public abstract class ReservedDao<Entity, SearchDTO> extends AbstractDao<Entity,
 
 	protected void reserveAccount(ReservedSearchDTO searchDTO) throws InternalException {
 		List<BasicDBObject> listDBObjects = new ArrayList<BasicDBObject>();
-		resevedNotUsedEntity(searchDTO);
+		//resevedNotUsedEntity(searchDTO);
 	}
 
-	protected Integer resevedNotUsedEntity(ReservedSearchDTO searchDTO) throws InternalException {
+/*	protected Integer resevedNotUsedEntity(ReservedSearchDTO searchDTO) throws InternalException {
 		BasicDBObject queryDoc = searchDTO.getSearchQuery().getQuery();
 		BasicDBObject queryDocParam = new BasicDBObject("$lte", getEndPrivDay());
 		queryDoc.append("dateReserve", queryDocParam);
-		BasicDBObject updateDoc = searchDTO.getUpdateDoc();
+		BasicDBObject updateDoc = searchDTO.getSearchQuery().getQuery();
 
 		reserveQuery(searchDTO, queryDoc, updateDoc);
 	}
@@ -40,12 +41,12 @@ public abstract class ReservedDao<Entity, SearchDTO> extends AbstractDao<Entity,
 					+ searchDTO.getReservedMinute() * MILSEC_IN_MINUTE + MILSEC_IN_QUERY * (countEntity - curEntity));
 			UpdateResult listDocumnet = collection.updateOne(queryDoc, updateDoc);
 		}
-	}
+	}*/
 
 	
 
 	protected void setDefaultEntityParam(Entity entity) throws InternalException {
-		AbstractReservedEntity reservedEntity = (AbstractReservedEntity) entity;
+		AbstractReservableEntity reservedEntity = (AbstractReservableEntity) entity;
 		reservedEntity.setDateReserved(getEndPrivDay());
 		reservedEntity.setIdReserve(DEFAULT_RESERVE);
 	}

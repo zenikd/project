@@ -1,8 +1,8 @@
-package org.ez.vk.dao.common.entity.db.reserved;
+package org.ez.vk.dao.common.entity.db.reservable;
 
 import com.vk.api.sdk.client.actors.UserActor;
 
-public class AccountVk extends AbstractReservedEntity {
+public class AccountVk extends AbstractReservableEntity {
 	protected String type;
 	private UserActor userActor;
 	private String customAccountUrl;

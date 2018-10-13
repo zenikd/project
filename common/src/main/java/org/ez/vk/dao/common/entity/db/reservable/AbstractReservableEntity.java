@@ -1,8 +1,8 @@
-package org.ez.vk.dao.common.entity.db.reserved;
+package org.ez.vk.dao.common.entity.db.reservable;
 
 import org.ez.vk.dao.common.entity.db.BaseEntity;
 
-public abstract class AbstractReservedEntity extends BaseEntity
+public abstract class AbstractReservableEntity extends BaseEntity
 {
 	private String idReserve;
 	private Long dateReserved;

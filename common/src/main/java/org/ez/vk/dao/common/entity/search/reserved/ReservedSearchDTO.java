@@ -1,39 +1,22 @@
 package org.ez.vk.dao.common.entity.search.reserved;
 
-import org.ez.vk.dao.common.entity.search.BaseSearchDTO;
+import org.ez.vk.dao.common.entity.search.SearchDTO;
 
 import com.mongodb.BasicDBObject;
 
-public abstract class ReservedSearchDTO extends BaseSearchDTO
+public abstract class ReservedSearchDTO extends SearchDTO
 {
-	private Long reservedMinute;
-	private boolean reserve;
-	private int count = 1;
+	private Long reservedMinute = 60l;
 
 	protected abstract BasicDBObject getResetFiled();
-
-	public int getCount() {
-		return count;
-	}
-
-	public void setCount(int count) {
-		this.count = count;
-	}
-
-	public boolean isReserve() {
-		return reserve;
-	}
-
-	public void setReserve(boolean reserve) {
-		this.reserve = reserve;
-	}
 
 	public Long getReservedMinute() {
 		return reservedMinute;
 	}
 
-	public void setReservedMinute(Long reservedMinute) {
+	public ReservedSearchDTO setReservedMinute(Long reservedMinute) {
 		this.reservedMinute = reservedMinute;
+		return this;
 	}
 
 }
