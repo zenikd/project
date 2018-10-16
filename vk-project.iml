@@ -6,6 +6,10 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/dao/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/common/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ui/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/common/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/ui/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/dao/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

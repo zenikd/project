@@ -7,7 +7,7 @@ import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
 import org.ez.vk.dao.common.exception.internal.InternalException;
 import org.ez.vk.dao.common.exception.user.BadCredentialsException;
 import org.ez.vk.dao.common.exception.user.RootUserException;
-import org.ez.vk.dao.common.helper.impl.WebHelper;
+import org.ez.vk.dao.common.helper.WebHelper;
 import org.ez.vk.service.api.IAccountService;
 import org.ez.vk.service.entity.AccountServiceDTO;
 import org.ez.vk.service.impl.AbstractService;

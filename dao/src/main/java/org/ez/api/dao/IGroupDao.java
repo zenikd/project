@@ -1,10 +1,7 @@
 package org.ez.api.dao;
 
-import java.util.List;
-
 import org.ez.vk.dao.common.entity.db.GroupEntity;
+import org.ez.vk.dao.common.entity.search.SearchDTO;
 
-public interface IGroupDao {
-	public void addGroups(List<GroupEntity> groups);
-
+public interface IGroupDao extends IAbstractDao<GroupEntity, SearchDTO> {
 }

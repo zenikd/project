@@ -2,8 +2,7 @@ package org.ez.vk.dao.common.entity.db;
 
 import org.bson.types.ObjectId;
 
-public class GroupEntity {
-	private ObjectId objectId;
+public class GroupEntity extends BaseEntity {
 	private Integer id; 
 	private String town;
 	private String type;
@@ -12,12 +11,6 @@ public class GroupEntity {
 	}
 	public void setType(String type) {
 		this.type = type;
-	}
-	public ObjectId getObjectId() {
-		return objectId;
-	}
-	public void setObjectId(ObjectId objectId) {
-		this.objectId = objectId;
 	}
 	public Integer getId() {
 		return id;

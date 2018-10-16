@@ -4,13 +4,14 @@ import org.bson.types.ObjectId;
 
 public abstract class BaseEntity {
 	private ObjectId objectId;
-	private Long update;
-	public Long getUpdate() {
-		return update;
+	private Long updated;
+	
+	public Long getUpdated() {
+		return updated;
 	}
 
-	public void setUpdate(Long update) {
-		this.update = update;
+	public void setUpdated(Long updated) {
+		this.updated = updated;
 	}
 
 	public ObjectId getObjectId() {

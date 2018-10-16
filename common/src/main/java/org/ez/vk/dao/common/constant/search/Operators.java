@@ -1,4 +1,4 @@
-package org.ez.vk.dao.common.constant;
+package org.ez.vk.dao.common.constant.search;
 
 public class Operators {
 	public static final String $EQ = "$eq";

@@ -13,7 +13,7 @@ import org.ez.vk.dao.common.entity.search.reserved.AccountSearchDTO;
 import org.ez.vk.dao.common.exception.internal.InternalException;
 import org.ez.vk.dao.common.exception.user.NotUniqueException;
 import org.ez.vk.dao.common.exception.user.RootUserException;
-import org.ez.vk.dao.common.helper.impl.JsonHelper;
+import org.ez.vk.dao.common.helper.JsonHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -35,13 +35,11 @@ public class AccountDao extends ReservedDao<AccountVk> implements IAccountDao {
 		this.collection = database.getCollection("account", BasicDBObject.class);
 	}
 
-	public void addEntity(AccountVk defaultAccount) throws RootUserException, InternalException {
+	public void addEntity(AccountVk defaultAccount) throws  InternalException, RootUserException {
 		if (!isUnique(defaultAccount)) {
 			throw new NotUniqueException(ACCOUNT_ALREADY_EXIST);
 		}
-		setDefaultEntityParam(defaultAccount);
-		BasicDBObject document = jsonHelper.entityToDBObject(defaultAccount);
-		collection.insertOne(document);
+		super.addEntity(defaultAccount);
 	}
 
 	protected void setDefaultEntityParam(AccountVk accountVk) throws InternalException {

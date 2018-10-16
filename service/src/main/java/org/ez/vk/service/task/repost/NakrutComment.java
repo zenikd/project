@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class NakrutComment {
 
-	private final static String WORKING = "workingg";
+	private final static String WORKING = "workinggg";
 	@Autowired
 	IAccountDao accountDao;
 

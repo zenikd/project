@@ -5,10 +5,13 @@ import java.util.List;
 
 import org.ez.api.dao.IAccountDao;
 import org.ez.api.dao.IGroupDao;
+import org.ez.vk.dao.common.constant.db.filed.reservable.AccountConst;
+import org.ez.vk.dao.common.constant.search.Operators;
 import org.ez.vk.dao.common.entity.db.GroupEntity;
-import org.ez.vk.dao.common.entity.db.reserved.AccountVk;
+import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
 import org.ez.vk.dao.common.entity.search.reserved.AccountSearchDTO;
 import org.ez.vk.dao.common.exception.internal.InternalException;
+import org.ez.vk.dao.common.exception.user.RootUserException;
 import org.ez.vk.service.api.IRepostTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +26,7 @@ import com.vk.api.sdk.objects.groups.Group;
 @Service
 public class RepostTask implements IRepostTask {
 	private final static VkApiClient vk = new VkApiClient(HttpTransportClient.getInstance());
-	private final static String WORKING = "workingg";
+	private final static String WORKING = "workin";
 	private final static Integer COUNT_GROUP = 100;
 	@Autowired
 	IAccountDao accountDao;
@@ -35,7 +38,7 @@ public class RepostTask implements IRepostTask {
 		List<AccountVk> listAccount = accountDao.select(accountSearchDTO);
 	}
 
-	public void addNewGroupToFound(String town) throws InternalException {
+	public void addNewGroupToFound(String town) throws InternalException, RootUserException {
 		try {
 			List<GroupEntity> listGroups = new ArrayList<GroupEntity>();
 			AccountSearchDTO accountSearchDTO = getListAccount();
@@ -49,7 +52,7 @@ public class RepostTask implements IRepostTask {
 				Thread.sleep(1100);
 
 			}
-			groupDao.addGroups(listGroups);
+			groupDao.addListEntity(listGroups);
 		} catch (ApiException e1) {
 			throw new InternalException();
 		} catch (ClientException e1) {
@@ -57,8 +60,6 @@ public class RepostTask implements IRepostTask {
 		} catch (InterruptedException e) {
 			throw new InternalException();
 		}
-
-		return "ok";
 
 	}
 
@@ -74,7 +75,7 @@ public class RepostTask implements IRepostTask {
 		AccountSearchDTO accountSearchDTO = new AccountSearchDTO();
 		accountSearchDTO
 			.setLimit(10)
-			.getSearchQuery().addSearchParam(filed, operator, value).
+			.getSearchQuery().addSearchParam(AccountConst.TYPE, Operators.$EQ, WORKING);
 			
 		return accountSearchDTO;
 	}

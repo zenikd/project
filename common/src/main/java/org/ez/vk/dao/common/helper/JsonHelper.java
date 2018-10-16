@@ -1,4 +1,4 @@
-package org.ez.vk.dao.common.helper.impl;
+package org.ez.vk.dao.common.helper;
 
 import java.io.IOException;
 import java.util.ArrayList;

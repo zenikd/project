@@ -10,7 +10,7 @@ public abstract class AbstractConverterFromDBObject<Entity> implements IAbstract
 	public Entity setEntity(BasicDBObject basicDBObject, Entity entity) {
 		BaseEntity baseEntity = (BaseEntity) entity;
 		baseEntity.setObjectId(basicDBObject.getObjectId(BaseEntityConst._ID));
-		baseEntity.setUpdate(basicDBObject.getLong(BaseEntityConst.UPDATED));
+		baseEntity.setUpdated(basicDBObject.getLong(BaseEntityConst.UPDATED));
 		return (Entity) baseEntity;
 	}
 

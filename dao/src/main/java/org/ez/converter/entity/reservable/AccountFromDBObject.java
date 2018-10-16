@@ -14,7 +14,8 @@ public class AccountFromDBObject extends ReservedConverterFromDBObject<AccountVk
 	@Override
 	public AccountVk setEntity(BasicDBObject basicDBObject, AccountVk accountVk) {
 		accountVk.setType(basicDBObject.getString(AccountConst.TYPE));
-		accountVk.setUserActor(new UserActor(basicDBObject.getInt(AccountConst.ID), basicDBObject.getString(AccountConst.TOKEN)));
+		BasicDBObject userActorJson = (BasicDBObject) basicDBObject.get(AccountConst.USER_ACTOR);
+		accountVk.setUserActor(new UserActor(userActorJson.getInt(AccountConst.ID), userActorJson.getString(AccountConst.TOKEN)));
 		accountVk.setCustomAccountUrl(basicDBObject.getString(AccountConst.CUSTOM_ACCOUNT_URL));
 		accountVk.setDefaultAccountUrl(basicDBObject.getString(AccountConst.DEFAULT_ACCOUNT_URL));
 		accountVk.setUserLogin(basicDBObject.getString(AccountConst.USER_LOGIN));
