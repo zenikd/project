@@ -3,10 +3,10 @@ package org.ez.vk.db.impl.reservable;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ez.vk.vk.dao.common.entity.db.reservable.AbstractReservableEntity;
-import org.ez.vk.vk.dao.common.entity.query.reserv.ReservedSearchDTO;
+import org.ez.vk.entity.db.reservable.ReservableEntity;
+import org.ez.vk.entity.query.reserv.ReservedSearchDTO;
 import org.ez.vk.db.impl.AbstractDao;
-import org.ez.vk.vk.dao.common.exception.internal.InternalException;
+import org.ez.vk.exception.internal.InternalException;
 
 import com.mongodb.BasicDBObject;
 
@@ -45,7 +45,7 @@ public abstract class ReservableDao<Entity> extends AbstractDao<Entity>
 	
 
 	protected void setDefaultEntityParam(Entity entity) throws InternalException {
-		AbstractReservableEntity reservedEntity = (AbstractReservableEntity) entity;
+		ReservableEntity reservedEntity = (ReservableEntity) entity;
 		reservedEntity.setDateReserved(dateHelper.getEndPrivDay());
 		reservedEntity.setIdReserve(DEFAULT_RESERVE);
 		super.setDefaultEntityParam(entity);

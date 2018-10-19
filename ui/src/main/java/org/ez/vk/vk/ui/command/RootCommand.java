@@ -3,7 +3,7 @@ package org.ez.vk.vk.ui.command;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ez.vk.vk.dao.common.exception.internal.InternalException;
+import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.vk.ui.command.common.ConsoleHelper;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

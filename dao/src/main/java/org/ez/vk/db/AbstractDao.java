@@ -2,8 +2,8 @@ package org.ez.vk.db;
 
 import java.util.List;
 
-import org.ez.vk.vk.dao.common.exception.internal.InternalException;
-import org.ez.vk.vk.dao.common.exception.user.RootUserException;
+import org.ez.vk.exception.internal.InternalException;
+import org.ez.vk.exception.user.RootUserException;
 
 public interface AbstractDao<Entity, SearchDTO> {
 	public void addEntity(Entity entity) throws  InternalException , RootUserException;

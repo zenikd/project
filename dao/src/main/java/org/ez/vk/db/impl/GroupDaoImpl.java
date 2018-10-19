@@ -6,7 +6,7 @@ import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-import org.ez.vk.vk.dao.common.entity.db.GroupEntity;
+import org.ez.vk.entity.db.GroupEntity;
 import org.ez.vk.db.GroupDao;
 import org.springframework.stereotype.Service;
 

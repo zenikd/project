@@ -1,8 +1,8 @@
 package org.ez.vk.converter;
 
 import org.ez.db.api.converter.entity.IAbstractConverterFromDBObject;
-import org.ez.vk.vk.dao.common.entity.db.constant.BaseEntityConst;
-import org.ez.vk.vk.dao.common.entity.db.BaseEntity;
+import org.ez.vk.entity.db.constant.BaseEntityConst;
+import org.ez.vk.entity.db.BaseEntity;
 
 import com.mongodb.BasicDBObject;
 

@@ -6,12 +6,12 @@ import java.util.List;
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.MongoCollection;
 
-import org.ez.vk.vk.dao.common.entity.db.BaseEntity;
-import org.ez.vk.vk.dao.common.entity.query.QueryDTO;
-import org.ez.vk.vk.dao.common.exception.internal.InternalException;
-import org.ez.vk.vk.dao.common.exception.user.RootUserException;
-import org.ez.vk.vk.dao.common.helper.DateHelper;
-import org.ez.vk.vk.dao.common.helper.JsonHelper;
+import org.ez.vk.entity.db.BaseEntity;
+import org.ez.vk.entity.query.QueryDTO;
+import org.ez.vk.exception.internal.InternalException;
+import org.ez.vk.exception.user.RootUserException;
+import org.ez.vk.helper.DateHelper;
+import org.ez.vk.helper.JsonHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<Entity, QueryDTO>

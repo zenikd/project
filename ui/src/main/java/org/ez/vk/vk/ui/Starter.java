@@ -1,6 +1,6 @@
 package org.ez.vk.vk.ui;
 
-import org.ez.vk.vk.dao.common.exception.internal.InternalException;
+import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.vk.ui.command.MainCommand;
 
 ;

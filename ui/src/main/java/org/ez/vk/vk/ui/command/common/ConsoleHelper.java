@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
-import org.ez.vk.vk.dao.common.exception.internal.InternalException;
+import org.ez.vk.exception.internal.InternalException;
 
 public class ConsoleHelper {
 	private final static String COMMAND_NO_UNIQUE = "command no unique";

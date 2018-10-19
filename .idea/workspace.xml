@@ -2,62 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be1f4fa-891c-46d3-8abc-c3e2fa063c14" name="Default" comment="Change project structure">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/AccountFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/FactoryDbEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/GroupFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/ReservableEntityFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/GroupEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/GroupEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/AccountConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/AccountConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/BaseEntityConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/BaseEntityConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/GroupConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/GroupConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/ReservableConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/ReservableConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/reservable/AbstractReservableEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/reservable/AbstractReservableEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/reservable/AccountVk.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/reservable/AccountVk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/QueryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/QueryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/constant/Operators.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/constant/Operators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/reserv/AccountSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/reserv/AccountSearchDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/reserv/ReservedSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/reserv/ReservedSearchDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/search/SearchQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/search/SearchQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/search/UpdateQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/search/UpdateQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/exception/internal/InternalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/exception/internal/InternalException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/exception/user/BadCredentialsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/exception/user/BadCredentialsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/exception/user/NotUniqueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/exception/user/NotUniqueException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/exception/user/RootUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/exception/user/RootUserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/DateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/helper/DateHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/JsonHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/helper/JsonHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/helper/WebHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/helper/WebHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/AbstractConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/AbstractConverterFromDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/reservable/AccountFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/reservable/AccountFromDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/reservable/ReservableConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/reservable/ReservableConverterFromDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/GroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/GroupDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/GroupDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/GroupDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/reservable/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/reservable/ReservableDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/ReservableDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/api/IAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/api/IRepostTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/RepostTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/entity/AccountServiceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/entity/AccountServiceDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/AbstractService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/AccountAdder2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/accountservice/AccountFSParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountFSParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/accountservice/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/NakrutComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/NakrutCommentImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/RepostTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RepostTaskImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/MainCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/RootCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/RootCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/AccountCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/account/AccountCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/account/add/AddCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/printing/AdderAccountByPrintCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/account/add/printing/AdderAccountByPrintCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/common/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/common/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/common/ConsoleHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/common/ConsoleHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/find/FindCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/find/FindCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/find/repost/AddTownCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/find/repost/AddTownCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/find/repost/FindRepostCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/find/repost/FindRepostCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/find/repost/PostToRepostCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/find/repost/PostToRepostCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/GroupEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/GroupEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/AccountConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/constant/AccountConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/BaseEntityConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/constant/BaseEntityConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/GroupConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/constant/GroupConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/ReservableConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/constant/ReservableConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/reservable/AbstractReservableEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/reservable/ReservableEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/reservable/AccountVk.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/reservable/AccountVk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/QueryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/QueryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/constant/Operators.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/constant/Operators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/reserv/AccountSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/reserv/AccountSearchDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/reserv/ReservedSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/reserv/ReservedSearchDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/search/SearchQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/search/SearchQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/search/UpdateQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/search/UpdateQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/exception/internal/InternalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/exception/internal/InternalException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/exception/user/BadCredentialsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/exception/user/BadCredentialsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/exception/user/NotUniqueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/exception/user/NotUniqueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/exception/user/RootUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/exception/user/RootUserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/helper/DateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/helper/DateHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/helper/JsonHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/helper/JsonHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/helper/WebHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/helper/WebHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/AbstractConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/AbstractConverterFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/reservable/AccountFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/reservable/AccountFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/reservable/ReservableConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/reservable/ReservableConverterFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AbstractDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/GroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/GroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/AbstractDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/GroupDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/GroupDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/ReservableDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/ReservableDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/RootCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/RootCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/common/ConsoleHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/vk/ui/command/common/ConsoleHelper.java" afterDir="false" />
     </list>
     <ignored path="vk-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,31 +86,31 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="33" />
+          <entry key="java" value="41" />
           <entry key="ss" value="1" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="33" />
+          <entry key="JAVA" value="41" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="39" />
+          <entry key="dummy" value="40" />
           <entry key="gitignore" value="8" />
-          <entry key="java" value="381" />
+          <entry key="java" value="699" />
           <entry key="txt" value="26" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="381" />
-          <entry key="PLAIN_TEXT" value="73" />
+          <entry key="JAVA" value="699" />
+          <entry key="PLAIN_TEXT" value="74" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -165,82 +148,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/constant/Operators.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/FactoryDbEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="210">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/App.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/ReservableEntityFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-622">
-              <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+            <state relative-caret-position="165">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/GeterPost.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/AccountFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountFSParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RepostTaskImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/RepostTask.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/GroupFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="150">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/NakrutCommentImpl.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/reservable/ReservableEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -281,6 +237,14 @@
         <option value="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/RepostTask.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RepostTaskImpl.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/NakrutCommentImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/reservableEntityFactory.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/FactoryDbEntity.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/reservable/AccountFactory.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/ReservableEntityFactory.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/reservable/ReservableEntity.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/AccountFactory.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/GroupFactory.java" />
       </list>
     </option>
   </component>
@@ -329,6 +293,86 @@
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vk" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vk" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vk" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vk" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="reservable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,6 +414,29 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vk" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vk" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vk" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
@@ -401,7 +468,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539951084872" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539953512853" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -602,7 +669,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/kkk.java" />
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/exception/internal/InternalException.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/exception/internal/InternalException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="8" selection-start-column="8" selection-end-column="28" />
@@ -743,28 +810,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/AccountConst.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/constant/AccountConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/BaseEntityConst.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/constant/BaseEntityConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/GroupConst.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/constant/GroupConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/db/constant/ReservableConst.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/constant/ReservableConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -774,24 +841,10 @@
     <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/ss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/vk/dao/common/entity/query/constant/Operators.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/constant/Operators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountFSParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -848,6 +901,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountFSParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="69" column="75" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/FactoryDbEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/ReservableEntityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/reservable/ReservableEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/reservable/AccountVk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/AccountFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/GroupFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>

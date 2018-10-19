@@ -9,10 +9,10 @@ import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoDatabase;
 
 import org.ez.db.api.converter.entity.IAccountFromDBObject;
-import org.ez.vk.vk.dao.common.entity.db.reservable.AccountVk;
-import org.ez.vk.vk.dao.common.exception.internal.InternalException;
-import org.ez.vk.vk.dao.common.exception.user.NotUniqueException;
-import org.ez.vk.vk.dao.common.exception.user.RootUserException;
+import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.exception.internal.InternalException;
+import org.ez.vk.exception.user.NotUniqueException;
+import org.ez.vk.exception.user.RootUserException;
 import org.ez.vk.db.AccountDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
