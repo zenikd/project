@@ -2,16 +2,18 @@ package org.ez.vk.entity.query.search;
 
 import com.mongodb.BasicDBObject;
 
-public class SearchQuery {
-	private BasicDBObject query = new BasicDBObject();
+import org.ez.vk.entity.query.BaseQuery;
+
+public class SearchQuery extends BaseQuery
+{
+	private BasicDBObject searchQuery = new BasicDBObject();
 
 	public SearchQuery addSearchParam(String filed, String operator, String value) {
-		BasicDBObject queryParam = new BasicDBObject(operator, value);
-		query.append(filed, queryParam);
+		addQueryParam(searchQuery,filed,operator,value);
 		return this;
 	}
 
 	public BasicDBObject getQuery() {
-		return query;
+		return searchQuery;
 	}
 }

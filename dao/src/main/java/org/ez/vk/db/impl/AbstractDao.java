@@ -7,14 +7,14 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.client.MongoCollection;
 
 import org.ez.vk.entity.db.BaseEntity;
-import org.ez.vk.entity.query.QueryDTO;
+import org.ez.vk.entity.query.search.FullSearchQuery;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.exception.user.RootUserException;
 import org.ez.vk.helper.DateHelper;
 import org.ez.vk.helper.JsonHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<Entity, QueryDTO>
+public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<Entity, FullSearchQuery>
 {
 	protected JsonHelper jsonHelper;
 	public MongoCollection<BasicDBObject> collection;
@@ -25,7 +25,7 @@ public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<En
 		jsonHelper = new JsonHelper<Entity>();
 	}
 
-	public List<Entity> select(QueryDTO searchDTO) throws InternalException {
+	public List<Entity> select(FullSearchQuery searchDTO) throws InternalException {
 		BasicDBObject searchQuery = searchDTO.getSearchQuery().getQuery();
 		List<BasicDBObject> searchResult = collection.find(searchQuery).limit(searchDTO.getLimit())
 				.into(new ArrayList<BasicDBObject>());
