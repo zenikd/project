@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.ez.vk.db.AccountDao;
 import org.ez.vk.entity.AccountServiceDTO;
+import org.ez.vk.entity.db.factory.AccountFactory;
 import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.exception.user.BadCredentialsException;
@@ -25,6 +26,8 @@ import com.vk.api.sdk.objects.account.UserSettings;
 @Service
 public class AccountServiceImpl implements AccountService
 {
+	@Autowired
+	AccountFactory accountFactory;
 	@Autowired
 	AccountDao accountDao;
 
@@ -61,7 +64,7 @@ public class AccountServiceImpl implements AccountService
 		JSONObject obj = new JSONObject(response);
 		String accessToken = obj.getString("access_token");
 		Integer userId = obj.getInt("user_id");
-		AccountVk accountVk = new AccountVk();
+		AccountVk accountVk = accountFactory.getEntity();
 		accountVk.setUserActor(new UserActor(userId, accessToken));
 		return accountVk;
 

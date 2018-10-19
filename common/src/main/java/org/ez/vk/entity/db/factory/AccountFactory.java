@@ -2,7 +2,8 @@ package org.ez.vk.entity.db.factory;
 
 import org.ez.vk.entity.db.factory.ReservableEntityFactory;
 import org.ez.vk.entity.db.reservable.AccountVk;
-
+import org.springframework.stereotype.Service;
+@Service
 public class AccountFactory extends ReservableEntityFactory<AccountVk>
 {
 	@Override

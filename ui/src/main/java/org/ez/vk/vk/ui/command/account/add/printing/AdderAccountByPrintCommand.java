@@ -17,13 +17,13 @@ public class AdderAccountByPrintCommand extends RootCommand{
 	
 	public AdderAccountByPrintCommand(){
 		listType.add("admin");
-		listType.add("workin");
+		listType.add("worki");
 	}
 	
 	
 	protected void execute() {
 		try {
-		AccountService accountService = (AccountService) context.getBean("accountService");
+		AccountService accountService = (AccountService) context.getBean("accountServiceImpl");
 		print(WRITE_LOGIN);
 		String login = ConsoleHelper.writeText();
 		print(WRITE_PASS);
