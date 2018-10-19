@@ -2,7 +2,7 @@ package org.ez.vk.service.task.repost;
 
 import java.util.List;
 
-import org.ez.api.dao.IAccountDao;
+import org.ez.db.api.dao.IAccountDao;
 import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
 import org.ez.vk.dao.common.entity.search.reserved.AccountSearchDTO;
 import org.ez.vk.dao.common.exception.internal.InternalException;

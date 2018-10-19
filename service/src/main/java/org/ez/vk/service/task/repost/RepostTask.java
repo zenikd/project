@@ -3,8 +3,8 @@ package org.ez.vk.service.task.repost;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ez.api.dao.IAccountDao;
-import org.ez.api.dao.IGroupDao;
+import org.ez.db.api.dao.IAccountDao;
+import org.ez.db.api.dao.IGroupDao;
 import org.ez.vk.dao.common.constant.db.filed.reservable.AccountConst;
 import org.ez.vk.dao.common.constant.search.Operators;
 import org.ez.vk.dao.common.entity.db.GroupEntity;
