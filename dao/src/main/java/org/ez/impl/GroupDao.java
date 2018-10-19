@@ -12,8 +12,6 @@ import com.mongodb.client.MongoDatabase;
 
 @Service
 public class GroupDao extends AbstractDao<GroupEntity> implements IGroupDao {
-	public MongoCollection<BasicDBObject> collection;
-
 	public GroupDao() {
 		MongoClient mlabClient = new MongoClient(
 				new MongoClientURI("mongodb://adminn:1234567qw@ds121673.mlab.com:21673/test-db"));

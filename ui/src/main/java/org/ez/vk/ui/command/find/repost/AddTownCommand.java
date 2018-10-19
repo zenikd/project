@@ -2,7 +2,7 @@ package org.ez.vk.ui.command.find.repost;
 
 import java.io.IOException;
 
-
+import org.ez.vk.service.api.IRepostTask;
 import org.ez.vk.ui.command.RootCommand;
 import org.ez.vk.ui.command.common.ConsoleHelper;
 

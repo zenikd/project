@@ -4,7 +4,7 @@ public class AccountConst extends ReservableConst {
 
 	public final static String TYPE = "type";
 	public final static String USER_ACTOR = "userActor";
-	public final static String TOKEN = "token";
+	public final static String TOKEN = "accessToken";
 	public final static String ID = "id";
 	public final static String CUSTOM_ACCOUNT_URL = "customAccountUrl";
 	public final static String DEFAULT_ACCOUNT_URL = "defaultAccountUrl";
