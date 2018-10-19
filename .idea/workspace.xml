@@ -2,48 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be1f4fa-891c-46d3-8abc-c3e2fa063c14" name="Default" comment="Change project structure">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAbstractConverterFromDBObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAbstractConverterToDBObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAccountConverterToDBObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IAccountFromDBObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/converter/entity/IGroupToDBObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IAbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IAccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/api/dao/IGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/GroupDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/AbstractConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/AbstractConverterFromDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reservable/AccountFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/entity/reservable/AccountFromDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/GroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/GroupDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/reservable/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/impl/reserved/ReservedDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/reservable/ReservableDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/dao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/test-classes/org/ez/vk/dao_import_file_system/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/accountservice/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/accountservice/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/constant/db/filed/BaseEntityConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/BaseEntityConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/constant/db/filed/GroupConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/GroupConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/constant/db/filed/reservable/AccountConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/AccountConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/constant/db/filed/reservable/ReservableConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/ReservableConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/constant/search/Operators.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/constant/Operators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/SearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/QueryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/query/SearchQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/search/SearchQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/query/UpdateQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/search/UpdateQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/reserved/AccountSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/reserv/AccountSearchDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/search/reserved/ReservedSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/reserv/ReservedSearchDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/AbstractConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/AbstractConverterFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/reservable/AccountFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/reservable/AccountFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/reservable/ReservableConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/converter/reservable/ReservableConverterFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/GroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/GroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/AbstractDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/reservable/ReservableDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/reservable/ReservableDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/NakrutComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/NakrutComment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/RepostTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/task/repost/RepostTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/test-classes/user/service/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/Starter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/MainCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/RootCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/account/AccountCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/account/add/AddCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/account/add/printing/AdderAccountByPrintCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/common/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/common/ConsoleHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/find/FindCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/find/repost/AddTownCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/find/repost/FindRepostCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/org/ez/vk/ui/command/find/repost/PostToRepostCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/classes/ui-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/target/test-classes/user/ui/AppTest.class" beforeDir="false" />
     </list>
     <ignored path="vk-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,20 +66,20 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="18" />
+          <entry key="java" value="23" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="18" />
+          <entry key="JAVA" value="23" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="17" />
+          <entry key="dummy" value="26" />
           <entry key="gitignore" value="8" />
           <entry key="java" value="381" />
           <entry key="txt" value="26" />
@@ -112,7 +89,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="381" />
-          <entry key="PLAIN_TEXT" value="51" />
+          <entry key="PLAIN_TEXT" value="60" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -150,10 +127,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/org/ez/db/AbstractDao.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/constant/Operators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -185,6 +162,8 @@
         <option value="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/AbstractDao.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/org/ez/db/impl/reservable/AccountDao.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/org/ez/db/AbstractDao.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/ReservableConst.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/constant/Operators.java" />
       </list>
     </option>
   </component>
@@ -233,70 +212,47 @@
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ez" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ez" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ez" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ez" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="reservable" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,7 +263,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539949813579" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539949909171" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -427,8 +383,7 @@
     <option name="totallyTimeSpent" value="3153000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="0" width="1922" height="1053" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19103523" />
       <window_info id="Structure" order="1" weight="0.24962178" />
@@ -667,6 +622,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/AccountConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/BaseEntityConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/GroupConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/db/constant/ReservableConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/dao/common/entity/query/constant/Operators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>

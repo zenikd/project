@@ -1,4 +1,4 @@
-package org.ez.vk.dao.common.entity.search.query;
+package org.ez.vk.dao.common.entity.query.search;
 
 import com.mongodb.BasicDBObject;
 

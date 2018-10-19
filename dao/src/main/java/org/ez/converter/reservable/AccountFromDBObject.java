@@ -1,7 +1,7 @@
 package org.ez.converter.reservable;
 
 import org.ez.db.api.converter.entity.IAccountFromDBObject;
-import org.ez.vk.dao.common.constant.db.filed.reservable.AccountConst;
+import org.ez.vk.dao.common.entity.db.constant.AccountConst;
 import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
 import org.springframework.stereotype.Repository;
 

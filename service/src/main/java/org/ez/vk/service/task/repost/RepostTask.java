@@ -9,7 +9,7 @@ import org.ez.vk.dao.common.constant.db.filed.reservable.AccountConst;
 import org.ez.vk.dao.common.constant.search.Operators;
 import org.ez.vk.dao.common.entity.db.GroupEntity;
 import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
-import org.ez.vk.dao.common.entity.search.reserved.AccountSearchDTO;
+import org.ez.vk.dao.common.entity.query.reserv.AccountSearchDTO;
 import org.ez.vk.dao.common.exception.internal.InternalException;
 import org.ez.vk.dao.common.exception.user.RootUserException;
 import org.ez.vk.service.api.IRepostTask;

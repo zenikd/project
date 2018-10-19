@@ -1,4 +1,4 @@
-package org.ez.vk.dao.common.constant.db.filed.reservable;
+package org.ez.vk.dao.common.entity.db.constant;
 
 public class AccountConst extends ReservableConst {
 

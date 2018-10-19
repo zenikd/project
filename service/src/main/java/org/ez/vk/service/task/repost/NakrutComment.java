@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.ez.db.api.dao.IAccountDao;
 import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
-import org.ez.vk.dao.common.entity.search.reserved.AccountSearchDTO;
+import org.ez.vk.dao.common.entity.query.reserv.AccountSearchDTO;
 import org.ez.vk.dao.common.exception.internal.InternalException;
 import org.springframework.beans.factory.annotation.Autowired;
 

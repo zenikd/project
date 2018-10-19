@@ -1,8 +1,9 @@
-package org.ez.vk.dao.common.entity.search;
+package org.ez.vk.dao.common.entity.query;
 
-import org.ez.vk.dao.common.entity.search.query.SearchQuery;
+import org.ez.vk.dao.common.entity.query.search.SearchQuery;
 
-public class SearchDTO {
+public class QueryDTO
+{
 	private SearchQuery searchQuery = new SearchQuery();
 	private Integer limit = 1;
 	
@@ -11,7 +12,7 @@ public class SearchDTO {
 		return limit;
 	}
 
-	public SearchDTO setLimit(Integer limit) {
+	public QueryDTO setLimit(Integer limit) {
 		this.limit = limit;
 		return this;
 	}
@@ -20,7 +21,7 @@ public class SearchDTO {
 		return searchQuery;
 	}
 
-	public SearchDTO setSearchQuery(SearchQuery searchQuery) {
+	public QueryDTO setSearchQuery(SearchQuery searchQuery) {
 		this.searchQuery = searchQuery;
 		return this;
 	}

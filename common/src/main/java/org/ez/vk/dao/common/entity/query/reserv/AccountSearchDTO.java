@@ -1,6 +1,4 @@
-package org.ez.vk.dao.common.entity.search.reserved;
-
-import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
+package org.ez.vk.dao.common.entity.query.reserv;
 
 import com.mongodb.BasicDBObject;
 

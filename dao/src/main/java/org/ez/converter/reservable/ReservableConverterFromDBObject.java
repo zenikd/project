@@ -2,7 +2,7 @@ package org.ez.converter.reservable;
 
 
 import org.ez.converter.AbstractConverterFromDBObject;
-import org.ez.vk.dao.common.constant.db.filed.reservable.ReservableConst;
+import org.ez.vk.dao.common.entity.db.constant.ReservableConst;
 import org.ez.vk.dao.common.entity.db.reservable.AbstractReservableEntity;
 
 import com.mongodb.BasicDBObject;

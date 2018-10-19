@@ -1,6 +1,4 @@
-package org.ez.vk.dao.common.constant.db.filed.reservable;
-
-import org.ez.vk.dao.common.constant.db.filed.BaseEntityConst;
+package org.ez.vk.dao.common.entity.db.constant;
 
 public class ReservableConst  extends BaseEntityConst {
 	public final static String DATE_RESERVED = "dateReserved";

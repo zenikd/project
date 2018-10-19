@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.ez.vk.dao.common.entity.db.reservable.AbstractReservableEntity;
-import org.ez.vk.dao.common.entity.search.reserved.ReservedSearchDTO;
+import org.ez.vk.dao.common.entity.query.reserv.ReservedSearchDTO;
 import org.ez.db.impl.AbstractDao;
 import org.ez.vk.dao.common.exception.internal.InternalException;
 

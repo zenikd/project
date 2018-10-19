@@ -1,4 +1,4 @@
-package org.ez.vk.dao.common.constant.db.filed;
+package org.ez.vk.dao.common.entity.db.constant;
 
 public class GroupConst extends BaseEntityConst{
 	public final static String TOWN = "town";

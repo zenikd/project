@@ -1,10 +1,10 @@
-package org.ez.vk.dao.common.entity.search.reserved;
+package org.ez.vk.dao.common.entity.query.reserv;
 
-import org.ez.vk.dao.common.entity.search.SearchDTO;
+import org.ez.vk.dao.common.entity.query.QueryDTO;
 
 import com.mongodb.BasicDBObject;
 
-public abstract class ReservedSearchDTO extends SearchDTO
+public abstract class ReservedSearchDTO extends QueryDTO
 {
 	private Long reservedMinute = 60l;
 
