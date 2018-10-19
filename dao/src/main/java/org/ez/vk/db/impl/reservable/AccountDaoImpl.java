@@ -39,12 +39,6 @@ public class AccountDaoImpl extends ReservableDao<AccountVk> implements AccountD
 		super.addEntity(defaultAccount);
 	}
 
-	protected void setDefaultEntityParam(AccountVk accountVk) throws InternalException {
-		accountVk.setCountComment(0);
-		accountVk.setCountLoad(0);
-		accountVk.setCountQuery(0);
-		super.setDefaultEntityParam(accountVk);
-	}
 
 	private boolean isUnique(AccountVk defaultAccount) {
 		BasicDBObject document = new BasicDBObject("type", defaultAccount.getType()).append("id",

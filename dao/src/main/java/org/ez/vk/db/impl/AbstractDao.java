@@ -34,7 +34,6 @@ public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<En
 
 	public void addEntity(Entity entity) throws InternalException , RootUserException
 	{
-		setDefaultEntityParam(entity);
 		BasicDBObject dbObject = jsonHelper.entityToDBObject((BaseEntity) entity);
 		collection.insertOne(dbObject);
 	}
@@ -42,15 +41,9 @@ public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<En
 	public void addListEntity(List<Entity> entities) throws  InternalException , RootUserException {
 		List<BasicDBObject> document= new ArrayList();
 		for (Entity entity : entities) {
-			setDefaultEntityParam(entity);
 			document.add(jsonHelper.entityToDBObject((BaseEntity) entity));
 		}
 		collection.insertMany(document);
-	}
-
-	protected void setDefaultEntityParam(Entity entity) throws InternalException {
-		BaseEntity baseEntity = (BaseEntity) entity;
-		baseEntity.setUpdated(dateHelper.getEndPrivDay());
 	}
 
 	

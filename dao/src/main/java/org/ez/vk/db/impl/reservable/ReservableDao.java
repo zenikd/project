@@ -44,11 +44,6 @@ public abstract class ReservableDao<Entity> extends AbstractDao<Entity>
 
 	
 
-	protected void setDefaultEntityParam(Entity entity) throws InternalException {
-		ReservableEntity reservedEntity = (ReservableEntity) entity;
-		reservedEntity.setDateReserved(dateHelper.getEndPrivDay());
-		reservedEntity.setIdReserve(DEFAULT_RESERVE);
-		super.setDefaultEntityParam(entity);
-	}
+
 
 }
