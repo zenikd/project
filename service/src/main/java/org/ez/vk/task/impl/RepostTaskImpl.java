@@ -3,15 +3,15 @@ package org.ez.vk.task.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ez.db.api.dao.IAccountDao;
-import org.ez.db.api.dao.IGroupDao;
-import org.ez.vk.dao.common.constant.db.filed.reservable.AccountConst;
-import org.ez.vk.dao.common.constant.search.Operators;
-import org.ez.vk.dao.common.entity.db.GroupEntity;
-import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
-import org.ez.vk.dao.common.entity.query.reserv.AccountSearchDTO;
-import org.ez.vk.dao.common.exception.internal.InternalException;
-import org.ez.vk.dao.common.exception.user.RootUserException;
+import org.ez.vk.db.AccountDao;
+import org.ez.vk.db.GroupDao;
+import org.ez.vk.entity.db.GroupEntity;
+import org.ez.vk.entity.db.constant.AccountConst;
+import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.query.constant.Operators;
+import org.ez.vk.entity.query.search.FullSearchQuery;
+import org.ez.vk.exception.internal.InternalException;
+import org.ez.vk.exception.user.RootUserException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,19 +29,19 @@ public class RepostTaskImpl implements org.ez.vk.task.RepostTask
 	private final static String WORKING = "workin";
 	private final static Integer COUNT_GROUP = 100;
 	@Autowired
-	IAccountDao accountDao;
+	AccountDao accountDao;
 	@Autowired
-	IGroupDao groupDao;
+	GroupDao groupDao;
 
 	public void findPostToRepost(String groupName, int count) throws InternalException {
-		AccountSearchDTO accountSearchDTO = getListAccount();
+		FullSearchQuery accountSearchDTO = getListAccount();
 		List<AccountVk> listAccount = accountDao.select(accountSearchDTO);
 	}
 
 	public void addNewGroupToFound(String town) throws InternalException, RootUserException {
 		try {
 			List<GroupEntity> listGroups = new ArrayList<GroupEntity>();
-			AccountSearchDTO accountSearchDTO = getListAccount();
+			FullSearchQuery accountSearchDTO = getListAccount();
 			List<AccountVk> listAccount = accountDao.select(accountSearchDTO);
 			UserActor userActor = listAccount.get(0).getUserActor();
 			for (int offset = 0; offset < COUNT_GROUP; offset += 100) {
@@ -71,8 +71,8 @@ public class RepostTaskImpl implements org.ez.vk.task.RepostTask
 		return groupEntity;
 	}
 
-	private AccountSearchDTO getListAccount() {
-		AccountSearchDTO accountSearchDTO = new AccountSearchDTO();
+	private FullSearchQuery getListAccount() {
+		FullSearchQuery accountSearchDTO = new FullSearchQuery();
 		accountSearchDTO
 			.setLimit(10)
 			.getSearchQuery().addSearchParam(AccountConst.TYPE, Operators.$EQ, WORKING);

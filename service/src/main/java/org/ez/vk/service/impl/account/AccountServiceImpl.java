@@ -2,14 +2,14 @@ package org.ez.vk.service.impl.account;
 
 import java.io.IOException;
 
-import org.ez.db.api.dao.IAccountDao;
-import org.ez.vk.dao.common.entity.db.reservable.AccountVk;
-import org.ez.vk.dao.common.exception.internal.InternalException;
-import org.ez.vk.dao.common.exception.user.BadCredentialsException;
-import org.ez.vk.dao.common.exception.user.RootUserException;
-import org.ez.vk.dao.common.helper.WebHelper;
-import org.ez.vk.service.AccountService;
+import org.ez.vk.db.AccountDao;
 import org.ez.vk.entity.AccountServiceDTO;
+import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.exception.internal.InternalException;
+import org.ez.vk.exception.user.BadCredentialsException;
+import org.ez.vk.exception.user.RootUserException;
+import org.ez.vk.helper.WebHelper;
+import org.ez.vk.service.AccountService;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,7 +26,7 @@ import com.vk.api.sdk.objects.account.UserSettings;
 public class AccountServiceImpl implements AccountService
 {
 	@Autowired
-	IAccountDao accountDao;
+	AccountDao accountDao;
 
 	public final static String ACCOUNT_ALREADY_EXIST = "account already exists";
 	private final static String BAD_CREDENTIALS = "Login or pass wrong";

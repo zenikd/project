@@ -5,8 +5,6 @@ import java.io.IOException;
 import org.ez.db.api.dao.IAccountDao;
 import org.ez.vk.dao.common.entity.vk.search.reserved.AccountSearchDTO;
 import org.ez.vk.db.impl.reservable.AccountDaoImpl;
-import org.ez.vk.service.entity.AccountServiceDTO;
-import org.ez.vk.service.impl.account.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

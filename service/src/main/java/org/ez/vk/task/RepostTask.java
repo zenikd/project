@@ -1,7 +1,7 @@
 package org.ez.vk.task;
 
-import org.ez.vk.dao.common.exception.internal.InternalException;
-import org.ez.vk.dao.common.exception.user.RootUserException;
+import org.ez.vk.exception.internal.InternalException;
+import org.ez.vk.exception.user.RootUserException;
 
 public interface RepostTask
 {

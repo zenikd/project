@@ -3,8 +3,8 @@ package org.ez.vk.vk.ui.command.account.add.printing;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ez.vk.service.entity.AccountServiceDTO;
-import org.ez.vk.service.impl.account.AccountService;
+import org.ez.vk.entity.AccountServiceDTO;
+import org.ez.vk.service.AccountService;
 import org.ez.vk.vk.ui.command.RootCommand;
 import org.ez.vk.vk.ui.command.common.ConsoleHelper;
 

@@ -1,8 +1,8 @@
 package org.ez.vk.service;
 
-import org.ez.vk.dao.common.exception.internal.InternalException;
-import org.ez.vk.dao.common.exception.user.RootUserException;
 import org.ez.vk.entity.AccountServiceDTO;
+import org.ez.vk.exception.internal.InternalException;
+import org.ez.vk.exception.user.RootUserException;
 
 public interface AccountService
 {

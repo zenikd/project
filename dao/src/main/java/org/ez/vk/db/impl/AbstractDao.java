@@ -3,9 +3,6 @@ package org.ez.vk.db.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.client.MongoCollection;
-
 import org.ez.vk.entity.db.BaseEntity;
 import org.ez.vk.entity.query.search.FullSearchQuery;
 import org.ez.vk.exception.internal.InternalException;
@@ -13,6 +10,9 @@ import org.ez.vk.exception.user.RootUserException;
 import org.ez.vk.helper.DateHelper;
 import org.ez.vk.helper.JsonHelper;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.client.MongoCollection;
 
 public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<Entity, FullSearchQuery>
 {
@@ -23,6 +23,8 @@ public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<En
 
 	public AbstractDao() {
 		jsonHelper = new JsonHelper<Entity>();
+		setCollection();
+		
 	}
 
 	public List<Entity> select(FullSearchQuery searchDTO) throws InternalException {
@@ -57,4 +59,5 @@ public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<En
 	}
 
 	protected abstract Entity getEntityInstance();
+	protected abstract void setCollection();
 }
