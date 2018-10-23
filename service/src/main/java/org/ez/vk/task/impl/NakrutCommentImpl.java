@@ -10,6 +10,7 @@ import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.entity.query.SearchDTOQuery;
 import org.ez.vk.entity.query.constant.Operators;
 import org.ez.vk.exception.internal.InternalException;
+import org.ez.vk.helper.TextHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +21,8 @@ import com.vk.api.sdk.httpclient.HttpTransportClient;
 
 @Service
 public class NakrutCommentImpl extends RootTask {
+	@Autowired
+	TextHelper textHelper;
 	
 	private final static Integer COUNT_ACCOUNT = 10;
 
@@ -51,9 +54,9 @@ public class NakrutCommentImpl extends RootTask {
 	}
 
 	private void addComment(Map.Entry<Integer, Integer> post, AccountVk accountVk) throws Exception {
-		for (Integer i = 1; i < 8; i++) {
+		for (Integer i = 0; i < 7; i++) {
 			vk.wall().createComment(accountVk.getUserActor(), post.getValue()).ownerId(post.getKey())
-					.message(i.toString()).execute();
+					.message(textHelper.getGoodText()).execute();
 			Thread.sleep(2000);
 		}
 	}
