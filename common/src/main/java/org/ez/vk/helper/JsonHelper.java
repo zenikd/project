@@ -64,5 +64,4 @@ public class JsonHelper<Entity> {
 			throw new InternalException();
 		}
 	}
-
 }

@@ -9,7 +9,7 @@ import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.exception.user.BadCredentialsException;
 import org.ez.vk.exception.user.RootUserException;
-import org.ez.vk.helper.WebHelper;
+import org.ez.vk.helper.web.WebHelper;
 import org.ez.vk.service.AccountService;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +30,8 @@ public class AccountServiceImpl implements AccountService
 	AccountFactory accountFactory;
 	@Autowired
 	AccountDao accountDao;
+	@Autowired
+	WebHelper webHelper;
 
 	public final static String ACCOUNT_ALREADY_EXIST = "account already exists";
 	private final static String BAD_CREDENTIALS = "Login or pass wrong";
@@ -43,7 +45,7 @@ public class AccountServiceImpl implements AccountService
 		String urlToGetAccount = getURLToGetAccount(accountServiceDTO);
 		String response;
 		try {
-			response = WebHelper.gerStringByUrl(urlToGetAccount);		
+			response = webHelper.getStringByUrl(urlToGetAccount);		
 		} catch (IOException e) {
 			throw new BadCredentialsException(BAD_CREDENTIALS);
 		}

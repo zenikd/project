@@ -2,15 +2,14 @@ package org.ez.vk.vk.ui.command.task;
 
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.task.impl.CountUnicPostTaskImpl;
+import org.ez.vk.task.impl.EarnPointTask;
 import org.ez.vk.vk.ui.command.RootCommand;
 
-public class AddComment extends RootCommand {
+public class EarnPoint extends RootCommand {
 	protected void execute() {
-		CountUnicPostTaskImpl countUnicPostTaskImpl = (CountUnicPostTaskImpl) context.getBean("countUnicPostTaskImpl");
-		Integer count;
+		EarnPointTask earnPointTask = (EarnPointTask) context.getBean("earnPointTask");
 		try {
-			count = countUnicPostTaskImpl.consider();
-			System.out.println(count);
+			earnPointTask.earn();
 		} catch (InternalException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -20,7 +19,7 @@ public class AddComment extends RootCommand {
 
 	@Override
 	protected String getCommandName() {
-		return "count unic post";
+		return "earn point";
 	}
 
 }

@@ -7,8 +7,8 @@ import java.util.Map;
 import org.ez.vk.db.AccountDao;
 import org.ez.vk.entity.db.constant.AccountConst;
 import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.query.SearchDTOQuery;
 import org.ez.vk.entity.query.constant.Operators;
-import org.ez.vk.entity.query.search.FullSearchQuery;
 import org.ez.vk.exception.internal.InternalException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,12 +17,11 @@ import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.exceptions.ApiException;
 import com.vk.api.sdk.exceptions.ClientException;
 import com.vk.api.sdk.httpclient.HttpTransportClient;
+
 @Service
-public class NakrutCommentImpl {
-	private final static VkApiClient vk = new VkApiClient(HttpTransportClient.getInstance());
-	private final static String WORKING = "worki";
-	@Autowired
-	AccountDao accountDao;
+public class NakrutCommentImpl extends RootTask {
+	
+	private final static Integer COUNT_ACCOUNT = 10;
 
 	public void addTask(String href) throws InternalException {
 
@@ -30,8 +29,7 @@ public class NakrutCommentImpl {
 
 	public void executeTask() {
 		try {
-			FullSearchQuery accountSearchDTO = getListAccount();
-			List<AccountVk> listAccount = accountDao.select(accountSearchDTO);
+			List<AccountVk> listAccount= getListWorkAccount(COUNT_ACCOUNT);
 			AccountVk accountVk = listAccount.get(0);
 
 			Map<Integer, Integer> listPost = new HashMap<Integer, Integer>();
@@ -54,16 +52,10 @@ public class NakrutCommentImpl {
 
 	private void addComment(Map.Entry<Integer, Integer> post, AccountVk accountVk) throws Exception {
 		for (Integer i = 1; i < 8; i++) {
-			vk.wall().createComment(accountVk.getUserActor(), post.getValue()).ownerId(post.getKey()).message(i.toString()).execute();
+			vk.wall().createComment(accountVk.getUserActor(), post.getValue()).ownerId(post.getKey())
+					.message(i.toString()).execute();
 			Thread.sleep(2000);
 		}
-	}
-
-	private FullSearchQuery getListAccount() {
-		FullSearchQuery accountSearchDTO = new FullSearchQuery();
-		accountSearchDTO.setLimit(10).getSearchQuery().addSearchParam(AccountConst.TYPE, Operators.$EQ, WORKING);
-
-		return accountSearchDTO;
 	}
 
 }

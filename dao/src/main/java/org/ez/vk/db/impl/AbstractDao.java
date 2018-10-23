@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.ez.vk.entity.db.BaseEntity;
-import org.ez.vk.entity.query.search.FullSearchQuery;
+import org.ez.vk.entity.query.SearchDTOQuery;
+import org.ez.vk.entity.query.update.UpdateDTOQuery;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.exception.user.RootUserException;
 import org.ez.vk.helper.DateHelper;
@@ -13,9 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.result.UpdateResult;
 
-public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<Entity, FullSearchQuery>
-{
+public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<Entity, SearchDTOQuery> {
 	protected JsonHelper jsonHelper;
 	public MongoCollection<BasicDBObject> collection;
 	@Autowired
@@ -24,33 +25,43 @@ public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<En
 	public AbstractDao() {
 		jsonHelper = new JsonHelper<Entity>();
 		setCollection();
-		
+
 	}
 
-	public List<Entity> select(FullSearchQuery searchDTO) throws InternalException {
+	public List<Entity> select(SearchDTOQuery searchDTO) throws InternalException {
 		BasicDBObject searchQuery = searchDTO.getSearchQuery().getQuery();
 		List<BasicDBObject> searchResult = collection.find(searchQuery).limit(searchDTO.getLimit())
 				.into(new ArrayList<BasicDBObject>());
-		return convetJsonToEntity(searchResult);
+		return convetListJsonToEntity(searchResult);
 	}
 
-	public void addEntity(Entity entity) throws InternalException , RootUserException
-	{
+	public void addEntity(Entity entity) throws InternalException, RootUserException {
 		BasicDBObject dbObject = jsonHelper.entityToDBObject((BaseEntity) entity);
 		collection.insertOne(dbObject);
 	}
 
-	public void addListEntity(List<Entity> entities) throws  InternalException , RootUserException {
-		List<BasicDBObject> document= new ArrayList();
+	public void addListEntity(List<Entity> entities) throws InternalException, RootUserException {
+		List<BasicDBObject> document = new ArrayList();
 		for (Entity entity : entities) {
 			document.add(jsonHelper.entityToDBObject((BaseEntity) entity));
 		}
 		collection.insertMany(document);
 	}
-
+	
+	public Integer updateEntity(UpdateDTOQuery updateFullQuery) {
+		Integer limit = updateFullQuery.getLimit();
+		for (int count = 0; count < limit; count++) {
+			BasicDBObject searchQuery = updateFullQuery.getSearchQuery().getQuery();
+			BasicDBObject updateQuery = updateFullQuery.getUpdateQuery().getQuery();
+			UpdateResult result = collection.updateOne(searchQuery, updateQuery);
+			if(result.getModifiedCount() == 0) return count;
+		}
+		return limit;
+	}
+	
 	
 
-	protected List<Entity> convetJsonToEntity(List<BasicDBObject> resultSearchJson) throws InternalException {
+	protected List<Entity> convetListJsonToEntity(List<BasicDBObject> resultSearchJson) throws InternalException {
 		List<Entity> listResultEntity = new ArrayList();
 		for (BasicDBObject json : resultSearchJson) {
 			listResultEntity.add((Entity) jsonHelper.bsonToEntity(json, getEntityInstance()));
@@ -59,5 +70,6 @@ public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<En
 	}
 
 	protected abstract Entity getEntityInstance();
+
 	protected abstract void setCollection();
 }

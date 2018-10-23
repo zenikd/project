@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.ez.vk.db.impl.AbstractDao;
-import org.ez.vk.entity.query.search.FullSearchQuery;
+import org.ez.vk.entity.query.SearchDTOQuery;
 import org.ez.vk.exception.internal.InternalException;
 
 import com.mongodb.BasicDBObject;
@@ -17,7 +17,7 @@ public abstract class ReservableDao<Entity> extends AbstractDao<Entity>
 	private static final Long MILSEC_IN_MINUTE = 600000l;
 	private static final Long MILSEC_IN_QUERY = 20000l;
 
-	protected void reserveAccount(FullSearchQuery searchDTO) throws InternalException {
+	protected void reserveAccount(SearchDTOQuery searchDTO) throws InternalException {
 		List<BasicDBObject> listDBObjects = new ArrayList<BasicDBObject>();
 		//resevedNotUsedEntity(searchDTO);
 	}
