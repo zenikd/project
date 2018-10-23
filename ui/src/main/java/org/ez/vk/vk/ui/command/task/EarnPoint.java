@@ -1,13 +1,12 @@
 package org.ez.vk.vk.ui.command.task;
 
 import org.ez.vk.exception.internal.InternalException;
-import org.ez.vk.task.impl.CountUnicPostTaskImpl;
-import org.ez.vk.task.impl.EarnPointTask;
+import org.ez.vk.task.impl.point.EarnPointTask2;
 import org.ez.vk.vk.ui.command.RootCommand;
 
 public class EarnPoint extends RootCommand {
 	protected void execute() {
-		EarnPointTask earnPointTask = (EarnPointTask) context.getBean("earnPointTask");
+		EarnPointTask2 earnPointTask = (EarnPointTask2) context.getBean("earnPointTask2");
 		try {
 			earnPointTask.earn();
 		} catch (InternalException e) {

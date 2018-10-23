@@ -14,6 +14,24 @@ public class AccountVk extends ReservableEntity
 	private Integer countComment;
 	private Integer countQuery;
 	private Integer countLoad;
+	private String likestSiteToken;
+	private String likestSiteCookie;
+
+	public String getLikestSiteToken() {
+		return likestSiteToken;
+	}
+
+	public void setLikestSiteToken(String likestSiteToken) {
+		this.likestSiteToken = likestSiteToken;
+	}
+
+	public String getLikestSiteCookie() {
+		return likestSiteCookie;
+	}
+
+	public void setLikestSiteCookie(String likestSiteCookie) {
+		this.likestSiteCookie = likestSiteCookie;
+	}
 
 	public Integer getCountComment() {
 		return countComment;

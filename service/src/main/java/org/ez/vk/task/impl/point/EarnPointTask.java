@@ -1,4 +1,4 @@
-package org.ez.vk.task.impl;
+package org.ez.vk.task.impl.point;
 
 import java.io.IOException;
 import java.util.List;
@@ -8,7 +8,9 @@ import java.util.regex.Pattern;
 import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.exception.internal.EmptyRequest;
 import org.ez.vk.exception.internal.InternalException;
-import org.ez.vk.helper.web.LikestSite;
+import org.ez.vk.helper.web.UrlRequestParam;
+import org.ez.vk.helper.web.WebHelper;
+import org.ez.vk.task.impl.RootTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +21,9 @@ import com.vk.api.sdk.exceptions.ClientException;
 @Service
 public class EarnPointTask extends RootTask {
 	@Autowired
-	LikestSite likestSite;
+	WebHelper webHelper;
+	
+	
 
 	public void earn() throws InternalException {
 		List<AccountVk> listAccount = getListWorkAccount(1);

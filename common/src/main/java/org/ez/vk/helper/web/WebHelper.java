@@ -21,8 +21,6 @@ public class WebHelper {
 			
 			connection = (HttpURLConnection) urlPath.openConnection();
 			connection.setRequestMethod("GET");
-			connection.setRequestProperty("Cookie",
-					"_ym_uid=1540235407581242675; _ym_d=1540235407; _ym_visorc_19178605=w; _ga=GA1.2.730229691.1540235407; _gid=GA1.2.1361554786.1540235407; has_js=1; _ym_isad=2; SESSeb75810f03a0895d9ff136a416f45948=GiN7YRwli4iiQooz4m97VubZ3nMI11DjTDiMUqD-Cd0");
 			connection.setDoOutput(true);
 			
 			// Send request
@@ -42,6 +40,7 @@ public class WebHelper {
 				response.append('\r');
 			}
 			rd.close();
+			System.out.println(connection.getHeaderFields().get("Set-Cookie"));
 			return response.toString();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -52,11 +51,49 @@ public class WebHelper {
 			}
 		}
 	}
+	
+	public  UrlResponseParam urlResponseParam(UrlRequestParam urlParam) throws InternalException {
+		HttpURLConnection connection = null;
+		try {
 
-	protected void setConnection(HttpURLConnection connection, URL urlPath) throws IOException {
-		connection = (HttpURLConnection) urlPath.openConnection();
-		connection.setRequestMethod("GET");
-		connection.setDoOutput(true);
+			URL urlPath = new URL(urlParam.getUrl());
+			
+			connection = (HttpURLConnection) urlPath.openConnection();
+			connection.setRequestMethod("GET");
+			connection.setRequestProperty("Cookie",
+					urlParam.getCookie());
+			connection.setDoOutput(true);
+			
+			// Send request
+			DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
+			wr.close();
+
+			// Get Response
+			InputStream is = null;
+
+			is = connection.getInputStream();
+
+			BufferedReader rd = new BufferedReader(new InputStreamReader(is));
+			StringBuilder response = new StringBuilder(); // or StringBuffer if Java version 5+
+			String line;
+			while ((line = rd.readLine()) != null) {
+				response.append(line);
+				response.append('\r');
+			}
+			rd.close();
+			UrlResponseParam urlResponseParam = new UrlResponseParam(response.toString());
+			urlResponseParam.setCookie(connection.getHeaderFields().get("Set-Cookie").toString());
+			return urlResponseParam;
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new InternalException();
+		} finally {
+			if (connection != null) {
+				connection.disconnect();
+			}
+		}
 	}
+
+	
 
 }

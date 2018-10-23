@@ -6,8 +6,8 @@ import java.util.regex.Pattern;
 public class Test {
 
 	public static void main(String[] args) {
-		Pattern p = Pattern.compile("/[a-z]+([\\d]+)\"");
-		Matcher m = p.matcher("{\"status\":\"SUCCESS\",\"link\":\"http://vk.com/club97574502\"}");
+		Pattern statusTextPattern = Pattern.compile("\"user_token\":\"([^\"]+)\"");
+		Matcher m = statusTextPattern.matcher("{\"status\":\"SUCCESS\",\"user_token\":\"-xkJSnQq44k2Datkj756PTLb-QpQDmGUQ_wCY12bp1I\"}");
 		if (m.find()) {
 			System.out.println(m.group(1));
 		}
