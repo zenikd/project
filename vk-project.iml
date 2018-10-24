@@ -14,6 +14,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="service" />
+    <orderEntry type="library" name="Maven: org.ez.vk:dao:0.0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.ez.vk:common:0.0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.0.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.0.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.0.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20180813" level="project" />
+    <orderEntry type="library" name="Maven: org.ez.vk:ui:0.0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: com.vk.api:sdk:0.5.12" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.1" level="project" />
