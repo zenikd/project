@@ -22,63 +22,19 @@ import com.vk.api.sdk.exceptions.ClientException;
 public class EarnPointTask2 extends RootTask {
 	@Autowired
 	WebHelper webHelper;
-
+	@Autowired
+	LikestAuthorizer likestAuthorizer;
+	
 	private final static Pattern oidPattern = Pattern.compile("oid\":\"([\\d]+)");
 	private final static Pattern taskPattern = Pattern.compile("/[a-z]+([\\d]+)\"");
-	private final static Pattern statusIDPattern = Pattern.compile("\"status_id\":\"([\\d]+)\"");
-	private final static Pattern statusTextPattern = Pattern.compile("\"status_status\":\"([^\"]+)\"");
-	private final static Pattern userTokenPattern = Pattern.compile("\"user_token\":\"([^\"]+)\"");
+	
 
 	public void earn() throws InternalException {
 		List<AccountVk> listAccount = getListWorkAccount(1);
 		AccountVk accountVk = listAccount.get(0);
-		authorize(accountVk);
+		likestAuthorizer.authorize(accountVk);
 		int a = 1;
 		a++;
-	}
-
-	private void authorize(AccountVk accountVk) throws InternalException {
-		UserActor actor =accountVk.getUserActor();
-		String statusResponse = webHelper.getStringByUrl(
-				String.format("http://likest.ru/api/users.login?authname=id%s&validation=status", actor.getId()));
-		Matcher statusTextMatcher = statusTextPattern.matcher(statusResponse);
-		String status;
-		if (statusTextMatcher.find()) {
-			status = statusTextMatcher.group(1);
-		} else {
-			throw new InternalException();
-		}
-
-		try {
-			vk.status().set(actor).text(status).execute();
-		} catch (ApiException e) {
-			throw new CaptchaException();
-		} catch (ClientException e) {
-			throw new InternalException();
-		}
-
-		Matcher statusIdMatcher = statusIDPattern.matcher(statusResponse);
-		String statusId;
-		if (statusIdMatcher.find()) {
-			statusId = statusIdMatcher.group(1);
-		} else {
-			throw new InternalException();
-		}
-
-		UrlRequestParam urlRequestParam = new UrlRequestParam(
-				String.format("http://likest.ru/api/users.login?authname=id%s&status_id=%s", actor.getId(), statusId));
-
-		UrlResponseParam urlResponseParam =  webHelper.urlResponseParam(urlRequestParam);
-		
-		Matcher userTokenMatcher = userTokenPattern.matcher(urlResponseParam.getBody());
-		String userToken;
-		if (userTokenMatcher.find()) {
-			accountVk.setLikestSiteToken(userTokenMatcher.group(1));
-			accountVk.setLikestSiteCookie(urlResponseParam.getCookie());
-		} else {
-			throw new InternalException();
-		}
-
 	}
 
 }

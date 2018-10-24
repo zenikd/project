@@ -17,7 +17,7 @@ public class AdderAccountByPrintCommand extends RootCommand{
 	
 	public AdderAccountByPrintCommand(){
 		listType.add("admin");
-		listType.add("wor");
+		listType.add("wo");
 		
 		
 	}

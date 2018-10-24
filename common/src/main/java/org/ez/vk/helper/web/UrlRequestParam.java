@@ -10,7 +10,7 @@ import org.ez.vk.exception.internal.EmptyRequest;
 import org.ez.vk.exception.internal.InternalException;
 import org.springframework.stereotype.Service;
 
-@Service
+
 public class UrlRequestParam {
 	private String url;
 	private String cookie;
