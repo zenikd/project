@@ -18,7 +18,7 @@ import com.vk.api.sdk.client.actors.UserActor;
 import com.vk.api.sdk.exceptions.ApiException;
 import com.vk.api.sdk.exceptions.ClientException;
 
-@Service
+
 public class EarnPointTask extends RootTask {
 	@Autowired
 	WebHelper webHelper;

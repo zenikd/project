@@ -14,9 +14,9 @@ public class ReserveAccountDTOQuery extends ReserveDTOQuery {
 	}
 
 	private void setResetFiled() {
-		resetFiled.addSearchParam(Operators.$SET, AccountConst.COUNT_COMMENT, 0);
-		resetFiled.addSearchParam(Operators.$SET, AccountConst.COUNT_LOAD, 0);
-		resetFiled.addSearchParam(Operators.$SET, AccountConst.COUNT_QUERY, 0);
+		resetFiled.addQueryParam(Operators.$SET, AccountConst.COUNT_COMMENT, 0);
+		resetFiled.addQueryParam(Operators.$SET, AccountConst.COUNT_LOAD, 0);
+		resetFiled.addQueryParam(Operators.$SET, AccountConst.COUNT_QUERY, 0);
 	}
 
 	public DBQuery getResetFiled() {

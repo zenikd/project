@@ -14,4 +14,6 @@ public class AccountConst extends ReservableConst {
 	public final static String COUNT_COMMENT = "countComment";
 	public final static String COUNT_LOAD = "countLoad";
 	public final static String COUNT_QUERY = "countQuery";
+	public final static String LIKEST_TOKEN = "likestSiteToken";
+	public final static String LIKEST_COOKIE = "likestSiteCookie";
 }

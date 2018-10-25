@@ -24,7 +24,7 @@ public class RootTask {
 		ReserveAccountDTOQuery reserveDTO = new ReserveAccountDTOQuery();
 		reserveDTO
 			.setLimit(count)
-			.getSearchQuery().addSearchParam(AccountConst.TYPE, Operators.$EQ, WORKING);				
+			.getSearchQuery().addQueryParam(AccountConst.TYPE, Operators.$EQ, WORKING);				
 		return accountDao.select(reserveDTO);
 	}
 }

@@ -13,16 +13,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class WebHelper {
-	public  String getStringByUrl(String url) throws InternalException {
+	public String getStringByUrl(String url) throws InternalException {
 		HttpURLConnection connection = null;
 		try {
 
 			URL urlPath = new URL(url);
-			
+
 			connection = (HttpURLConnection) urlPath.openConnection();
 			connection.setRequestMethod("GET");
 			connection.setDoOutput(true);
-			
+
 			// Send request
 			DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
 			wr.close();
@@ -51,7 +51,7 @@ public class WebHelper {
 			}
 		}
 	}
-	
+
 	public  UrlResponseParam urlResponseParam(UrlRequestParam urlParam) throws InternalException {
 		HttpURLConnection connection = null;
 		try {
@@ -82,7 +82,9 @@ public class WebHelper {
 			}
 			rd.close();
 			UrlResponseParam urlResponseParam = new UrlResponseParam(response.toString());
-			urlResponseParam.setCookie(connection.getHeaderFields().get("Set-Cookie").toString());
+			Object cookie = connection.getHeaderFields().get("Set-Cookie");
+			if(cookie != null)
+			urlResponseParam.setCookie(removeCookieBacket(cookie.toString()));
 			return urlResponseParam;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -94,6 +96,8 @@ public class WebHelper {
 		}
 	}
 
-	
+	private String removeCookieBacket(String cookie) {
+		return cookie.substring(1, cookie.length() - 1);
+	}
 
 }

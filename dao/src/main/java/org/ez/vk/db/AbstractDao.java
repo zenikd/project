@@ -9,4 +9,5 @@ public interface AbstractDao<Entity, SearchDTO> {
 	public void addEntity(Entity entity) throws  InternalException , RootUserException;
 	public void addListEntity(List<Entity> entities) throws  InternalException , RootUserException;
 	public List<Entity> select(SearchDTO searchDTO) throws InternalException ;
+	public void updateEntity(Entity entity) throws InternalException;
 }

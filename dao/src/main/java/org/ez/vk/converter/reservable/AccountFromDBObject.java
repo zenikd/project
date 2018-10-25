@@ -23,6 +23,8 @@ public class AccountFromDBObject extends ReservableConverterFromDBObject<Account
 		accountVk.setCountComment(basicDBObject.getInt(AccountConst.COUNT_COMMENT));
 		accountVk.setCountLoad(basicDBObject.getInt(AccountConst.COUNT_LOAD));
 		accountVk.setCountQuery(basicDBObject.getInt(AccountConst.COUNT_QUERY));
+		accountVk.setLikestSiteToken(basicDBObject.getString(AccountConst.LIKEST_TOKEN));
+		accountVk.setLikestSiteCookie(basicDBObject.getString(AccountConst.LIKEST_COOKIE));
 		return super.setEntity(basicDBObject, accountVk);
 	}
 	

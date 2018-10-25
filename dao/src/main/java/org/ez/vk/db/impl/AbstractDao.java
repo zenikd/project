@@ -4,13 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.ez.vk.entity.db.BaseEntity;
+import org.ez.vk.entity.db.constant.BaseEntityConst;
+import org.ez.vk.entity.query.DBQuery;
 import org.ez.vk.entity.query.SearchDTOQuery;
+import org.ez.vk.entity.query.constant.Operators;
 import org.ez.vk.entity.query.update.UpdateDTOQuery;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.exception.user.RootUserException;
 import org.ez.vk.helper.DateHelper;
 import org.ez.vk.helper.JsonHelper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.expression.spel.ast.Operator;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.MongoCollection;
@@ -57,6 +61,16 @@ public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<En
 			if(result.getModifiedCount() == 0) return count;
 		}
 		return limit;
+	}
+	
+	
+	public void updateEntity(Entity entity) throws InternalException {
+		BaseEntity baseEntity = (BaseEntity) entity;
+		DBQuery idQuery = new DBQuery();
+		idQuery.addQueryParam(BaseEntityConst._ID, Operators.$EQ, baseEntity.getObjectId());		
+		BasicDBObject updateQuery = new BasicDBObject();
+		updateQuery.append(Operators.$SET, jsonHelper.entityToDBObject(baseEntity));
+		collection.updateOne(idQuery.getQuery(), updateQuery);
 	}
 	
 	
