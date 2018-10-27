@@ -16,7 +16,7 @@ import com.vk.api.sdk.httpclient.HttpTransportClient;
 
 public class RootTask {
 	protected final static VkApiClient vk = new VkApiClient(HttpTransportClient.getInstance());
-	protected final static String WORKING = "wo";
+	protected final static String WORKING = "w";
 	@Autowired
 	protected AccountDao accountDao;
 	

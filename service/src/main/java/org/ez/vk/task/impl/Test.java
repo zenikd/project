@@ -6,10 +6,10 @@ import java.util.regex.Pattern;
 public class Test {
 
 	public static void main(String[] args) {
-		Pattern statusTextPattern  = Pattern.compile("\"like_like\":\"([^\"]+)\"");
-		Matcher m = statusTextPattern.matcher("{\"status\":\"VALIDATION_LIKE\",\"like_id\":\"290620\",\"like_like\":\"https://vk.com/photo329795391_456239118\"}");
+		Pattern statusTextPattern  = Pattern.compile("reward\":\"([\\d]+)");
+		Matcher m = statusTextPattern.matcher(" \"reward\":\"1\",");
 		if (m.find()) {
-			System.out.println(m.group(1));
+			System.out.println(Integer.parseInt(m.group(1)));
 		}
 	}
 
