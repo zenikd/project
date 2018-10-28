@@ -40,7 +40,6 @@ public class WebHelper {
 				response.append('\r');
 			}
 			rd.close();
-			System.out.println(connection.getHeaderFields().get("Set-Cookie"));
 			return response.toString();
 		} catch (Exception e) {
 			e.printStackTrace();

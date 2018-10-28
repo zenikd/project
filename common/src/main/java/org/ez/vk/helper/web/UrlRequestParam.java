@@ -1,16 +1,5 @@
 package org.ez.vk.helper.web;
 
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import org.ez.vk.exception.internal.EmptyRequest;
-import org.ez.vk.exception.internal.InternalException;
-import org.springframework.stereotype.Service;
-
-
 public class UrlRequestParam {
 	private String url;
 	private String cookie;
