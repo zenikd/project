@@ -21,6 +21,13 @@
 			<artifactId>dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!-- Log -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log.version}</version>
+		</dependency>
+		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

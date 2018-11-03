@@ -8,6 +8,7 @@ import org.ez.vk.task.impl.point.TaskParam;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.vk.api.sdk.client.VkApiClient;
+import com.vk.api.sdk.exceptions.ApiAuthException;
 import com.vk.api.sdk.exceptions.ApiException;
 import com.vk.api.sdk.exceptions.ClientException;
 import com.vk.api.sdk.httpclient.HttpTransportClient;
@@ -21,6 +22,7 @@ public abstract class AbstractOidTask {
 		try {
 			Thread.sleep(5000);
 			taskBody(accountVk, taskParam);
+
 		} catch (ApiException e) {
 			throw new InternalException();
 		} catch (ClientException e) {

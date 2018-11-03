@@ -1,5 +1,6 @@
 package org.ez.vk.task.impl.point.task;
 
+import org.apache.log4j.Logger;
 import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.helper.TextHelper;
@@ -16,10 +17,13 @@ public class CommentTask extends AbstractNoOidTask {
 	@Autowired
 	TextHelper textHelper;
 
+	private static final Logger log = Logger.getLogger(CommentTask.class);
+
 	@Override
 	protected void taskBody(AccountVk accountVk)
 			throws ApiException, ClientException, InterruptedException, InternalException {
-		Thread.sleep(5000);
+		log.info(accountVk.getUserName() + " start comment task");
+		Thread.sleep(2000);
 		CommentParam commentParam;
 		try {
 			commentParam = taskHelper.getCommentTask(accountVk);
@@ -28,11 +32,11 @@ public class CommentTask extends AbstractNoOidTask {
 			execute(accountVk);
 			return;
 		}
-	
+
 		if (commentParam.getStatus().equals("ERR_NO_ORDERS")) {
+			log.info("Comment task isn't available in accoun " + accountVk.getUserName());
 			throw new TaskAbsentException();
 		}
-		System.out.println(accountVk.getUserName() + " start comment task");
 		if (commentParam.getObject_place().equals("wall")) {
 			vk.wall().createComment(accountVk.getUserActor(), Integer.parseInt(commentParam.getId()[1]))
 					.ownerId(Integer.parseInt(commentParam.getId()[0])).message(commentParam.getMessage()).execute();
@@ -43,10 +47,10 @@ public class CommentTask extends AbstractNoOidTask {
 			vk.board().createComment(accountVk.getUserActor(), Integer.parseInt(commentParam.getId()[0]),
 					Integer.parseInt(commentParam.getId()[0])).execute();
 		}
-		System.out.println("sleep");
-		Thread.sleep(120000);
+		log.info(accountVk.getUserName() + " add comment and start sleep");
+		VkSearch.sleep(12, accountVk);
 
-		System.out.println(accountVk.getUserName() + " over comment task");
+		log.info(accountVk.getUserName() + " over comment task");
 
 	}
 
