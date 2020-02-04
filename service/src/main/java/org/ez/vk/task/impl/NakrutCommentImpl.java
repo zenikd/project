@@ -4,20 +4,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.ez.vk.db.AccountDao;
-import org.ez.vk.entity.db.constant.AccountConst;
 import org.ez.vk.entity.db.reservable.AccountVk;
-import org.ez.vk.entity.query.SearchDTOQuery;
-import org.ez.vk.entity.query.constant.Operators;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.helper.TextHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.vk.api.sdk.client.VkApiClient;
-import com.vk.api.sdk.exceptions.ApiException;
-import com.vk.api.sdk.exceptions.ClientException;
-import com.vk.api.sdk.httpclient.HttpTransportClient;
 
 @Service
 public class NakrutCommentImpl extends RootTask {

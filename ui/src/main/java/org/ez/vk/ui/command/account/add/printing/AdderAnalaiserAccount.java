@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.ez.vk.entity.AccountServiceDTO;
+import org.ez.vk.enums.UserTypeEnum;
 import org.ez.vk.service.AccountService;
 import org.ez.vk.ui.command.RootCommand;
 import org.ez.vk.ui.command.common.ConsoleHelper;
@@ -16,8 +17,8 @@ public class AdderAnalaiserAccount extends RootCommand{
 	private List<String> listType = new ArrayList();	
 	
 	public AdderAnalaiserAccount(){
-		listType.add("analizaer");
-		listType.add("searcher");
+		listType.add(UserTypeEnum.SEARCHER.toString());
+		listType.add(UserTypeEnum.WORKING.toString());
 	}
 	
 	

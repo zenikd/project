@@ -15,35 +15,17 @@ import org.apache.poi.ss.usermodel.DataFormat;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.ez.vk.db.AccountDao;
-import org.ez.vk.db.GroupDao;
-import org.ez.vk.entity.db.GroupEntity;
-import org.ez.vk.entity.db.constant.AccountConst;
 import org.ez.vk.entity.db.reservable.AccountVk;
-import org.ez.vk.entity.query.SearchDTOQuery;
-import org.ez.vk.entity.query.constant.Operators;
-import org.ez.vk.exception.internal.InternalException;
-import org.ez.vk.exception.user.RootUserException;
 import org.ez.vk.task.FinderGroupByProduct;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.vk.api.sdk.actions.Market;
-import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.UserActor;
-import com.vk.api.sdk.exceptions.ApiException;
-import com.vk.api.sdk.exceptions.ClientException;
-import com.vk.api.sdk.httpclient.HttpTransportClient;
 import com.vk.api.sdk.objects.groups.Group;
-import com.vk.api.sdk.objects.groups.GroupFull;
 import com.vk.api.sdk.objects.groups.GroupType;
 import com.vk.api.sdk.objects.market.MarketItem;
 import com.vk.api.sdk.objects.market.MarketItemFull;
 import com.vk.api.sdk.objects.wall.WallPostFull;
-import com.vk.api.sdk.objects.wall.responses.SearchResponse;
 import com.vk.api.sdk.queries.groups.GroupField;
-import com.vk.api.sdk.queries.market.MarketGetByIdQuery;
-import com.vk.api.sdk.queries.market.MarketGetQuery;
 
 @Service
 public class FinderGroupByProductImpl extends RootTask implements FinderGroupByProduct

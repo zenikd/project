@@ -8,6 +8,7 @@ import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.entity.query.SearchDTOQuery;
 import org.ez.vk.entity.query.constant.Operators;
 import org.ez.vk.entity.query.update.reserve.account.ReserveAccountDTOQuery;
+import org.ez.vk.enums.UserTypeEnum;
 import org.ez.vk.exception.internal.InternalException;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -16,7 +17,6 @@ import com.vk.api.sdk.httpclient.HttpTransportClient;
 
 public class RootTask {
 	protected final static VkApiClient vk = new VkApiClient(HttpTransportClient.getInstance());
-	protected final static String WORKING = "analizaer";
 	@Autowired
 	protected AccountDao accountDao;
 	
@@ -29,7 +29,7 @@ public class RootTask {
 	}
 	
 	protected List<AccountVk> getListWorkAccount(Integer count) throws InternalException {
-		return this.getListWorkAccount(count, WORKING);
+		return this.getListWorkAccount(count, UserTypeEnum.WORKING.toString());
 	}
 	
 	protected void validateAccounts(String type) throws InternalException {

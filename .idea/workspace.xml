@@ -5,87 +5,22 @@
     <option name="CUSTOM_SCOPE_NAME" value="All Places" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8632c89-366e-48ee-b8b6-1f688ac21749" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common (1).iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/dao (1).iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/main2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/test/test1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service (1).iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/main3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/test/test3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/main/main1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/test/test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/ui (1).iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/ui.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vk-project (1).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ez_vk_common_0_0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ez_vk_dao_0_0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/main2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/main2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/StatisticsDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/main1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/main1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/test3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/test3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/vk-token" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/service/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/resources/service-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/resources/service-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/RepostTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/RepostTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/NakrutCommentImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/NakrutCommentImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RootTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RootTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestAuthorizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestAuthorizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestTaskHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestTaskHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/test1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/test1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ui/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/ui/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/resources/ui-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Runner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/MainCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/AddCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/printing/AdderAccountByPrintCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vk-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vk-project.iml" afterDir="false" />
-    </list>
+    <list default="true" id="d8632c89-366e-48ee-b8b6-1f688ac21749" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="ProjectId" id="1XKedws9tZTBcjsCM5vYnNT2xLK" />
   <component name="ProjectViewState">
@@ -146,12 +81,39 @@
       <workItem from="1580840610090" duration="7556000" />
       <workItem from="1580848847823" duration="121000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactor code">
+      <created>1580852780990</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580852780990</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor code" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="646" y="278" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580850289845">
+      <screen x="0" y="0" width="1739" height="947" />
+    </state>
+    <state x="646" y="278" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1739.947@0.0.1739.947" timestamp="1580850289845" />
     <state x="719" y="364" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580809344970">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
@@ -160,30 +122,30 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="629" y="328" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.947@0.0.1739.947" timestamp="1580847008274" />
-    <state x="474" y="70" key="CommitChangelistDialog2" timestamp="1580849070232">
+    <state x="474" y="70" key="CommitChangelistDialog2" timestamp="1580852780475">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state x="474" y="70" key="CommitChangelistDialog2/0.0.1739.947@0.0.1739.947" timestamp="1580849070232" />
+    <state x="474" y="70" key="CommitChangelistDialog2/0.0.1739.947@0.0.1739.947" timestamp="1580852780475" />
     <state x="650" y="230" key="FileChooserDialogImpl" timestamp="1580847534659">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="650" y="230" key="FileChooserDialogImpl/0.0.1739.947@0.0.1739.947" timestamp="1580847534658" />
-    <state width="1696" height="251" key="GridCell.Tab.0.bottom" timestamp="1580848994449">
+    <state width="1696" height="251" key="GridCell.Tab.0.bottom" timestamp="1580852766819">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.bottom/0.0.1739.947@0.0.1739.947" timestamp="1580848994449" />
-    <state width="1696" height="251" key="GridCell.Tab.0.center" timestamp="1580848994449">
+    <state width="1696" height="251" key="GridCell.Tab.0.bottom/0.0.1739.947@0.0.1739.947" timestamp="1580852766819" />
+    <state width="1696" height="251" key="GridCell.Tab.0.center" timestamp="1580852766819">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.center/0.0.1739.947@0.0.1739.947" timestamp="1580848994449" />
-    <state width="1696" height="251" key="GridCell.Tab.0.left" timestamp="1580848994449">
+    <state width="1696" height="251" key="GridCell.Tab.0.center/0.0.1739.947@0.0.1739.947" timestamp="1580852766819" />
+    <state width="1696" height="251" key="GridCell.Tab.0.left" timestamp="1580852766819">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.left/0.0.1739.947@0.0.1739.947" timestamp="1580848994449" />
-    <state width="1696" height="251" key="GridCell.Tab.0.right" timestamp="1580848994449">
+    <state width="1696" height="251" key="GridCell.Tab.0.left/0.0.1739.947@0.0.1739.947" timestamp="1580852766819" />
+    <state width="1696" height="251" key="GridCell.Tab.0.right" timestamp="1580852766819">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.right/0.0.1739.947@0.0.1739.947" timestamp="1580848994449" />
+    <state width="1696" height="251" key="GridCell.Tab.0.right/0.0.1739.947@0.0.1739.947" timestamp="1580852766819" />
     <state x="400" y="130" key="Maven.ArtifactSearchDialog" timestamp="1580809481830">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
@@ -200,6 +162,10 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1739.947@0.0.1739.947" timestamp="1580809101496" />
+    <state x="462" y="208" key="Vcs.Push.Dialog.v2" timestamp="1580852870737">
+      <screen x="0" y="0" width="1739" height="947" />
+    </state>
+    <state x="462" y="208" key="Vcs.Push.Dialog.v2/0.0.1739.947@0.0.1739.947" timestamp="1580852870737" />
     <state x="571" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1580840754164">
       <screen x="0" y="0" width="1739" height="947" />
     </state>

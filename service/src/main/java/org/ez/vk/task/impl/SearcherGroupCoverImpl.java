@@ -1,52 +1,23 @@
 package org.ez.vk.task.impl;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellStyle;
-import org.apache.poi.ss.usermodel.DataFormat;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.ez.vk.db.AccountDao;
-import org.ez.vk.db.GroupDao;
-import org.ez.vk.entity.db.GroupEntity;
-import org.ez.vk.entity.db.constant.AccountConst;
 import org.ez.vk.entity.db.reservable.AccountVk;
-import org.ez.vk.entity.query.SearchDTOQuery;
-import org.ez.vk.entity.query.constant.Operators;
-import org.ez.vk.exception.internal.InternalException;
-import org.ez.vk.exception.user.RootUserException;
+import org.ez.vk.enums.UserTypeEnum;
 import org.ez.vk.task.SearcherGroupCover;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.vk.api.sdk.actions.Market;
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.UserActor;
 import com.vk.api.sdk.exceptions.ApiAuthException;
-import com.vk.api.sdk.exceptions.ApiException;
-import com.vk.api.sdk.exceptions.ClientException;
 import com.vk.api.sdk.httpclient.HttpTransportClient;
 import com.vk.api.sdk.objects.groups.Cover;
 import com.vk.api.sdk.objects.groups.Group;
-import com.vk.api.sdk.objects.groups.GroupFull;
 import com.vk.api.sdk.objects.groups.GroupType;
 import com.vk.api.sdk.objects.market.MarketItem;
-import com.vk.api.sdk.objects.market.MarketItemFull;
 import com.vk.api.sdk.objects.wall.WallPostFull;
-import com.vk.api.sdk.objects.wall.responses.SearchResponse;
 import com.vk.api.sdk.queries.groups.GroupField;
-import com.vk.api.sdk.queries.market.MarketGetByIdQuery;
-import com.vk.api.sdk.queries.market.MarketGetQuery;
 
 @Service
 public class SearcherGroupCoverImpl extends RootTask implements SearcherGroupCover {
@@ -60,12 +31,12 @@ public class SearcherGroupCoverImpl extends RootTask implements SearcherGroupCov
 		for (String tag : tags) {
 
 			try {
-				this.validateAccounts("searcher");
-				this.validateAccounts("analizaer");				
+				this.validateAccounts(UserTypeEnum.SEARCHER.toString());
+				this.validateAccounts(UserTypeEnum.WORKING.toString());
 				
 				
 				List<Group> listGroups = new ArrayList<Group>();
-				List<AccountVk> listAccount = getListWorkAccount(1, "searcher");
+				List<AccountVk> listAccount = getListWorkAccount(1, UserTypeEnum.SEARCHER.toString());
 				UserActor userActor = listAccount.get(0).getUserActor();
 
 				for (int offset = 0; offset < COUNT_GROUP; offset += 100) {
