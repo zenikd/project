@@ -6,78 +6,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8632c89-366e-48ee-b8b6-1f688ac21749" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common (1).iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/dao (1).iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/main2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/test/test1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service (1).iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/main3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/test/test3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/main/main1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/test/test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/ui (1).iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/ui.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vk-project (1).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ez_vk_common_0_0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ez_vk_dao_0_0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/main2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/main2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/StatisticsDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/main1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/main1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/test3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/test3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/vk-token" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/service/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/resources/service-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/resources/service-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/RepostTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/RepostTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/NakrutCommentImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/NakrutCommentImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RootTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RootTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestAuthorizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestAuthorizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestTaskHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestTaskHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/test1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/test1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ui/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/ui/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/resources/ui-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Runner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/MainCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/AddCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/printing/AdderAccountByPrintCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vk-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vk-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/converter/AbstractConverterFromDBObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/converter/reservable/AccountFromDBObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/converter/reservable/ReservableConverterFromDBObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/AbstractDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/GroupDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/AbstractDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/GroupDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/reservable/AccountDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/reservable/ReservableDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/test-classes/org/ez/vk/dao_import_file_system/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/test-classes/org/ez/vk/dao_import_file_system/Eiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/test-classes/org/ez/vk/dao_import_file_system/Rynge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/entity/AccountServiceDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/GeterPost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/account/AccountFSParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/account/AccountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/FinderGroupByProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/FinderPopularGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/FinderPopularPost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/RepostTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/SearcherGroupCover.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CountUnicPostTaskImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CoverSearcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderGroupByProductImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularGroupImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularPostImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/NakrutCommentImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/PostWithValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/RepostTaskImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/RootTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/SearcherGroupCoverImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/BalanceUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/EarnPointTask2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/LikestAuthorizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/LikestTaskHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/LikestWebHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/TaskParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/entity/CommentParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/entity/PollParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/exception/AccessDeniedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/exception/LikestException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/exception/TaskAbsentException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/exception/TaskReservedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/AbstractNoOidTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/AbstractOidTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/AddFriendTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/CommentTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/JoinToGroupTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/PollTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/VkSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/test-classes/user/service/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,12 +147,42 @@
       <workItem from="1580808631001" duration="671000" />
       <workItem from="1580809315435" duration="706000" />
       <workItem from="1580840610090" duration="7556000" />
-      <workItem from="1580848847823" duration="121000" />
+      <workItem from="1580848847823" duration="425000" />
     </task>
+    <task id="LOCAL-00001" summary="Change project structure">
+      <created>1580849039493</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580849039493</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Change project structure">
+      <created>1580849101575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580849101575</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Change project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change project structure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="719" y="364" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580809344970">
@@ -160,10 +193,14 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="629" y="328" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.947@0.0.1739.947" timestamp="1580847008274" />
-    <state x="474" y="70" key="CommitChangelistDialog2" timestamp="1580849070232">
+    <state x="474" y="70" key="CommitChangelistDialog2" timestamp="1580849278089">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state x="474" y="70" key="CommitChangelistDialog2/0.0.1739.947@0.0.1739.947" timestamp="1580849070232" />
+    <state x="474" y="70" key="CommitChangelistDialog2/0.0.1739.947@0.0.1739.947" timestamp="1580849278089" />
+    <state x="93" y="93" width="1553" height="762" key="DiffContextDialog" timestamp="1580849299543">
+      <screen x="0" y="0" width="1739" height="947" />
+    </state>
+    <state x="93" y="93" width="1553" height="762" key="DiffContextDialog/0.0.1739.947@0.0.1739.947" timestamp="1580849299543" />
     <state x="650" y="230" key="FileChooserDialogImpl" timestamp="1580847534659">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
@@ -192,6 +229,10 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="542" y="174" key="NewModule_or_Project.wizard/0.0.1739.947@0.0.1739.947" timestamp="1580840811745" />
+    <state x="698" y="186" key="RollbackChangesDialog" timestamp="1580849224280">
+      <screen x="0" y="0" width="1739" height="947" />
+    </state>
+    <state x="698" y="186" key="RollbackChangesDialog/0.0.1739.947@0.0.1739.947" timestamp="1580849224280" />
     <state x="350" y="50" key="SettingsEditor" timestamp="1580848967921">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
@@ -200,6 +241,10 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1739.947@0.0.1739.947" timestamp="1580809101496" />
+    <state x="462" y="208" key="Vcs.Push.Dialog.v2" timestamp="1580849119159">
+      <screen x="0" y="0" width="1739" height="947" />
+    </state>
+    <state x="462" y="208" key="Vcs.Push.Dialog.v2/0.0.1739.947@0.0.1739.947" timestamp="1580849119159" />
     <state x="571" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1580840754164">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
