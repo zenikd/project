@@ -101,7 +101,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -193,10 +193,10 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="629" y="328" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.947@0.0.1739.947" timestamp="1580847008274" />
-    <state x="474" y="70" key="CommitChangelistDialog2" timestamp="1580849278089">
+    <state x="474" y="70" key="CommitChangelistDialog2" timestamp="1580849314599">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state x="474" y="70" key="CommitChangelistDialog2/0.0.1739.947@0.0.1739.947" timestamp="1580849278089" />
+    <state x="474" y="70" key="CommitChangelistDialog2/0.0.1739.947@0.0.1739.947" timestamp="1580849314599" />
     <state x="93" y="93" width="1553" height="762" key="DiffContextDialog" timestamp="1580849299543">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
@@ -205,22 +205,22 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="650" y="230" key="FileChooserDialogImpl/0.0.1739.947@0.0.1739.947" timestamp="1580847534658" />
-    <state width="1696" height="251" key="GridCell.Tab.0.bottom" timestamp="1580848994449">
+    <state width="1696" height="251" key="GridCell.Tab.0.bottom" timestamp="1580849383448">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.bottom/0.0.1739.947@0.0.1739.947" timestamp="1580848994449" />
-    <state width="1696" height="251" key="GridCell.Tab.0.center" timestamp="1580848994449">
+    <state width="1696" height="251" key="GridCell.Tab.0.bottom/0.0.1739.947@0.0.1739.947" timestamp="1580849383448" />
+    <state width="1696" height="251" key="GridCell.Tab.0.center" timestamp="1580849383448">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.center/0.0.1739.947@0.0.1739.947" timestamp="1580848994449" />
-    <state width="1696" height="251" key="GridCell.Tab.0.left" timestamp="1580848994449">
+    <state width="1696" height="251" key="GridCell.Tab.0.center/0.0.1739.947@0.0.1739.947" timestamp="1580849383448" />
+    <state width="1696" height="251" key="GridCell.Tab.0.left" timestamp="1580849383448">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.left/0.0.1739.947@0.0.1739.947" timestamp="1580848994449" />
-    <state width="1696" height="251" key="GridCell.Tab.0.right" timestamp="1580848994449">
+    <state width="1696" height="251" key="GridCell.Tab.0.left/0.0.1739.947@0.0.1739.947" timestamp="1580849383448" />
+    <state width="1696" height="251" key="GridCell.Tab.0.right" timestamp="1580849383448">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.right/0.0.1739.947@0.0.1739.947" timestamp="1580848994449" />
+    <state width="1696" height="251" key="GridCell.Tab.0.right/0.0.1739.947@0.0.1739.947" timestamp="1580849383448" />
     <state x="400" y="130" key="Maven.ArtifactSearchDialog" timestamp="1580809481830">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
@@ -241,10 +241,10 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1739.947@0.0.1739.947" timestamp="1580809101496" />
-    <state x="462" y="208" key="Vcs.Push.Dialog.v2" timestamp="1580849119159">
+    <state x="462" y="208" key="Vcs.Push.Dialog.v2" timestamp="1580849322637">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state x="462" y="208" key="Vcs.Push.Dialog.v2/0.0.1739.947@0.0.1739.947" timestamp="1580849119159" />
+    <state x="462" y="208" key="Vcs.Push.Dialog.v2/0.0.1739.947@0.0.1739.947" timestamp="1580849322637" />
     <state x="571" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1580840754164">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
