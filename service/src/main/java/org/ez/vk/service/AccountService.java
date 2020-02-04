@@ -6,5 +6,5 @@ import org.ez.vk.exception.user.RootUserException;
 
 public interface AccountService
 {
-	public void addAccount(AccountServiceDTO accountServiceDTO) throws RootUserException, InternalException;
+	void addAccount(AccountServiceDTO accountServiceDTO) throws RootUserException, InternalException;
 }

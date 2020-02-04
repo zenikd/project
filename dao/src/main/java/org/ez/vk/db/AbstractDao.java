@@ -6,8 +6,8 @@ import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.exception.user.RootUserException;
 
 public interface AbstractDao<Entity, SearchDTO> {
-	public void addEntity(Entity entity) throws  InternalException , RootUserException;
-	public void addListEntity(List<Entity> entities) throws  InternalException , RootUserException;
-	public List<Entity> select(SearchDTO searchDTO) throws InternalException ;
-	public void updateEntity(Entity entity) throws InternalException;
+	void addEntity(Entity entity) throws  InternalException , RootUserException;
+	void addListEntity(List<Entity> entities) throws  InternalException , RootUserException;
+	List<Entity> select(SearchDTO searchDTO) throws InternalException ;
+	void updateEntity(Entity entity) throws InternalException;
 }

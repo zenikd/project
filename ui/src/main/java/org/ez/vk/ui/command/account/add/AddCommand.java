@@ -1,11 +1,11 @@
 package org.ez.vk.ui.command.account.add;
 
-import org.ez.vk.ui.command.account.add.printing.AdderAccountByPrintCommand;
+import org.ez.vk.ui.command.account.add.printing.AdderAnalaiserAccount;
 import org.ez.vk.ui.command.RootCommand;
 
 public class AddCommand extends RootCommand{
 	public AddCommand() {
-		listCommands.add(new AdderAccountByPrintCommand());
+		listCommands.add(new AdderAnalaiserAccount());
 	}
 
 	@Override

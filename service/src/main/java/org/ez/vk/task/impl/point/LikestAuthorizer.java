@@ -74,7 +74,7 @@ public class LikestAuthorizer {
 	}
 
 	private void addLike(UserActor actor, Integer ownerId, Integer postId, LikesType likeType)
-			throws CaptchaException, InternalException {
+			throws InternalException {
 		try {
 			vk.likes().add(actor, likeType, postId).ownerId(ownerId).execute();
 		} catch (ApiException e) {
@@ -141,7 +141,7 @@ public class LikestAuthorizer {
 	}
 
 	private void deleteLike(UserActor actor, Integer ownerId, Integer postId, LikesType likeType)
-			throws CaptchaException, InternalException {
+			throws InternalException {
 		try {
 			vk.likes().delete(actor, likeType, postId).ownerId(ownerId).execute();
 		} catch (ApiException e) {

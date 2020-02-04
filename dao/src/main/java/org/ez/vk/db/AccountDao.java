@@ -9,5 +9,6 @@ import org.ez.vk.exception.internal.InternalException;
 
 public interface AccountDao extends AbstractDao<AccountVk, SearchDTOQuery>
 {
-	public List<AccountVk> reserveAccount(ReserveAccountDTOQuery reserveDTO) throws InternalException;
+	List<AccountVk> reserveAccount(ReserveAccountDTOQuery reserveDTO) throws InternalException;
+	void removeAccount(AccountVk accountVk) throws InternalException;
 }

@@ -43,7 +43,7 @@ public class LikestTaskHelper {
 		UrlResponseParam response = webHelper.getResponseWithCookie("http://likest.ru/api/orders.getComments", accountVk);
 		ObjectMapper mapper = new ObjectMapper();
 		try {
-			return (CommentParam) mapper.readValue(response.getBody(), CommentParam.class);
+			return mapper.readValue(response.getBody(), CommentParam.class);
 		} catch (IOException e) {
 			log.info("Task is no longer available");
 			throw new TaskReservedException();
@@ -54,7 +54,7 @@ public class LikestTaskHelper {
 		UrlResponseParam response = webHelper.getResponseWithCookie("http://likest.ru/api/orders.getPolls", accountVk);
 		ObjectMapper mapper = new ObjectMapper();
 		try {
-			return (PollParam) mapper.readValue(response.getBody(), PollParam.class);
+			return mapper.readValue(response.getBody(), PollParam.class);
 		} catch (IOException e) {
 			log.info("Task is no longer available");
 			throw new TaskReservedException();

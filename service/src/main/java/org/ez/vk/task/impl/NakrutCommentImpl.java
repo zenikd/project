@@ -36,14 +36,15 @@ public class NakrutCommentImpl extends RootTask {
 			AccountVk accountVk = listAccount.get(0);
 
 			Map<Integer, Integer> listPost = new HashMap<Integer, Integer>();
-			listPost.put(-161471349, 7);
-			listPost.put(-160698080, 232);
-
+			listPost.put(-161471349, 1226);
+			listPost.put(-160698080, 1146);
+			listPost.put(-18458246, 1833);
+			
 			for (Map.Entry<Integer, Integer> post : listPost.entrySet()) {
-
-				addComment(post, accountVk);
 				Thread.sleep(60000);
-				addComment(post, accountVk);
+				//addComment(post, accountVk);
+				Thread.sleep(60000);
+				//addComment(post, accountVk);
 
 			}
 
@@ -53,12 +54,6 @@ public class NakrutCommentImpl extends RootTask {
 		}
 	}
 
-	private void addComment(Map.Entry<Integer, Integer> post, AccountVk accountVk) throws Exception {
-		for (Integer i = 0; i < 7; i++) {
-			vk.wall().createComment(accountVk.getUserActor(), post.getValue()).ownerId(post.getKey())
-					.message(textHelper.getGoodText()).execute();
-			Thread.sleep(2000);
-		}
-	}
+	
 
 }

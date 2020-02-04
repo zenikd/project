@@ -16,8 +16,7 @@
 
 	<import resource="dao.xml" />
 
-	<context:component-scan
-		base-package="org.ez.vk.service" />
+	<context:component-scan base-package="org.ez.vk.service" />
 
 
 </beans>

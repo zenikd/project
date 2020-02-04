@@ -55,12 +55,9 @@ public class AccountDaoImpl extends AbstractDao<AccountVk> implements AccountDao
 		BasicDBObject document = new BasicDBObject("type", defaultAccount.getType()).append("id",
 				defaultAccount.getUserActor().getId());
 		List<BasicDBObject> foundDocument = collection.find(document).limit(1).into(new ArrayList());
-		if (foundDocument.size() > 0) {
-			return false;
-		}
-		return true;
+        return foundDocument.size() <= 0;
 
-	}
+    }
 
 	@Override
 	protected List<AccountVk> convetListJsonToEntity(List<BasicDBObject> resultSearchJson) throws InternalException {
@@ -83,6 +80,11 @@ public class AccountDaoImpl extends AbstractDao<AccountVk> implements AccountDao
 		MongoDatabase database = mlabClient.getDatabase("test-db");
 		this.collection = database.getCollection("account", BasicDBObject.class);
 
+	}
+	
+	public void removeAccount(AccountVk accountVk) throws InternalException {
+		accountVk.setType("deleted");
+		this.updateEntity(accountVk);
 	}
 
 }
