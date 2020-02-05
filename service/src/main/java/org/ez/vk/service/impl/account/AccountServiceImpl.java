@@ -1,11 +1,16 @@
 package org.ez.vk.service.impl.account;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.ez.vk.db.AccountDao;
 import org.ez.vk.entity.AccountServiceDTO;
+import org.ez.vk.entity.db.constant.AccountConst;
 import org.ez.vk.entity.db.factory.AccountFactory;
 import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.query.constant.Operators;
+import org.ez.vk.entity.query.update.reserve.account.ReserveAccountDTOQuery;
+import org.ez.vk.enums.UserTypeEnum;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.exception.user.BadCredentialsException;
 import org.ez.vk.exception.user.RootUserException;
@@ -94,6 +99,38 @@ public class AccountServiceImpl implements AccountService
 		return String.format(
 				"https://oauth.vk.com/token?grant_type=password&client_id=2274003&client_secret=hHbZxrka2uZ6jB1inYsH&username=%s&password=%s",
 				accountServiceDTO.getLogin(), accountServiceDTO.getPass());
+	}
+
+	public List<AccountVk> getAccountsByType(Integer count, String type) throws InternalException {
+		this.validateAccounts(type);
+		return this.getAccountsWithoutValidation(count, type);
+	}
+
+	public List<AccountVk> getAccountsByType(Integer count) throws InternalException {
+		return this.getAccountsByType(count, UserTypeEnum.WORKING.toString());
+	}
+
+	private void validateAccounts(String type) throws InternalException {
+		List<AccountVk> listAccount = this.getAccountsWithoutValidation(999, type);
+		int counter = 0;
+		for (AccountVk account : listAccount) {
+			try {
+				vk.account().getProfileInfo(account.getUserActor()).execute();
+			} catch (Exception e1) {
+				this.accountDao.removeAccount(account);
+				counter++;
+			}
+		}
+
+		if (counter > 0) System.out.println("Acoounts " + counter + " has been deleted");
+	}
+
+	private List<AccountVk> getAccountsWithoutValidation(Integer count, String type) throws InternalException {
+		ReserveAccountDTOQuery reserveDTO = new ReserveAccountDTOQuery();
+		reserveDTO
+				.setLimit(count)
+				.getSearchQuery().addQueryParam(AccountConst.TYPE, Operators.$EQ, type);
+		return accountDao.select(reserveDTO);
 	}
 
 }

@@ -23,7 +23,7 @@ public class NakrutCommentImpl extends RootTask {
 
 	public void executeTask() {
 		try {
-			List<AccountVk> listAccount= getListWorkAccount(COUNT_ACCOUNT);
+			List<AccountVk> listAccount= this.accountService.getAccountsByType(COUNT_ACCOUNT);
 			AccountVk accountVk = listAccount.get(0);
 
 			Map<Integer, Integer> listPost = new HashMap<Integer, Integer>();

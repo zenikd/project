@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.exception.internal.InternalException;
+import org.ez.vk.service.AccountService;
 import org.ez.vk.task.impl.RootTask;
 import org.ez.vk.task.impl.point.exception.AccessDeniedException;
 import org.ez.vk.task.impl.point.exception.TaskAbsentException;
@@ -35,12 +36,14 @@ public class EarnPointTask2 extends RootTask {
 	PollTask pollTask;
 	@Autowired
 	JoinToGroupTask joinToGroupTask;
+	@Autowired
+	AccountService accountService;
 
 	private static final Logger log = Logger.getLogger(EarnPointTask2.class);
 	private int countTask = 0;
 
 	public void earn() throws InternalException {
-		List<AccountVk> listAccount = getListWorkAccount(10);
+		List<AccountVk> listAccount = this.accountService.getAccountsByType(10);
 		int curAcc = 0;
 		while (true) {
 

@@ -31,12 +31,9 @@ public class SearcherGroupCoverImpl extends RootTask implements SearcherGroupCov
 		for (String tag : tags) {
 
 			try {
-				this.validateAccounts(UserTypeEnum.SEARCHER.toString());
-				this.validateAccounts(UserTypeEnum.WORKING.toString());
-				
 				
 				List<Group> listGroups = new ArrayList<Group>();
-				List<AccountVk> listAccount = getListWorkAccount(1, UserTypeEnum.SEARCHER.toString());
+				List<AccountVk> listAccount = this.accountService.getAccountsByType(1, UserTypeEnum.SEARCHER.toString());
 				UserActor userActor = listAccount.get(0).getUserActor();
 
 				for (int offset = 0; offset < COUNT_GROUP; offset += 100) {
@@ -48,7 +45,7 @@ public class SearcherGroupCoverImpl extends RootTask implements SearcherGroupCov
 					Thread.sleep(1100);
 				}
 
-				listAccount = getListWorkAccount(COUNT_ACCOUNT, "analizaer");
+				listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT, "analizaer");
 				int currentGroup = 0;
 				while (currentGroup < listGroups.size()) {
 					for (AccountVk actor : listAccount) {

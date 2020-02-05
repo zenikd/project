@@ -22,7 +22,7 @@ public class CountUnicPostTaskImpl extends RootTask {
 	DateHelper dateHelper;
 
 	public Integer consider() throws InternalException {
-		List<AccountVk> listAccount = getListWorkAccount(COUNT_ACCOUNT);
+		List<AccountVk> listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT);
 		UserActor actor = listAccount.get(0).getUserActor();
 		return getCount(actor);
 	}

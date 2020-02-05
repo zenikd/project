@@ -19,7 +19,7 @@ public class FinderPopularGroupImpl extends RootTask implements FinderPopularGro
 
 	public void getListGroup(String tag) {
 		try {
-			List<AccountVk> listAccount = getListWorkAccount(COUNT_ACCOUNT);
+			List<AccountVk> listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT);
 			UserActor userActor = listAccount.get(0).getUserActor();
 	
 			for (Group group : vk.groups()

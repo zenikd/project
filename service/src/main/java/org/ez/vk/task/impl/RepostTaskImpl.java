@@ -26,13 +26,13 @@ public class RepostTaskImpl extends RootTask implements RepostTask
 	GroupDao groupDao;
 
 	public void findPostToRepost(String groupName, int count) throws InternalException {
-		List<AccountVk> listAccount = getListWorkAccount(COUNT_ACCOUNT);
+		List<AccountVk> listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT);
 	}
 
 	public void addNewGroupToFound(String town) throws InternalException, RootUserException {
 		try {
 			List<GroupEntity> listGroups = new ArrayList<GroupEntity>();
-			List<AccountVk> listAccount = getListWorkAccount(COUNT_ACCOUNT);
+			List<AccountVk> listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT);
 			UserActor userActor = listAccount.get(0).getUserActor();
 			for (int offset = 0; offset < COUNT_GROUP; offset += 100) {
 				for (Group group : vk.groups().search(userActor, town).count(100).offset(offset).execute().getItems()) {

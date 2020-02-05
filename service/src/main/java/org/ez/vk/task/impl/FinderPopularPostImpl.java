@@ -23,7 +23,7 @@ public class FinderPopularPostImpl extends RootTask implements FinderPopularPost
 	public void getListPost(String tag) {
 		try {
 			List<Group> listGroups = new ArrayList<Group>();
-			List<AccountVk> listAccount = getListWorkAccount(COUNT_ACCOUNT);
+			List<AccountVk> listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT);
 			UserActor userActor = listAccount.get(0).getUserActor();
 			
 			for (int offset = 0; offset < COUNT_GROUP; offset += 100) {

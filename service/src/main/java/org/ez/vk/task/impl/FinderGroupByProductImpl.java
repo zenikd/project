@@ -42,7 +42,7 @@ public class FinderGroupByProductImpl extends RootTask implements FinderGroupByP
 		
 		try {
 			List<Group> listGroups = new ArrayList<Group>();
-			List<AccountVk> listAccount = getListWorkAccount(COUNT_ACCOUNT);
+			List<AccountVk> listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT);
 			UserActor userActor = listAccount.get(0).getUserActor();
 			System.out.println(userActor.getId());
 			for (int offset = 0; offset < COUNT_GROUP; offset += 100) {
