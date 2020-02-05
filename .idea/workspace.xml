@@ -6,26 +6,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8632c89-366e-48ee-b8b6-1f688ac21749" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/GroupHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/AbstractHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupHelperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/GeterPost.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/CountUnicPostTaskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/CountUnicPostTaskImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/GroupHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderGroupByProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderGroupByProductImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularGroupImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularGroupImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularPostImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularPostImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/NakrutCommentImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/NakrutCommentImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RepostTaskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RepostTaskImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RootTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RootTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/SearcherGroupCoverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/SearcherGroupCoverImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/EarnPointTask2.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/EarnPointTask2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/GeterPost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CoverSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CoverSearcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/RootTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/RootTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/SearcherGroupCoverImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/SearcherGroupCoverImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/account/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/account/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CountUnicPostTaskImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CountUnicPostTaskImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CoverSearcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderGroupByProductImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularGroupImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularGroupImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularPostImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/NakrutCommentImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/NakrutCommentImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/PostWithValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/RepostTaskImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/RepostTaskImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/RootTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/SearcherGroupCoverImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/EarnPointTask2.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/EarnPointTask2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,7 @@
       <workItem from="1580809315435" duration="706000" />
       <workItem from="1580840610090" duration="7556000" />
       <workItem from="1580848847823" duration="121000" />
-      <workItem from="1580930081780" duration="1659000" />
+      <workItem from="1580930081780" duration="3477000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor code">
       <created>1580852780990</created>
@@ -125,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580853214715</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Improve validation account logic and move get list account method to account service">
+      <created>1580931987782</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580931987782</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,13 +155,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor code" />
+    <MESSAGE value="Improve validation account logic and move get list account method to account service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve validation account logic and move get list account method to account service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="646" y="278" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580850289845">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="646" y="278" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1739.947@0.0.1739.947" timestamp="1580850289845" />
+    <state x="675" y="185" key="#com.intellij.ide.util.MemberChooser" timestamp="1580933360514">
+      <screen x="0" y="0" width="1739" height="947" />
+    </state>
+    <state x="675" y="185" key="#com.intellij.ide.util.MemberChooser/0.0.1739.947@0.0.1739.947" timestamp="1580933360514" />
     <state x="719" y="364" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580809344970">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
@@ -161,30 +175,30 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="629" y="328" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.947@0.0.1739.947" timestamp="1580847008274" />
-    <state x="474" y="70" key="CommitChangelistDialog2" timestamp="1580852780475">
+    <state x="474" y="70" key="CommitChangelistDialog2" timestamp="1580931987175">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state x="474" y="70" key="CommitChangelistDialog2/0.0.1739.947@0.0.1739.947" timestamp="1580852780475" />
+    <state x="474" y="70" key="CommitChangelistDialog2/0.0.1739.947@0.0.1739.947" timestamp="1580931987175" />
     <state x="650" y="230" key="FileChooserDialogImpl" timestamp="1580847534659">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state x="650" y="230" key="FileChooserDialogImpl/0.0.1739.947@0.0.1739.947" timestamp="1580847534658" />
-    <state width="1696" height="251" key="GridCell.Tab.0.bottom" timestamp="1580931790828">
+    <state width="1696" height="251" key="GridCell.Tab.0.bottom" timestamp="1580933617795">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.bottom/0.0.1739.947@0.0.1739.947" timestamp="1580931790828" />
-    <state width="1696" height="251" key="GridCell.Tab.0.center" timestamp="1580931790828">
+    <state width="1696" height="251" key="GridCell.Tab.0.bottom/0.0.1739.947@0.0.1739.947" timestamp="1580933617795" />
+    <state width="1696" height="251" key="GridCell.Tab.0.center" timestamp="1580933617795">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.center/0.0.1739.947@0.0.1739.947" timestamp="1580931790828" />
-    <state width="1696" height="251" key="GridCell.Tab.0.left" timestamp="1580931790828">
+    <state width="1696" height="251" key="GridCell.Tab.0.center/0.0.1739.947@0.0.1739.947" timestamp="1580933617795" />
+    <state width="1696" height="251" key="GridCell.Tab.0.left" timestamp="1580933617795">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.left/0.0.1739.947@0.0.1739.947" timestamp="1580931790828" />
-    <state width="1696" height="251" key="GridCell.Tab.0.right" timestamp="1580931790828">
+    <state width="1696" height="251" key="GridCell.Tab.0.left/0.0.1739.947@0.0.1739.947" timestamp="1580933617795" />
+    <state width="1696" height="251" key="GridCell.Tab.0.right" timestamp="1580933617795">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state width="1696" height="251" key="GridCell.Tab.0.right/0.0.1739.947@0.0.1739.947" timestamp="1580931790828" />
+    <state width="1696" height="251" key="GridCell.Tab.0.right/0.0.1739.947@0.0.1739.947" timestamp="1580933617795" />
     <state x="400" y="130" key="Maven.ArtifactSearchDialog" timestamp="1580809481830">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
@@ -201,10 +215,10 @@
       <screen x="0" y="0" width="1739" height="947" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1739.947@0.0.1739.947" timestamp="1580809101496" />
-    <state x="462" y="208" key="Vcs.Push.Dialog.v2" timestamp="1580852870737">
+    <state x="462" y="208" key="Vcs.Push.Dialog.v2" timestamp="1580931996269">
       <screen x="0" y="0" width="1739" height="947" />
     </state>
-    <state x="462" y="208" key="Vcs.Push.Dialog.v2/0.0.1739.947@0.0.1739.947" timestamp="1580852870737" />
+    <state x="462" y="208" key="Vcs.Push.Dialog.v2/0.0.1739.947@0.0.1739.947" timestamp="1580931996269" />
     <state x="571" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1580930094538">
       <screen x="0" y="0" width="1739" height="947" />
     </state>

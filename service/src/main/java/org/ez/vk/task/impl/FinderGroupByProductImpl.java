@@ -41,17 +41,8 @@ public class FinderGroupByProductImpl extends RootTask implements FinderGroupByP
 	     Sheet sheet = book.createSheet("Birthdays");
 		
 		try {
-			List<Group> listGroups = new ArrayList<Group>();
-			List<AccountVk> listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT);
-			UserActor userActor = listAccount.get(0).getUserActor();
-			System.out.println(userActor.getId());
-			for (int offset = 0; offset < COUNT_GROUP; offset += 100) {
-				for (Group group : vk.groups().search(userActor, tag).count(100).offset(offset).execute().getItems()) {
-					listGroups.add(group);
-				}
-
-				Thread.sleep(1100);
-			}
+			List<Group> listGroups = this.groupHelper.getListGroupsByTag(tag);
+			UserActor userActor = this.accountService.getAccountsByType(COUNT_ACCOUNT).get(0).getUserActor();
 			
 			int numberRow = 0;
 			int contractLowGroup = 0;
@@ -105,8 +96,7 @@ public class FinderGroupByProductImpl extends RootTask implements FinderGroupByP
 			        Row row = sheet.createRow(numberRow);
 			        
 			        Cell url = row.createCell(0);					        
-			        String groupPrefix = group.getType() == GroupType.GROUP ? "club" : "public";					    
-			        url.setCellValue("https://vk.com/" + groupPrefix +  group.getId());
+			        url.setCellValue(this.groupHelper.getGroupUrl(group));
 			        
 			        Cell name = row.createCell(1);		 
 			        name.setCellValue(group.getName());

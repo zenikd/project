@@ -31,21 +31,10 @@ public class SearcherGroupCoverImpl extends RootTask implements SearcherGroupCov
 		for (String tag : tags) {
 
 			try {
-				
-				List<Group> listGroups = new ArrayList<Group>();
-				List<AccountVk> listAccount = this.accountService.getAccountsByType(1, UserTypeEnum.SEARCHER.toString());
-				UserActor userActor = listAccount.get(0).getUserActor();
 
-				for (int offset = 0; offset < COUNT_GROUP; offset += 100) {
-					for (Group group : vk.groups().search(userActor, tag).count(100).offset(offset).execute()
-							.getItems()) {
-						listGroups.add(group);
-					}
+				List<Group> listGroups = this.groupHelper.getListGroupsByTag(tag);
 
-					Thread.sleep(1100);
-				}
-
-				listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT, "analizaer");
+				List<AccountVk> listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT, "analizaer");
 				int currentGroup = 0;
 				while (currentGroup < listGroups.size()) {
 					for (AccountVk actor : listAccount) {

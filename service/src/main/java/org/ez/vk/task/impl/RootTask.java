@@ -11,6 +11,7 @@ import org.ez.vk.entity.query.update.reserve.account.ReserveAccountDTOQuery;
 import org.ez.vk.enums.UserTypeEnum;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.helper.web.WebHelper;
+import org.ez.vk.helpers.GroupHelper;
 import org.ez.vk.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -21,9 +22,12 @@ public class RootTask {
 	protected final static VkApiClient vk = new VkApiClient(HttpTransportClient.getInstance());
 
 	@Autowired
-	AccountService accountService;
+	protected AccountService accountService;
 
 	@Autowired
 	protected AccountDao accountDao;
+
+	@Autowired
+	protected GroupHelper groupHelper;
 
 }

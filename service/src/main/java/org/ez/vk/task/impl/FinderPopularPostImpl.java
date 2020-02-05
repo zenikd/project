@@ -16,23 +16,13 @@ import com.vk.api.sdk.objects.wall.WallPostFull;
 @Service
 public class FinderPopularPostImpl extends RootTask implements FinderPopularPost
 {
-	private final static Integer COUNT_GROUP = 100;
 	private final static Integer COUNT_ACCOUNT = 1;
 
 
 	public void getListPost(String tag) {
 		try {
-			List<Group> listGroups = new ArrayList<Group>();
-			List<AccountVk> listAccount = this.accountService.getAccountsByType(COUNT_ACCOUNT);
-			UserActor userActor = listAccount.get(0).getUserActor();
-			
-			for (int offset = 0; offset < COUNT_GROUP; offset += 100) {
-				for (Group group : vk.groups().search(userActor, tag).count(50).offset(offset).execute().getItems()) {
-					listGroups.add(group);
-				}
-
-				Thread.sleep(1100);
-			}
+			List<Group> listGroups = this.groupHelper.getListGroupsByTag(tag);
+			UserActor userActor = this.accountService.getAccountsByType(COUNT_ACCOUNT).get(0).getUserActor();
 			
 			List<PostWithValue> list = new ArrayList();
 			for(int i = 0; i < 100; i++) {
@@ -67,8 +57,7 @@ public class FinderPopularPostImpl extends RootTask implements FinderPopularPost
 			    	 if(list.get(99).value <  value ) {
 			    		 PostWithValue postWithValue = new PostWithValue();
 			    		 postWithValue.value = value;
-			    		 String groupPrefix = group.getType() == GroupType.GROUP ? "club" : "public";
-			    		 postWithValue.url = "https://vk.com/" + groupPrefix + group.getId() + "?w=wall-" + group.getId() + "_" + post.getId();
+			    		 postWithValue.url = this.groupHelper.getGroupUrl(group);
 			    		 list.set(99, postWithValue);
 			    		 Collections.sort(list, (d1, d2) -> {
 			    				return (int)(d2.value * 100 - d1.value * 100);

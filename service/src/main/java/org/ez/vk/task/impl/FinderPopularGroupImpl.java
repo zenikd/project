@@ -27,8 +27,7 @@ public class FinderPopularGroupImpl extends RootTask implements FinderPopularGro
 					.sort(GroupsSearchSort.BY_COMMENTS_NUMBER_PER_MEMBERS_NUMBER_RATIO)
 					.execute()
 					.getItems()) {
-				String groupPrefix = group.getType() == GroupType.GROUP ? "club" : "public";
-				System.out.println("https://vk.com/" + groupPrefix + group.getId());
+				System.out.println(this.groupHelper.getGroupUrl(group));
 
 			}		
 			
