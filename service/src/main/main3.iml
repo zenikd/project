@@ -13,5 +13,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi:3.12" level="project" />
+    <orderEntry type="module" module-name="main1" />
+    <orderEntry type="module" module-name="main" />
   </component>
 </module>

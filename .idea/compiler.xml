@@ -4,9 +4,9 @@
     <bytecodeTargetLevel>
       <module name="common" target="8" />
       <module name="dao" target="8" />
-      <module name="project" target="8" />
       <module name="service" target="8" />
       <module name="ui" target="8" />
+      <module name="vk-project" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

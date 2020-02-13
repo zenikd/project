@@ -1,6 +1,5 @@
 package org.ez.vk.ui.command.task;
 
-import org.ez.vk.task.RepostTask;
 import org.ez.vk.task.FinderGroupByProduct;
 import org.ez.vk.ui.command.RootCommand;
 import org.ez.vk.ui.command.common.ConsoleHelper;

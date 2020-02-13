@@ -5,5 +5,5 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class AbstractHelper {
     @Autowired
-    AccountService accountService;
+    protected AccountService accountService;
 }

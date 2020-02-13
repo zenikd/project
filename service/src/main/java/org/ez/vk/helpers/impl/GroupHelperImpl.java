@@ -8,15 +8,20 @@ import com.vk.api.sdk.objects.groups.Group;
 import com.vk.api.sdk.objects.groups.GroupType;
 import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.enums.UserTypeEnum;
-import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.helpers.GroupHelper;
+import org.ez.vk.helpers.impl.AbstractHelper;
+import org.ez.vk.service.AccountService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class GroupHelperImpl extends AbstractHelper implements GroupHelper {
+public class GroupHelperImpl implements GroupHelper {
+    @Autowired
+    protected AccountService accountService;
+
     private final static Integer COUNT_GROUP = 100;
     private final static TransportClient transportClient = HttpTransportClient.getInstance();
     private final static VkApiClient vk = new VkApiClient(transportClient);
