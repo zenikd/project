@@ -2,40 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe489d8-688d-41a3-b8f9-b3822b6d024d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/printing/AdderMultipleAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/GroupFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/GroupFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/GroupHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/AbstractHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupHelperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupHelperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/model/filter/BaseFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/model/filter/BaseFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/AbandonedGroupGetterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/AbandonedGroupGetterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/AdminGetterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/AdminGetterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/CountUnicPostTaskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/CountUnicPostTaskImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderGroupByProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderGroupByProductImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularPostImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularPostImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/SearcherGroupCoverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/SearcherGroupCoverImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/account/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/account/AccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CountUnicPostTaskImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CountUnicPostTaskImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderGroupByProductImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderGroupByProductImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularPostImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularPostImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/PostWithValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/PostWithValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/SearcherGroupCoverImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/SearcherGroupCoverImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/RootCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/RootCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/AddCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/printing/AdderAnalaiserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/printing/AdderAnalaiserAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/common/ConsoleHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/common/ConsoleHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/AbadonedGroupGetterCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/AbadonedGroupGetterCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/AdminGetterCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/AdminGetterCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/FindGroupByProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/FindGroupByProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/FindPopularGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/FindPopularGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/FindPopularPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/FindPopularPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/SearchGroupCover.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/SearchGroupCover.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +86,7 @@
       <workItem from="1581616165301" duration="8576000" />
       <workItem from="1581662034935" duration="1230000" />
       <workItem from="1581765214500" duration="18323000" />
-      <workItem from="1581883215401" duration="378000" />
+      <workItem from="1581883215401" duration="1111000" />
     </task>
     <task id="LOCAL-00001" summary="Add filter and helper to group">
       <created>1581617651357</created>
@@ -126,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581617651357</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add group filter as separate thread">
+      <created>1581883647154</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581883647154</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +123,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add filter and helper to group" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add filter and helper to group" />
+    <MESSAGE value="Add group filter as separate thread" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add group filter as separate thread" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581278973767">
@@ -166,10 +143,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1581275328490" />
-    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1581883598190">
+    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1581883646268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581883598190" />
+    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581883646268" />
     <state width="515" height="438" key="DebuggerActiveHint" timestamp="1581805339000">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -178,22 +155,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581269227553" />
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1581807951398">
+    <state width="1493" height="94" key="GridCell.Tab.0.bottom" timestamp="1581884406099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581807951398" />
-    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1581807951398">
+    <state width="1493" height="94" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581884406099" />
+    <state width="1493" height="94" key="GridCell.Tab.0.center" timestamp="1581884406099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581807951398" />
-    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1581807951398">
+    <state width="1493" height="94" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581884406099" />
+    <state width="1493" height="94" key="GridCell.Tab.0.left" timestamp="1581884406099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581807951398" />
-    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1581807951398">
+    <state width="1493" height="94" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581884406099" />
+    <state width="1493" height="94" key="GridCell.Tab.0.right" timestamp="1581884406099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581807951398" />
+    <state width="1493" height="94" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581884406099" />
     <state width="1493" height="182" key="GridCell.Tab.1.bottom" timestamp="1581805419832">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -214,10 +191,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581269229668" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581617664271">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581883655610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581617664271" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581883655610" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1581883497091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -245,7 +222,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupHelperImpl.java</url>
-          <line>45</line>
+          <line>50</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

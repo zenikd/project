@@ -22,35 +22,8 @@ public class AdminGetterImpl extends RootTask implements AdminGetter {
 
     @Override
     public void getListAdmins(String tag) {
-
-        List<Integer> groups = new ArrayList<>();
-
-
         try {
-            //List<Integer> groups = groupHelper.getListGroupsByTag(tag, 1000);
-
-            Path pathToFile = Paths.get("12.txt");
-
-            // create an instance of BufferedReader
-            // using try with resource, Java 7 feature to close resources
-            try (BufferedReader br = Files.newBufferedReader(pathToFile,
-                    StandardCharsets.US_ASCII)) {
-
-                // read the first line from the text file
-                String line = br.readLine();
-
-                // loop until all lines are read
-                while (line != null) {
-                    groups.add(Integer.parseInt(line));
-                    line = br.readLine();
-                }
-
-            } catch (IOException ioe) {
-                ioe.printStackTrace();
-            }
-
-
-
+            List<Integer> groups = groupHelper.getListGroupIdsFromFile();
 
             FullGroupFilterCriteria groupFilterCriteria = new FullGroupFilterCriteria();
             groupFilterCriteria.setAddAdminsToResponse(true);
