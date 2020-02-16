@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.google.gson.JsonElement;
 import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.helper.DateHelper;
@@ -30,17 +31,9 @@ public class CountUnicPostTaskImpl extends RootTask {
 
     private Integer getCount(UserActor actor) throws InternalException {
         try {
-            Set<Integer> postAuthor = new HashSet();
-            Integer count = 0;
-            Long datePrivDay = dateHelper.getEndPrivDay();
-            Long datePost = new Date().getTime();
-            for (int i = 0; i < 1000; i += 100) {
-                GetResponse posts = vk.wall().get(actor).ownerId(-77541446).offset(i).count(100).execute();
-                setUnicePost(posts, datePost, postAuthor);
-                Thread.sleep(1100);
-                System.out.println(i);
-            }
-            return postAuthor.size();
+            JsonElement response = vk.execute().code(actor, "return API.groups.search({\"offset\": 990, \"q\": \"клиника\"});")
+                    .execute();
+            return 1;
         } catch (Exception e) {
             throw new InternalException();
         }

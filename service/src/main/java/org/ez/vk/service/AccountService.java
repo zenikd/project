@@ -11,6 +11,8 @@ public interface AccountService
 {
 	void addAccount(AccountServiceDTO accountServiceDTO) throws RootUserException, InternalException;
 
+	void addListAccount(List<String> loginPassList, String type);
+
 	List<AccountVk> getAccountsByType(Integer count, String type) throws InternalException;
 
 	List<AccountVk> getAccountsByType(Integer count) throws InternalException;

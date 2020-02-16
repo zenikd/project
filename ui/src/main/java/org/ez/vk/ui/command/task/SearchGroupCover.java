@@ -11,7 +11,7 @@ public class SearchGroupCover extends RootCommand
 			SearcherGroupCover nakrutCommentImpl;
 			nakrutCommentImpl = (SearcherGroupCover) context.getBean("searcherGroupCoverImpl");
 			print("Write tag");
-			String tag = ConsoleHelper.writeText();
+			String tag = ConsoleHelper.readLine();
 			nakrutCommentImpl.getListGroup(tag);
 			print("OK");
 			} catch (Exception e) {

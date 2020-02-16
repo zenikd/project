@@ -40,7 +40,8 @@ public class FinderGroupByProductImpl extends RootTask implements FinderGroupByP
         Sheet sheet = book.createSheet("Birthdays");
 
         try {
-            List<Group> listGroups = this.groupHelper.getListGroupsByTag(tag);
+            //List<Group> listGroups = this.groupHelper.getListGroupsByTag(tag);
+            List<Group> listGroups =  new ArrayList<>();
             UserActor userActor = this.accountService.getAccountsByType(COUNT_ACCOUNT).get(0).getUserActor();
 
             int numberRow = 0;

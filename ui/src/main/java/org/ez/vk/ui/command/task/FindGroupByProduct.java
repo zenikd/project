@@ -11,7 +11,7 @@ public class FindGroupByProduct extends RootCommand
 			FinderGroupByProduct nakrutCommentImpl;
 			nakrutCommentImpl = (FinderGroupByProduct) context.getBean("finderGroupByProductImpl");
 			print("Write tag");
-			String tag = ConsoleHelper.writeText();
+			String tag = ConsoleHelper.readLine();
 			nakrutCommentImpl.getListGroup(tag);
 			print("OK");
 			} catch (Exception e) {

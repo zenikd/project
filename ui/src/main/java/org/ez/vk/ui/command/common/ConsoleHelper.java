@@ -3,6 +3,7 @@ package org.ez.vk.ui.command.common;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.ez.vk.exception.internal.InternalException;
@@ -16,7 +17,7 @@ public class ConsoleHelper {
 			System.out.println(command);
 		}
 		try {
-			String typedCommand = writeText();
+			String typedCommand = readLine();
 			Command command = setCommand(typedCommand, listCommands);
 			if (!command.isUnique()) {
 				System.out.println(COMMAND_NO_UNIQUE);
@@ -50,7 +51,7 @@ public class ConsoleHelper {
 		return command;
 	}
 
-	public static String writeText() throws InternalException {
+	public static String readLine() throws InternalException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			return in.readLine();
@@ -60,4 +61,18 @@ public class ConsoleHelper {
 		
 	}
 
+	public static List<String> readMultipleLine() throws InternalException {
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		List<String> readLines = new ArrayList<String>();
+		try {
+			String line;
+
+			while ((line = in.readLine()) != null && line.length()!= 0) {
+				readLines.add(line);
+			}
+		} catch (IOException e) {
+			throw new InternalException();
+		}
+		return readLines;
+	}
 }

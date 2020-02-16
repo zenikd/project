@@ -23,7 +23,7 @@ public class GroupFilterImpl implements GroupFilter {
     AccountServiceImpl accountService;
 
     @Override
-    public List<GroupFilterResult> filterGroup(FullGroupFilterCriteria groupFilterCriteria, List<Group> groups) throws InternalException {
+    public List<GroupFilterResult> filterGroup(FullGroupFilterCriteria groupFilterCriteria, List<Integer> groups) throws InternalException {
         CopyOnWriteArrayList<GroupFilterResult> groupFilterResults = new CopyOnWriteArrayList<>();
         List<AccountVk> accountVkList = accountService.getAccountsByType(999, UserTypeEnum.WORKING.toString());
         ExecutorService eService = Executors.newFixedThreadPool(accountVkList.size());

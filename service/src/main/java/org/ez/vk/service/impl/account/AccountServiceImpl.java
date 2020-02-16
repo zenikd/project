@@ -1,6 +1,7 @@
 package org.ez.vk.service.impl.account;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.ez.vk.db.AccountDao;
@@ -58,6 +59,23 @@ public class AccountServiceImpl implements AccountService {
         setUserCredentials(accountServiceDTO, accountVk);
         accountDao.addEntity(accountVk);
 
+    }
+
+    public void addListAccount(List<String> loginPassList, String type) {
+        loginPassList
+                .stream()
+                .forEach(loginPassStr -> {
+                    try {
+                        Thread.sleep(30000);
+                        String[] loginPassArr = loginPassStr.split(":");
+                        AccountServiceDTO accountServiceDTO
+                                = new AccountServiceDTO(loginPassArr[0], loginPassArr[1].split(";")[0], type);
+
+                        this.addAccount(accountServiceDTO);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                });
     }
 
     private void setUserCredentials(AccountServiceDTO accountServiceDTO, AccountVk defaultAccount) {

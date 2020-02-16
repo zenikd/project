@@ -1,22 +1,21 @@
 package org.ez.vk.ui.command.account.add.printing;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.ez.vk.entity.AccountServiceDTO;
 import org.ez.vk.enums.UserTypeEnum;
 import org.ez.vk.service.AccountService;
 import org.ez.vk.ui.command.RootCommand;
 import org.ez.vk.ui.command.common.ConsoleHelper;
 
-public class AdderAnalaiserAccount extends RootCommand{
-	private final static String WRITE_LOGIN = "write login";
-	private final static String WRITE_PASS = "write pass";
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+
+public class AdderMultipleAccount extends RootCommand{
+	private final static String WRITE_LOGIN = "write login pass array";
 	private final static String WRITE_TYPE = "write type";
-	
-	private List<String> listType = new ArrayList();	
-	
-	public AdderAnalaiserAccount(){
+
+	private List<String> listType = new ArrayList();
+
+	public AdderMultipleAccount(){
 		listType.add(UserTypeEnum.SEARCHER.toString());
 		listType.add(UserTypeEnum.WORKING.toString());
 	}
@@ -26,13 +25,10 @@ public class AdderAnalaiserAccount extends RootCommand{
 		try {
 		AccountService accountService = (AccountService) context.getBean("accountServiceImpl");
 		print(WRITE_LOGIN);
-		String login = ConsoleHelper.readLine();
-		print(WRITE_PASS);
-		String pass = ConsoleHelper.readLine();
+		List<String> loginPassList = ConsoleHelper.readMultipleLine();
 		print(WRITE_TYPE);
 		String type = ConsoleHelper.chooseOneFromList(listType);
-		AccountServiceDTO accountSearchDTO = new AccountServiceDTO(login, pass, type);		
-		accountService.addAccount(accountSearchDTO);
+		accountService.addListAccount(loginPassList, type);
 		print("OK");
 		} catch (Exception e) {
 			print(e.getMessage());
@@ -42,6 +38,6 @@ public class AdderAnalaiserAccount extends RootCommand{
 
 	@Override
 	protected String getCommandName() {
-		return "print";
+		return "multiple";
 	}
 }

@@ -16,7 +16,7 @@ public class AbandonedGroupGetterImpl extends RootTask implements AbandonedGroup
     public void getListGroup(String tag) {
 
         try {
-            List<Group> groups = groupHelper.getListGroupsByTag(tag);
+            List<Integer> groups = groupHelper.getListGroupsByTag(tag);
 
             FullGroupFilterCriteria groupFilterCriteria = new FullGroupFilterCriteria();
 

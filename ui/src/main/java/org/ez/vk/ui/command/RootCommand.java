@@ -26,7 +26,7 @@ public abstract class RootCommand {
 
 	private void chooseChildCommand() throws InternalException {
 		boolean isFound = false;
-		String command = ConsoleHelper.writeText();
+		String command = ConsoleHelper.readLine();
 		if (EXIT.startsWith(command)) {
 			return;
 		}

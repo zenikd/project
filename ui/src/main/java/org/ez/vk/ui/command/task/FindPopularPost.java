@@ -11,7 +11,7 @@ public class FindPopularPost extends RootCommand
 			FinderPopularPost nakrutCommentImpl;
 			nakrutCommentImpl = (FinderPopularPost) context.getBean("finderPopularPostImpl");
 			print("Write tag");
-			String tag = ConsoleHelper.writeText();
+			String tag = ConsoleHelper.readLine();
 			nakrutCommentImpl.getListPost(tag);
 			print("OK");
 			} catch (Exception e) {

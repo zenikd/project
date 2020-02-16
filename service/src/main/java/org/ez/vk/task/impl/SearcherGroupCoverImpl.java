@@ -27,7 +27,7 @@ public class SearcherGroupCoverImpl extends RootTask implements SearcherGroupCov
 
     public void getListGroup(String tagss) {
 
-        String[] tags = {"создание сайтов", "разработка сайтов", "копирайтинг", "seo", "smm"};
+       /* String[] tags = {"создание сайтов", "разработка сайтов", "копирайтинг", "seo", "smm"};
 
         for (String tag : tags) {
 
@@ -51,7 +51,7 @@ public class SearcherGroupCoverImpl extends RootTask implements SearcherGroupCov
             } catch (Exception e1) {
                 System.out.println(e1);
             }
-        }
+        }*/
 
     }
 }

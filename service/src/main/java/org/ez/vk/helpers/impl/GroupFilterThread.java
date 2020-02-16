@@ -23,12 +23,12 @@ import java.util.stream.Collectors;
 public class GroupFilterThread extends Thread {
     final static VkApiClient vk = new VkApiClient(HttpTransportClient.getInstance());
     FullGroupFilterCriteria groupFilterCriteria;
-    List<Group> groups;
+    List<Integer> groups;
     CopyOnWriteArrayList<GroupFilterResult> groupFilterResults;
     AtomicInteger groupIndex;
     UserActor userActor;
 
-    GroupFilterThread(FullGroupFilterCriteria groupFilterCriteria, List<Group> groups, CopyOnWriteArrayList<GroupFilterResult> groupFilterResults, AtomicInteger groupIndex, UserActor userActor) {
+    GroupFilterThread(FullGroupFilterCriteria groupFilterCriteria, List<Integer> groups, CopyOnWriteArrayList<GroupFilterResult> groupFilterResults, AtomicInteger groupIndex, UserActor userActor) {
         this.groupFilterCriteria = groupFilterCriteria;
         this.groups = groups;
         this.groupFilterResults = groupFilterResults;
@@ -39,29 +39,30 @@ public class GroupFilterThread extends Thread {
     public void run() {
         try {
             while (groups.size() > groupIndex.intValue()) {
-                Group group = groups.get(groupIndex.getAndIncrement());
+                Integer groupId = groups.get(groupIndex.getAndIncrement());
                 System.out.println(groupIndex.intValue());
-                Thread.sleep(1100);
+                Thread.sleep(300);
 
                 if (groupFilterCriteria.getPostFilter() != null) {
-                    if (!checkPostCriteria(group)) {
+                    if (!checkPostCriteria(groupId)) {
                         continue;
                     }
                 }
 
                 GroupFilterResult groupFilterResult = new GroupFilterResult();
-                groupFilterResult.setGroup(group);
+                //Todo
+                //groupFilterResult.setGroup(group);
 
                 try {
                     if (groupFilterCriteria.isAddAdminsToResponse()) {
-                        Thread.sleep(1100);
+                        Thread.sleep(350);
                         GroupFull groupFull = vk.groups()
                                 .getById(userActor)
-                                .groupIds(group.getId().toString())
+                                .groupIds(groupId.toString())
                                 .fields(GroupField.CONTACTS)
                                 .execute()
                                 .get(0);
-                        if(groupFull.getContacts().size() == 0) continue;
+                        if(groupFull.getContacts() == null || groupFull.getContacts().size() == 0) continue;
 
                         List<Integer> adminsIds = groupFull
                                 .getContacts()
@@ -70,7 +71,7 @@ public class GroupFilterThread extends Thread {
                                 .mapToInt(contact -> contact.getUserId())
                                 .boxed()
                                 .collect(Collectors.toList());
-                        if(adminsIds.size() == 0) continue;
+                        if(adminsIds.size() == 0 || adminsIds.size() > 3 ) continue;
 
                         groupFilterResult.setAdminIds(adminsIds);
                     }
@@ -86,14 +87,19 @@ public class GroupFilterThread extends Thread {
         }
     }
 
-    boolean checkPostCriteria(Group group) throws ClientException {
+    boolean checkPostCriteria(Integer groupId) throws ClientException {
         PostFilter postFilter = groupFilterCriteria.getPostFilter();
         try {
             if (postFilter.isSearchByLastPostDate()) {
 
                 if (postFilter.isSearchByLastPostDate()) {
 
-                    List<WallPostFull> wallPostFullList = vk.wall().get(userActor).count(2).ownerId(-group.getId()).execute().getItems();
+                    List<WallPostFull> wallPostFullList = vk.wall().get(userActor).count(51).ownerId(-groupId).execute().getItems();
+
+                    if(wallPostFullList.size() < 10) {
+                        return false;
+                    }
+
                     WallPostFull wallPostFull = wallPostFullList.get(0).getIsPinned() == null ? wallPostFullList.get(0) : wallPostFullList.get(1);
 
                     long creationDate = wallPostFull.getDate();

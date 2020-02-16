@@ -11,7 +11,7 @@ public class FindPopularGroup extends RootCommand
 			FinderPopularGroup finderPopularGroup;
 			finderPopularGroup = (FinderPopularGroup) context.getBean("finderPopularGroupImpl");
 			print("Write tag");
-			String tag = ConsoleHelper.writeText();
+			String tag = ConsoleHelper.readLine();
 			finderPopularGroup.getListGroup(tag);
 			print("OK");
 			} catch (Exception e) {
