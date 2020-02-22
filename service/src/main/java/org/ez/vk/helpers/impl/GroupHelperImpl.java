@@ -66,6 +66,7 @@ public class GroupHelperImpl implements GroupHelper {
             }
 
         }
+        return groups;
     }
 
     @Override
