@@ -1,7 +1,7 @@
 package org.ez.vk.service;
 
 import org.ez.vk.entity.AccountServiceDTO;
-import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.db.AccountVk;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.exception.user.RootUserException;
 

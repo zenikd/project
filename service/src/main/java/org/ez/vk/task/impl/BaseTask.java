@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.httpclient.HttpTransportClient;
 
-public class RootTask {
+public class BaseTask {
     protected final static VkApiClient vk = new VkApiClient(HttpTransportClient.getInstance());
 
     @Autowired

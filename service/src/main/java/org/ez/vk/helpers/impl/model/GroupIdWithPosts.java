@@ -6,18 +6,18 @@ import java.util.List;
 
 public class GroupIdWithPosts {
     private Integer groupId;
-    private List<WallPostFull> list;
+    private List<WallPostFull> posts;
 
     public GroupIdWithPosts(Integer groupId, List<WallPostFull> list) {
         this.groupId = groupId;
-        this.list = list;
+        this.posts = list;
     }
 
     public Integer getGroupId() {
         return groupId;
     }
 
-    public List<WallPostFull> getList() {
-        return list;
+    public List<WallPostFull> getPosts() {
+        return posts;
     }
 }

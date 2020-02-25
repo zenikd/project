@@ -3,10 +3,10 @@ package org.ez.vk.task.impl.point;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.db.AccountVk;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.service.AccountService;
-import org.ez.vk.task.impl.RootTask;
+import org.ez.vk.task.impl.BaseTask;
 import org.ez.vk.task.impl.point.exception.AccessDeniedException;
 import org.ez.vk.task.impl.point.exception.TaskAbsentException;
 import org.ez.vk.task.impl.point.exception.TaskReservedException;
@@ -17,11 +17,8 @@ import org.ez.vk.task.impl.point.task.PollTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.vk.api.sdk.exceptions.ApiException;
-import com.vk.api.sdk.exceptions.ClientException;
-
 @Service
-public class EarnPointTask2 extends RootTask {
+public class EarnPointTask2 extends BaseTask {
 	@Autowired
 	LikestAuthorizer likestAuthorizer;
 	@Autowired

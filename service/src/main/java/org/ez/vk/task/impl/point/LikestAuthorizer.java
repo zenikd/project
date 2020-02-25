@@ -3,7 +3,7 @@ package org.ez.vk.task.impl.point;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.db.AccountVk;
 import org.ez.vk.exception.internal.CaptchaException;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.helper.web.UrlRequestParam;
@@ -17,7 +17,6 @@ import com.vk.api.sdk.client.actors.UserActor;
 import com.vk.api.sdk.exceptions.ApiException;
 import com.vk.api.sdk.exceptions.ClientException;
 import com.vk.api.sdk.httpclient.HttpTransportClient;
-import com.vk.api.sdk.objects.wall.PostType;
 import com.vk.api.sdk.queries.likes.LikesType;
 
 @Service

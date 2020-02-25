@@ -15,20 +15,18 @@ import org.apache.poi.ss.usermodel.DataFormat;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.task.FinderGroupByProduct;
 import org.springframework.stereotype.Service;
 
 import com.vk.api.sdk.client.actors.UserActor;
 import com.vk.api.sdk.objects.groups.Group;
-import com.vk.api.sdk.objects.groups.GroupType;
 import com.vk.api.sdk.objects.market.MarketItem;
 import com.vk.api.sdk.objects.market.MarketItemFull;
 import com.vk.api.sdk.objects.wall.WallPostFull;
 import com.vk.api.sdk.queries.groups.GroupField;
 
 @Service
-public class FinderGroupByProductImpl extends RootTask implements FinderGroupByProduct {
+public class FinderGroupByProductImpl extends BaseTask implements FinderGroupByProduct {
     private final static Integer COUNT_GROUP = 100;
     private final static Integer COUNT_ACCOUNT = 1;
 

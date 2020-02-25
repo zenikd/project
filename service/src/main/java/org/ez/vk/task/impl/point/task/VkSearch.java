@@ -1,6 +1,6 @@
 package org.ez.vk.task.impl.point.task;
 
-import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.db.AccountVk;
 
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.exceptions.ApiException;

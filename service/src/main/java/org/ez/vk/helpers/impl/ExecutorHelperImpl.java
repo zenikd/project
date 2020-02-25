@@ -4,24 +4,25 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
+import com.google.gson.JsonPrimitive;
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.UserActor;
 import com.vk.api.sdk.exceptions.ApiException;
 import com.vk.api.sdk.exceptions.ClientException;
 import com.vk.api.sdk.httpclient.HttpTransportClient;
 import com.vk.api.sdk.objects.wall.WallPostFull;
-import org.ez.vk.entity.db.reservable.AccountVk;
-import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.helpers.ExecutorHelper;
 import org.ez.vk.helpers.impl.model.GroupIdWithPosts;
 import org.ez.vk.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@Service
 public class ExecutorHelperImpl implements ExecutorHelper {
     protected final static VkApiClient vk = new VkApiClient(HttpTransportClient.getInstance());
 
@@ -34,8 +35,8 @@ public class ExecutorHelperImpl implements ExecutorHelper {
                 "var index = 0;" +
                 "while(index < groupIds.length) {" +
                     "var groupId = groupIds[index];" +
-                    "var posts = API.wall.get({\"count\": 100, \"owner_id\": -groupId});" +
-                    "response.push({groupId: groupId, posts: posts});" +
+                        "var posts = API.wall.get({\"count\": 100, \"owner_id\": -groupId});" +
+                        "response.push({groupId: groupId, posts: posts});" +
                     "index = index + 1;" +
                 "};" +
                 "return response;";
@@ -43,13 +44,14 @@ public class ExecutorHelperImpl implements ExecutorHelper {
 
         JsonElement jsonResult = vk.execute().code(actor, query)
                 .execute();
-        Gson gson = new Gson();
         ObjectMapper mapper = new ObjectMapper();
 
         List<GroupIdWithPosts> response = new ArrayList<>();
 
         jsonResult.getAsJsonArray().forEach(jsonElement -> {
-            String mJsonString = jsonElement.toString();
+            if(jsonElement.getAsJsonObject().get("posts") instanceof JsonPrimitive) {
+                return;
+            }
 
             JsonArray itemsArray = jsonElement.getAsJsonObject().get("posts").getAsJsonObject().get("items").getAsJsonArray();
             List<WallPostFull> posts = new ArrayList<>();
@@ -75,7 +77,6 @@ public class ExecutorHelperImpl implements ExecutorHelper {
             GroupIdWithPosts groupIdWithPosts = new GroupIdWithPosts(groupId, posts);
             response.add(groupIdWithPosts);
         });
-
         return response;
     }
 
@@ -83,7 +84,11 @@ public class ExecutorHelperImpl implements ExecutorHelper {
         String[] removedUnderScoreArray = inccorectJson.split("_");
         List<String> removedUnderScoreList = Arrays.asList(removedUnderScoreArray);
         return removedUnderScoreList.stream().reduce("", (sum, res) -> {
-            return sum + res.substring(0, 1).toUpperCase() + res.substring(1);
+            try {
+                return sum + res.substring(0, 1).toUpperCase() + res.substring(1);
+            } catch (StringIndexOutOfBoundsException e) {
+                return sum + "_";
+            }
         });
     }
 

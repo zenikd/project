@@ -4,6 +4,12 @@ public class PostFilter extends BaseFilter {
     boolean searchByLastPostDate;
     boolean isEarlier;
     int day;
+    int minAmountPosts;
+
+    int minAverageLikes;
+    int minAverageReposts;
+    int minAverageComments;
+
 
     public boolean isSearchByLastPostDate() {
         return searchByLastPostDate;
@@ -27,5 +33,37 @@ public class PostFilter extends BaseFilter {
 
     public void setDay(int month) {
         this.day = month;
+    }
+
+    public int getMinAmountPosts() {
+        return minAmountPosts;
+    }
+
+    public void setMinAmountPosts(int minAmountPosts) {
+        this.minAmountPosts = minAmountPosts;
+    }
+
+    public int getMinAverageLikes() {
+        return minAverageLikes;
+    }
+
+    public void setMinAverageLikes(int minAverageLikes) {
+        this.minAverageLikes = minAverageLikes;
+    }
+
+    public int getMinAverageReposts() {
+        return minAverageReposts;
+    }
+
+    public void setMinAverageReposts(int minAverageReposts) {
+        this.minAverageReposts = minAverageReposts;
+    }
+
+    public int getMinAverageComments() {
+        return minAverageComments;
+    }
+
+    public void setMinAverageComments(int minAverageComments) {
+        this.minAverageComments = minAverageComments;
     }
 }

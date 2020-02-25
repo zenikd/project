@@ -3,31 +3,36 @@ package org.ez.vk.task.impl;
 import org.ez.vk.helpers.impl.model.GroupFilterResult;
 import org.ez.vk.helpers.impl.model.filter.FullGroupFilterCriteria;
 import org.ez.vk.helpers.impl.model.filter.PostFilter;
-import org.ez.vk.task.AbandonedGroupGetter;
+import org.ez.vk.task.PopularGroupFinder;
 import org.springframework.stereotype.Service;
 
+import java.io.PrintWriter;
 import java.util.List;
 
 @Service
-public class AbandonedGroupGetterImpl extends BaseTask implements AbandonedGroupGetter {
+public class PopularGroupFinderImpl extends BaseTask implements PopularGroupFinder {
 
     @Override
-    public void getListGroup(String tag) {
-
+    public void getPopularGroup(String tag) {
         try {
-            List<Integer> groups = groupHelper.getListGroupsByTag(tag);
+            List<Integer> groups = groupHelper.getListGroupIdsFromFile();
 
             FullGroupFilterCriteria groupFilterCriteria = new FullGroupFilterCriteria();
+            groupFilterCriteria.setAddAdminsToResponse(true);
 
             PostFilter postFilter = new PostFilter();
-            postFilter.setDay(365);
-            postFilter.setEarlier(false);
-            postFilter.setSearchByLastPostDate(true);
+            postFilter.setMinAverageLikes(10);
+            postFilter.setMinAmountPosts(30);
             groupFilterCriteria.setPostFilter(postFilter);
+
+            PrintWriter writer = new PrintWriter("popularGroupsIds.txt", "UTF-8");
 
             List<GroupFilterResult> result = groupFilter.filterGroup(groupFilterCriteria, groups);
             result
-                    .forEach(groupFilterResult -> System.out.println(groupHelper.getGroupUrl(groupFilterResult.getGroup())));
+                    .forEach(groupFilterResult -> writer.println(groupFilterResult.getGroupId()));
+            writer.close();
+
+
         } catch (Exception e) {
             System.out.println(e);
         }

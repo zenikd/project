@@ -1,14 +1,15 @@
-package org.ez.vk.converter.reservable;
+package org.ez.vk.converter;
 
+import org.ez.vk.converter.AbstractConverterFromDBObject;
 import org.ez.vk.entity.db.constant.AccountConst;
-import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.db.AccountVk;
 import org.springframework.stereotype.Repository;
 
 import com.mongodb.BasicDBObject;
 import com.vk.api.sdk.client.actors.UserActor;
 
 @Repository
-public class AccountFromDBObject extends ReservableConverterFromDBObject<AccountVk>  {
+public class AccountFromDBObject extends AbstractConverterFromDBObject<AccountVk> {
 
 	@Override
 	public AccountVk setEntity(BasicDBObject basicDBObject, AccountVk accountVk) {

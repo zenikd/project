@@ -6,7 +6,7 @@ import com.vk.api.sdk.client.actors.UserActor;
 import com.vk.api.sdk.httpclient.HttpTransportClient;
 import com.vk.api.sdk.objects.groups.Group;
 import com.vk.api.sdk.objects.groups.GroupType;
-import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.db.AccountVk;
 import org.ez.vk.enums.UserTypeEnum;
 import org.ez.vk.helpers.GroupHelper;
 import org.ez.vk.service.AccountService;
@@ -54,7 +54,7 @@ public class GroupHelperImpl implements GroupHelper {
     @Override
     public List<Integer> getListGroupIdsFromFile() throws IOException {
         List<Integer> groups = new ArrayList<>();
-        Path pathToFile = Paths.get("groups.txt");
+        Path pathToFile = Paths.get("groupsIds.txt");
 
         try (BufferedReader br = Files.newBufferedReader(pathToFile,
                 StandardCharsets.US_ASCII)) {

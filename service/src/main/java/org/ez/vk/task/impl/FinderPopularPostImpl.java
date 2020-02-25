@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.ez.vk.entity.db.reservable.AccountVk;
 import org.ez.vk.task.FinderPopularPost;
 import org.springframework.stereotype.Service;
 import com.vk.api.sdk.client.actors.UserActor;
@@ -14,7 +13,7 @@ import com.vk.api.sdk.objects.groups.GroupType;
 import com.vk.api.sdk.objects.wall.WallPostFull;
 
 @Service
-public class FinderPopularPostImpl extends RootTask implements FinderPopularPost {
+public class FinderPopularPostImpl extends BaseTask implements FinderPopularPost {
     private final static Integer COUNT_ACCOUNT = 1;
 
 

@@ -7,14 +7,13 @@ public class MainCommand extends RootCommand {
 
 	public MainCommand(){
 		listCommands.add(new AccountCommand());
-		listCommands.add(new AddComment());
-		listCommands.add(new EarnPoint());
 		listCommands.add(new AdminGetterCommand());
 		listCommands.add(new FindGroupByProduct());
-		listCommands.add(new FindPopularGroup());
 		listCommands.add(new FindPopularPost());
 		listCommands.add(new SearchGroupCover());
 		listCommands.add(new AbadonedGroupGetterCommand());
+		listCommands.add(new PopularGroupFinderCommand());
+		listCommands.add(new AddGroupFromFile());
 	}
 	@Override
 	protected String getCommandName() {

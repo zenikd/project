@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
-import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.db.AccountVk;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.helper.web.UrlResponseParam;
 import org.ez.vk.task.impl.point.entity.CommentParam;

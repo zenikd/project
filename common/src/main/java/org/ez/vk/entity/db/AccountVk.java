@@ -1,8 +1,9 @@
-package org.ez.vk.entity.db.reservable;
+package org.ez.vk.entity.db;
 
 import com.vk.api.sdk.client.actors.UserActor;
+import org.ez.vk.entity.db.BaseEntity;
 
-public class AccountVk extends ReservableEntity
+public class AccountVk extends BaseEntity
 {
 	protected String type;
 	private UserActor userActor;

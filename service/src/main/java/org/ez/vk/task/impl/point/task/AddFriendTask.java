@@ -1,7 +1,7 @@
 package org.ez.vk.task.impl.point.task;
 
 import org.apache.log4j.Logger;
-import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.db.AccountVk;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.task.impl.point.TaskParam;
 import org.springframework.stereotype.Service;

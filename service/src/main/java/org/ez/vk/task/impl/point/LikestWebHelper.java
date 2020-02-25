@@ -1,6 +1,6 @@
 package org.ez.vk.task.impl.point;
 
-import org.ez.vk.entity.db.reservable.AccountVk;
+import org.ez.vk.entity.db.AccountVk;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.helper.web.UrlRequestParam;
 import org.ez.vk.helper.web.UrlResponseParam;

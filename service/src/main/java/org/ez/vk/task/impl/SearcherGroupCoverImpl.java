@@ -1,12 +1,9 @@
 package org.ez.vk.task.impl;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import org.ez.vk.entity.db.reservable.AccountVk;
-import org.ez.vk.enums.UserTypeEnum;
 import org.ez.vk.task.SearcherGroupCover;
 import org.springframework.stereotype.Service;
 import com.vk.api.sdk.client.VkApiClient;
@@ -21,7 +18,7 @@ import com.vk.api.sdk.objects.wall.WallPostFull;
 import com.vk.api.sdk.queries.groups.GroupField;
 
 @Service
-public class SearcherGroupCoverImpl extends RootTask implements SearcherGroupCover {
+public class SearcherGroupCoverImpl extends BaseTask implements SearcherGroupCover {
     private final static Integer COUNT_GROUP = 1000;
     private final static Integer COUNT_ACCOUNT = 10;
 
