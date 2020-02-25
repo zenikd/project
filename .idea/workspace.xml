@@ -2,96 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe489d8-688d-41a3-b8f9-b3822b6d024d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/model/GroupFilterThreadParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/GroupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/GroupServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/PopularGroupFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/PopularGroupFinderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/AddGroupFromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/GroupEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/GroupEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/StaticticEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/AccountFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/AccountFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/factory/ReservableEntityFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/reservable/AccountVk.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/AccountVk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/reservable/ReservableEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/reservable/AccountFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/AccountFromDBObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/reservable/ReservableConverterFromDBObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/GroupDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/GroupDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/reservable/ReservableDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/converter/reservable/AccountFromDBObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/converter/reservable/ReservableConverterFromDBObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/AccountDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/GroupDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/GroupDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/reservable/AccountDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/reservable/ReservableDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/ExecutorHelperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/ExecutorHelperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupHelperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupHelperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/model/GroupFilterResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/model/GroupFilterResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/model/GroupIdWithPosts.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/model/GroupIdWithPosts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/model/filter/PostFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/model/filter/PostFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountFSParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/FinderPopularGroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/AbandonedGroupGetterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/AbandonedGroupGetterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/AdminGetterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/AdminGetterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/CountUnicPostTaskImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderGroupByProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderGroupByProductImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularGroupImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularPostImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularPostImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/RootTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/BaseTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/SearcherGroupCoverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/SearcherGroupCoverImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/BalanceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/BalanceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/EarnPointTask2.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/EarnPointTask2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestAuthorizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestAuthorizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestTaskHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestTaskHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestWebHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestWebHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AbstractNoOidTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AbstractNoOidTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AbstractOidTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AbstractOidTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AddFriendTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AddFriendTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/CommentTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/CommentTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/JoinToGroupTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/JoinToGroupTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/PollTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/PollTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/VkSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/VkSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/account/AccountFSParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/service/impl/account/AccountServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/FinderPopularGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CountUnicPostTaskImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CoverSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/CoverSearcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderGroupByProductImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderGroupByProductImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularGroupImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularPostImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularPostImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/PostWithValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/PostWithValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/RootTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/SearcherGroupCoverImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/SearcherGroupCoverImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/BalanceUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/BalanceUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/EarnPointTask2.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/EarnPointTask2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/LikestAuthorizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/LikestAuthorizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/LikestTaskHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/LikestTaskHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/LikestWebHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/LikestWebHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/AbstractNoOidTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/AbstractNoOidTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/AbstractOidTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/AbstractOidTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/AddFriendTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/AddFriendTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/CommentTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/CommentTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/JoinToGroupTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/JoinToGroupTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/PollTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/PollTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/VkSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/point/task/VkSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/MainCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/AddComment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/FindPopularGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/PopularGroupFinderCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vk-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vk-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/BalanceUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/EarnPointTask2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestAuthorizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestTaskHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestWebHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/TaskParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/entity/CommentParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/entity/PollParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/exception/AccessDeniedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/exception/LikestException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/exception/TaskAbsentException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/exception/TaskReservedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AbstractNoOidTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AbstractOidTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AddFriendTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/CommentTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/JoinToGroupTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/PollTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/VkSearch.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +111,7 @@
       <workItem from="1582312196816" duration="779000" />
       <workItem from="1582393506864" duration="12486000" />
       <workItem from="1582578358881" duration="2391000" />
-      <workItem from="1582659714442" duration="5230000" />
+      <workItem from="1582659714442" duration="5513000" />
     </task>
     <task id="LOCAL-00001" summary="Add filter and helper to group">
       <created>1581617651357</created>
@@ -212,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582394947162</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add dao to group and popular group task">
+      <created>1582666237858</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582666237858</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +172,8 @@
     <MESSAGE value="Add group filter as separate thread" />
     <MESSAGE value="Add getGroupIdsFromFile method to GroupHelper" />
     <MESSAGE value="Add base executor helper version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add base executor helper version" />
+    <MESSAGE value="Add dao to group and popular group task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add dao to group and popular group task" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581278973767">
@@ -263,10 +200,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="514" y="117" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1582400603701" />
-    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1582666205449">
+    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1582666327049">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582666205449" />
+    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582666327049" />
     <state width="515" height="438" key="DebuggerActiveHint" timestamp="1582665584931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -275,22 +212,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581269227553" />
-    <state width="1493" height="173" key="GridCell.Tab.0.bottom" timestamp="1582666121273">
+    <state width="1493" height="173" key="GridCell.Tab.0.bottom" timestamp="1582666378385">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582666121273" />
-    <state width="1493" height="173" key="GridCell.Tab.0.center" timestamp="1582666121273">
+    <state width="1493" height="173" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582666378385" />
+    <state width="1493" height="173" key="GridCell.Tab.0.center" timestamp="1582666378385">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582666121273" />
-    <state width="1493" height="173" key="GridCell.Tab.0.left" timestamp="1582666121273">
+    <state width="1493" height="173" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582666378385" />
+    <state width="1493" height="173" key="GridCell.Tab.0.left" timestamp="1582666378385">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582666121273" />
-    <state width="1493" height="173" key="GridCell.Tab.0.right" timestamp="1582666121273">
+    <state width="1493" height="173" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582666378385" />
+    <state width="1493" height="173" key="GridCell.Tab.0.right" timestamp="1582666378385">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582666121273" />
+    <state width="1493" height="173" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582666378385" />
     <state width="1493" height="223" key="GridCell.Tab.1.bottom" timestamp="1582665748997">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -311,10 +248,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582665059537" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582394951866">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582666244615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582394951866" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582666244615" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1582400722589">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
