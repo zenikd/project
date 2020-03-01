@@ -9,7 +9,7 @@ import org.ez.vk.entity.db.constant.AccountConst;
 import org.ez.vk.entity.db.factory.AccountFactory;
 import org.ez.vk.entity.db.AccountVk;
 import org.ez.vk.entity.query.constant.Operators;
-import org.ez.vk.entity.query.update.reserve.account.ReserveAccountDTOQuery;
+import org.ez.vk.entity.query.reserve.account.ReserveAccountDTOQuery;
 import org.ez.vk.enums.UserTypeEnum;
 import org.ez.vk.exception.internal.InternalException;
 import org.ez.vk.exception.user.BadCredentialsException;

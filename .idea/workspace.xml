@@ -2,25 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe489d8-688d-41a3-b8f9-b3822b6d024d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/BalanceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/EarnPointTask2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestAuthorizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestTaskHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/LikestWebHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/TaskParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/entity/CommentParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/entity/PollParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/exception/AccessDeniedException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/exception/LikestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/exception/TaskAbsentException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/exception/TaskReservedException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AbstractNoOidTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AbstractOidTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/AddFriendTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/CommentTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/JoinToGroupTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/PollTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/point/task/VkSearch.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/GroupSearchDTOQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/GroupFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/constant/GroupConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/db/constant/GroupConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/SearchDTOQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/BaseSearchDTOQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/update/UpdateDTOQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/update/UpdateDTOQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/update/reserve/ReserveDTOQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/reserve/ReserveDTOQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/update/reserve/account/ReserveAccountDTOQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/ez/vk/entity/query/reserve/account/ReserveAccountDTOQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/AbstractConverterFromDBObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/AbstractConverterFromDBObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/GroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/GroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/AbstractDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/GroupDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/GroupDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/converter/AbstractConverterFromDBObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/converter/AbstractConverterFromDBObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/AccountDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/GroupDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/GroupDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/AbstractDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/AbstractDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/GroupDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/org/ez/vk/db/impl/GroupDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/GroupHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupHelperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupHelperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/GroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/GroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/GroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/AbandonedGroupGetterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/AbandonedGroupGetterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/BaseTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/BaseTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderGroupByProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderGroupByProductImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularPostImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/FinderPopularPostImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/PopularGroupFinderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/PopularGroupFinderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderGroupByProductImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderGroupByProductImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularPostImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/FinderPopularPostImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/PostWithValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/org/ez/vk/task/impl/PostWithValue.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vk-groups/только дизайн.txt" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15722656" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -56,11 +70,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.ez.vk.converter" />
       <recent name="org.ez.vk.ui.command.task" />
       <recent name="org.ez.vk.service.impl" />
       <recent name="org.ez.vk.service" />
       <recent name="org.ez.vk.task" />
-      <recent name="org.ez.vk.task.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work\project" />
@@ -111,7 +125,10 @@
       <workItem from="1582312196816" duration="779000" />
       <workItem from="1582393506864" duration="12486000" />
       <workItem from="1582578358881" duration="2391000" />
-      <workItem from="1582659714442" duration="5513000" />
+      <workItem from="1582659714442" duration="8813000" />
+      <workItem from="1582746586334" duration="8357000" />
+      <workItem from="1583011566710" duration="4570000" />
+      <workItem from="1583084391317" duration="3532000" />
     </task>
     <task id="LOCAL-00001" summary="Add filter and helper to group">
       <created>1581617651357</created>
@@ -148,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582666237858</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Remove earn point logic">
+      <created>1582666401160</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582666401160</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,97 +197,102 @@
     <MESSAGE value="Add getGroupIdsFromFile method to GroupHelper" />
     <MESSAGE value="Add base executor helper version" />
     <MESSAGE value="Add dao to group and popular group task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add dao to group and popular group task" />
+    <MESSAGE value="Remove earn point task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove earn point task" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581278973767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1581278973767" />
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1582663753182">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1582752809152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582663753182" />
-    <state x="425" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581617208094">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582752809152" />
+    <state x="425" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582752750664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1581617208094" />
-    <state x="18" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582404960961">
+    <state x="425" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1582752750664" />
+    <state x="18" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582752722537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="18" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1582404960961" />
+    <state x="18" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1582752722537" />
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581275328490">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1581275328490" />
-    <state x="514" y="117" key="#xdebugger.evaluate" timestamp="1582400603701">
+    <state x="514" y="117" key="#xdebugger.evaluate" timestamp="1583013819742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="514" y="117" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1582400603701" />
-    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1582666327049">
+    <state x="514" y="117" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1583013819742" />
+    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1582666400591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582666327049" />
-    <state width="515" height="438" key="DebuggerActiveHint" timestamp="1582665584931">
+    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582666400591" />
+    <state width="515" height="438" key="DebuggerActiveHint" timestamp="1583014917866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="515" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1582665584931" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1581269227553">
+    <state width="515" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1583014917866" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1582749384674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581269227553" />
-    <state width="1493" height="173" key="GridCell.Tab.0.bottom" timestamp="1582666378385">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582749384674" />
+    <state x="609" y="315" key="GitRewordDialog" timestamp="1582666415278">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582666378385" />
-    <state width="1493" height="173" key="GridCell.Tab.0.center" timestamp="1582666378385">
+    <state x="609" y="315" key="GitRewordDialog/0.0.1536.824@0.0.1536.824" timestamp="1582666415278" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1583090699653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582666378385" />
-    <state width="1493" height="173" key="GridCell.Tab.0.left" timestamp="1582666378385">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583090699653" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1583090699652">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582666378385" />
-    <state width="1493" height="173" key="GridCell.Tab.0.right" timestamp="1582666378385">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583090699652" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1583090699652">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="173" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582666378385" />
-    <state width="1493" height="223" key="GridCell.Tab.1.bottom" timestamp="1582665748997">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583090699652" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1583090699652">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582665748997" />
-    <state width="1493" height="223" key="GridCell.Tab.1.center" timestamp="1582665748997">
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583090699652" />
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1583015391477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582665748997" />
-    <state width="1493" height="223" key="GridCell.Tab.1.left" timestamp="1582665748997">
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583015391477" />
+    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1583015391477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582665748997" />
-    <state width="1493" height="223" key="GridCell.Tab.1.right" timestamp="1582665748997">
+    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583015391477" />
+    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1583015391477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582665748997" />
+    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583015391477" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1583015391477">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583015391477" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1582665059537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582665059537" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582666244615">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582666420127">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582666244615" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582666420127" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1582400722589">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1582400722589" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1582659822224">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1583084393057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582659822224" />
-    <state x="462" y="144" width="611" height="536" key="find.popup" timestamp="1582664488534">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583084393057" />
+    <state x="462" y="144" width="611" height="536" key="find.popup" timestamp="1582754758121">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="462" y="144" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1582664488534" />
+    <state x="462" y="144" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1582754758121" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1581282876593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -277,24 +306,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupHelperImpl.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/account/add/printing/AdderMultipleAccount.java</url>
           <line>33</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/helpers/impl/GroupFilterThread.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/PopularGroupFinderImpl.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ui/src/main/java/org/ez/vk/ui/command/task/AddGroupFromFile.java</url>
@@ -303,13 +317,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/service/impl/GroupServiceImpl.java</url>
-          <line>51</line>
+          <line>37</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/dao/src/main/java/org/ez/vk/db/impl/AbstractDao.java</url>
-          <line>51</line>
+          <line>50</line>
           <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/PopularGroupFinderImpl.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/src/main/java/org/ez/vk/task/impl/PopularGroupFinderImpl.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/org/ez/vk/helper/JsonHelper.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dao/src/main/java/org/ez/vk/converter/AbstractConverterFromDBObject.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

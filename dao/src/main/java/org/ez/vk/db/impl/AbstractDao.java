@@ -6,7 +6,7 @@ import java.util.List;
 import org.ez.vk.entity.db.BaseEntity;
 import org.ez.vk.entity.db.constant.BaseEntityConst;
 import org.ez.vk.entity.query.DBQuery;
-import org.ez.vk.entity.query.SearchDTOQuery;
+import org.ez.vk.entity.query.BaseSearchDTOQuery;
 import org.ez.vk.entity.query.constant.Operators;
 import org.ez.vk.entity.query.update.UpdateDTOQuery;
 import org.ez.vk.exception.internal.InternalException;
@@ -14,13 +14,12 @@ import org.ez.vk.exception.user.RootUserException;
 import org.ez.vk.helper.DateHelper;
 import org.ez.vk.helper.JsonHelper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.expression.spel.ast.Operator;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.result.UpdateResult;
 
-public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<Entity, SearchDTOQuery> {
+public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<Entity, BaseSearchDTOQuery> {
 	protected JsonHelper jsonHelper;
 	public MongoCollection<BasicDBObject> collection;
 	@Autowired
@@ -32,7 +31,7 @@ public abstract class AbstractDao<Entity> implements org.ez.vk.db.AbstractDao<En
 
 	}
 
-	public List<Entity> select(SearchDTOQuery searchDTO) throws InternalException {
+	public List<Entity> select(BaseSearchDTOQuery searchDTO) throws InternalException {
 		BasicDBObject searchQuery = searchDTO.getSearchQuery().getQuery();
 		List<BasicDBObject> searchResult = collection.find(searchQuery).limit(searchDTO.getLimit())
 				.into(new ArrayList<BasicDBObject>());

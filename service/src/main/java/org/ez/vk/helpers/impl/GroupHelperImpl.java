@@ -33,7 +33,7 @@ public class GroupHelperImpl implements GroupHelper {
     private final static VkApiClient vk = new VkApiClient(transportClient);
 
     @Override
-    public List<Integer> getListGroupsByTag(String tag, int count) throws Exception {
+    public List<Integer> getListGroupsByTag(String tag, int count, List<String> incompatibleTags) throws Exception {
         List<Integer> listGroups = new ArrayList<>();
         List<AccountVk> listAccount = this.accountService.getAccountsByType(1, UserTypeEnum.SEARCHER.toString());
         UserActor userActor = listAccount.get(0).getUserActor();
@@ -43,6 +43,10 @@ public class GroupHelperImpl implements GroupHelper {
                     .getItems();
 
             groups.stream()
+                    .filter(group -> group.getIsClosed().getValue() == 0)
+                    .filter(group -> incompatibleTags
+                            .stream()
+                            .noneMatch(incompatibleTag -> group.getName().toLowerCase().contains(incompatibleTag)))
                     .forEach(group -> listGroups.add(group.getId()));
 
             Thread.sleep(1100);
@@ -71,12 +75,11 @@ public class GroupHelperImpl implements GroupHelper {
 
     @Override
     public List<Integer> getListGroupsByTag(String tag) throws Exception {
-        return this.getListGroupsByTag(tag, COUNT_GROUP);
+        return this.getListGroupsByTag(tag, COUNT_GROUP, new ArrayList<>());
     }
 
     @Override
-    public String getGroupUrl(Group group) {
-        String groupPrefix = group.getType() == GroupType.GROUP ? "club" : "public";
-        return "https://vk.com/" + groupPrefix + group.getId();
+    public String getGroupUrl(int groupId) {
+        return "https://vk.com/public" + groupId;
     }
 }

@@ -100,8 +100,13 @@ public class GroupFilterThread extends Thread {
             Thread.sleep(350);
             List<Integer> groupIdsToSearch = new ArrayList();
             int currentGroup = 0;
-            while (groupsIdsToFilter.size() > groupIndexToPost.intValue() && currentGroup < 25) {
-                groupIdsToSearch.add(groupsIdsToFilter.get(groupIndexToPost.getAndIncrement()));
+
+            while ( currentGroup < 25) {
+                int groupIndex = groupIndexToPost.getAndIncrement();
+                if(groupsIdsToFilter.size() <= groupIndex) {
+                    break;
+                }
+                groupIdsToSearch.add(groupsIdsToFilter.get(groupIndex));
                 currentGroup++;
             }
 

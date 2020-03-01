@@ -1,8 +1,6 @@
 package org.ez.vk.entity.query;
 
-import com.mongodb.BasicDBObject;
-
-public class SearchDTOQuery 
+public class BaseSearchDTOQuery
 {
 	private DBQuery searchQuery = new DBQuery();
 	private Integer limit = 1;
@@ -12,7 +10,7 @@ public class SearchDTOQuery
 		return limit;
 	}
 
-	public SearchDTOQuery setLimit(Integer limit) {
+	public BaseSearchDTOQuery setLimit(Integer limit) {
 		this.limit = limit;
 		return this;
 	}
@@ -21,7 +19,7 @@ public class SearchDTOQuery
 		return searchQuery;
 	}
 
-	public SearchDTOQuery setSearchQuery(DBQuery searchQuery) {
+	public BaseSearchDTOQuery setSearchQuery(DBQuery searchQuery) {
 		this.searchQuery = searchQuery;
 		return this;
 	}

@@ -7,6 +7,7 @@ import org.ez.vk.task.PopularGroupFinder;
 import org.springframework.stereotype.Service;
 
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -15,7 +16,12 @@ public class PopularGroupFinderImpl extends BaseTask implements PopularGroupFind
     @Override
     public void getPopularGroup(String tag) {
         try {
-            List<Integer> groups = groupHelper.getListGroupIdsFromFile();
+            List<String> incompatibleTags = new ArrayList<>();
+            incompatibleTags.add("интер");
+            incompatibleTags.add("декор");
+            incompatibleTags.add("ногт");
+
+            List<Integer> groups = groupHelper.getListGroupsByTag(tag, 1000, incompatibleTags);
 
             FullGroupFilterCriteria groupFilterCriteria = new FullGroupFilterCriteria();
             groupFilterCriteria.setAddAdminsToResponse(true);
@@ -23,6 +29,13 @@ public class PopularGroupFinderImpl extends BaseTask implements PopularGroupFind
             PostFilter postFilter = new PostFilter();
             postFilter.setMinAverageLikes(10);
             postFilter.setMinAmountPosts(30);
+
+            postFilter.setDay(30);
+            postFilter.setEarlier(true);
+            postFilter.setSearchByLastPostDate(true);
+
+            groupFilterCriteria.setPostFilter(postFilter);
+
             groupFilterCriteria.setPostFilter(postFilter);
 
             PrintWriter writer = new PrintWriter("popularGroupsIds.txt", "UTF-8");

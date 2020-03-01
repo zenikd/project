@@ -1,10 +1,9 @@
-package org.ez.vk.entity.query.update.reserve.account;
+package org.ez.vk.entity.query.reserve.account;
 
 import org.ez.vk.entity.db.constant.AccountConst;
 import org.ez.vk.entity.query.DBQuery;
 import org.ez.vk.entity.query.constant.Operators;
-import org.ez.vk.entity.query.update.UpdateDTOQuery;
-import org.ez.vk.entity.query.update.reserve.ReserveDTOQuery;
+import org.ez.vk.entity.query.reserve.ReserveDTOQuery;
 
 public class ReserveAccountDTOQuery extends ReserveDTOQuery {
 	private DBQuery resetFiled = new DBQuery();

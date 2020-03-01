@@ -1,4 +1,4 @@
-package org.ez.vk.entity.query.update.reserve;
+package org.ez.vk.entity.query.reserve;
 
 import org.ez.vk.entity.query.update.UpdateDTOQuery;
 

@@ -94,7 +94,7 @@ public class FinderGroupByProductImpl extends BaseTask implements FinderGroupByP
                     Row row = sheet.createRow(numberRow);
 
                     Cell url = row.createCell(0);
-                    url.setCellValue(this.groupHelper.getGroupUrl(group));
+                    url.setCellValue(this.groupHelper.getGroupUrl(groupId));
 
                     Cell name = row.createCell(1);
                     name.setCellValue(group.getName());

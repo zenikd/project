@@ -27,7 +27,7 @@ public class AbandonedGroupGetterImpl extends BaseTask implements AbandonedGroup
 
             List<GroupFilterResult> result = groupFilter.filterGroup(groupFilterCriteria, groups);
             result
-                    .forEach(groupFilterResult -> System.out.println(groupHelper.getGroupUrl(groupFilterResult.getGroup())));
+                    .forEach(groupFilterResult -> System.out.println(groupHelper.getGroupUrl(groupFilterResult.getGroup().getId())));
         } catch (Exception e) {
             System.out.println(e);
         }

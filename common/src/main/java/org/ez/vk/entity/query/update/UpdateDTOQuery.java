@@ -1,11 +1,9 @@
 package org.ez.vk.entity.query.update;
 
 import org.ez.vk.entity.query.DBQuery;
-import org.ez.vk.entity.query.SearchDTOQuery;
+import org.ez.vk.entity.query.BaseSearchDTOQuery;
 
-import com.mongodb.BasicDBObject;
-
-public class UpdateDTOQuery extends SearchDTOQuery{
+public class UpdateDTOQuery extends BaseSearchDTOQuery {
 	private DBQuery updateQuery = new DBQuery();
 
 	public DBQuery getUpdateQuery() {

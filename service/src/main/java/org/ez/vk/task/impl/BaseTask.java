@@ -4,6 +4,7 @@ import org.ez.vk.db.AccountDao;
 import org.ez.vk.helpers.GroupHelper;
 import org.ez.vk.helpers.GroupFilter;
 import org.ez.vk.service.AccountService;
+import org.ez.vk.service.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.vk.api.sdk.client.VkApiClient;
@@ -23,5 +24,8 @@ public class BaseTask {
 
     @Autowired
     protected GroupFilter groupFilter;
+
+    @Autowired
+    protected GroupService groupService;
 
 }
